@@ -1,14 +1,14 @@
 {
-  "name": "ihome",
+  "name": "espaco-vita",
   "version": "1.0.0",
-  "description": "UX for iHome system based in Materialize Teclabs kit",
+  "description": "UX do sistema da Espaço Vita (PHP, HTML, JS e CSS)",
   "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RAR90/ihome.git"
+    "url": "git+https://github.com/RAR90/espaco-vita.git"
   },
   "keywords": [
     "php",
@@ -21,7 +21,7 @@
   "author": "RAR90",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RAR90/ihome/issues"
+    "url": "https://github.com/RAR90/espaco-vita/issues"
   },
-  "homepage": "https://github.com/RAR90/ihome#readme"
+  "homepage": "https://github.com/RAR90/espaco-vita#readme"
 }

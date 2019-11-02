@@ -1,12 +1,9 @@
-# iHome UX kit
-
-### UX for iHome system based in Materialize Teclabs kit
-### [LIVE DEMO](https://teclabs.com.br/html/ihome/)
+# Espaço Vita UX kit
 
 ## Usage
 ##### 1. Clone repository
 ``` bash
-$ git clone https://github.com/RAR90/ihome
+$ git clone https://github.com/RAR90/espaco-vita
 ```
 ##### 2. Colors
 [Follow these steps to coloring layout.](https://teclabs.com.br/html/materialize.teclabs/css-color.html)
