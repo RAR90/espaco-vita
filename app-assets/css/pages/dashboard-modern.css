@@ -12,14 +12,14 @@
 .conversion-ratio-tooltip
 {
     color: #fff;
-    background: #F79543;
+    background: #015099;
 }
 .total-transaction-tooltip:before,
 .current-balance-tooltip:before,
 .user-statistics-tooltip:before,
 .conversion-ratio-tooltip:before
 {
-    border-top-color: #F79543;
+    border-top-color: #015099;
 }
 
 .card .card-content .card-title i.material-icons
@@ -50,7 +50,7 @@
 }
 #current-balance-donut-chart .ct-series-a .ct-slice-donut
 {
-    stroke: #F79543;
+    stroke: #015099;
 }
 #current-balance-donut-chart .ct-series-b .ct-slice-donut
 {
@@ -94,7 +94,7 @@
 {
     fill: #fff;
     stroke-width: 4;
-    stroke: #F79543;
+    stroke: #015099;
 }
 #total-transaction-line-chart .ct-grid
 {
@@ -141,7 +141,7 @@
 }
 #user-statistics-bar-chart .ct-series-a .ct-slice-pie
 {
-    fill: #F79543;
+    fill: #015099;
 }
 #user-statistics-bar-chart .ct-series-b .ct-bar
 {
@@ -149,7 +149,7 @@
 }
 #user-statistics-bar-chart .ct-series-b .ct-slice-pie
 {
-    fill: #bb5f14;
+    fill: #61a4fc;
 }
 
 .recent-buyers-card .collection

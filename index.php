@@ -10,7 +10,7 @@
       include "app-includes/head/icons.php";
     ?>
 
-    <title>iHome - Login</title>
+    <title>Sistema Espaço Vita</title>
 
     <?php
       include "app-includes/head/vendors.css.php";
@@ -40,8 +40,8 @@
               <form class="login-form">
                 <div class="row">
                   <div class="input-field col s12 login-title-header">
-                    <img class="login-title-logo" src="http://www.mundialimoveis.com.br/img/site/logos/logo.svg" alt="Logo do cliente">
-                    <h5 class="login-title-text">Entrar no <strong class="text-orange">iHome</strong></h5>
+                    <img class="login-title-logo" src="app-assets/images/logo/logo-icon.png" alt="Logo do cliente">
+                    <h5 class="login-title-text">Entrar no Sistema</h5>
                   </div>
                 </div>
                 <div class="row margin">
@@ -70,7 +70,7 @@
                 </div>
                 <div class="row">
                   <div class="input-field col s12 text-center" style="text-align: center">
-                    <a href="home.php" class="btn waves-effect waves-light border-round gradient-45deg-purple-deep-orange" >Entrar</a>
+                    <a href="dashboard-modern.php" class="btn waves-effect waves-light border-round gradient-45deg-indigo-light-blue" >Entrar</a>
                   </div>
                 </div>
               </form>

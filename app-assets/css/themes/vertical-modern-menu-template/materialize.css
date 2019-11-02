@@ -454,12 +454,12 @@
 
 .purple.darken-2
 {
-    background-color: #F79543 !important;
+    background-color: #015099 !important;
 }
 
 .purple-text.text-darken-2
 {
-    color: #F79543 !important;
+    color: #015099 !important;
 }
 
 .purple.darken-3
@@ -504,12 +504,12 @@
 
 .purple.accent-3
 {
-    background-color: #ffb475 !important;
+    background-color: #61a4fc !important;
 }
 
 .purple-text.text-accent-3
 {
-    color: #ffb475 !important;
+    color: #61a4fc !important;
 }
 
 .purple.accent-4
@@ -724,12 +724,12 @@
 
 .indigo.darken-1
 {
-    background-color: #3949ab !important;
+    background-color: #0f6fff !important;
 }
 
 .indigo-text.text-darken-1
 {
-    color: #3949ab !important;
+    color: #0f6fff !important;
 }
 
 .indigo.darken-2
@@ -984,12 +984,12 @@
 
 .light-blue.lighten-2
 {
-    background-color: #4fc3f7 !important;
+    background-color: #015099 !important;
 }
 
 .light-blue-text.text-lighten-2
 {
-    color: #4fc3f7 !important;
+    color: #015099 !important;
 }
 
 .light-blue.lighten-1
@@ -1994,12 +1994,12 @@
 
 .amber.darken-2
 {
-    background-color: #ffa000 !important;
+    background-color: #005bc4 !important;
 }
 
 .amber-text.text-darken-2
 {
-    color: #ffa000 !important;
+    color: #005bc4 !important;
 }
 
 .amber.darken-3
@@ -3217,7 +3217,7 @@ a
 {
     text-decoration: none;
 
-    color: #3949ab;
+    color: #0f6fff;
 
     -webkit-tap-highlight-color: transparent;
 }
@@ -6215,7 +6215,7 @@ small
             transition: color .3s ease;
     text-transform: uppercase;
 
-    color: #3949ab;
+    color: #0f6fff;
 }
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover
 {

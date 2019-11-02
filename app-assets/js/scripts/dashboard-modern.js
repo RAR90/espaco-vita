@@ -73,27 +73,27 @@
             })
             .elem("stop", {
                 offset: "0%",
-                "stop-color": "#ffb376"
+                "stop-color": "#61a4fc"
             })
             .parent()
             .elem("stop", {
                 offset: "10%",
-                "stop-color": "#ffb376"
+                "stop-color": "#61a4fc"
             })
             .parent()
             .elem("stop", {
                 offset: "30%",
-                "stop-color": "#ffb376"
+                "stop-color": "#61a4fc"
             })
             .parent()
             .elem("stop", {
                 offset: "95%",
-                "stop-color": "#F79543"
+                "stop-color": "#015099"
             })
             .parent()
             .elem("stop", {
                 offset: "100%",
-                "stop-color": "#F79543"
+                "stop-color": "#015099"
             });
 
         return defs;
@@ -200,12 +200,12 @@
             })
             .elem("stop", {
                 offset: 0,
-                "stop-color": "#F79543"
+                "stop-color": "#015099"
             })
             .parent()
             .elem("stop", {
                 offset: 1,
-                "stop-color": "#F79543"
+                "stop-color": "#015099"
             });
 
         defs
@@ -218,12 +218,12 @@
             })
             .elem("stop", {
                 offset: 0,
-                "stop-color": "#bb5f14"
+                "stop-color": "#61a4fc"
             })
             .parent()
             .elem("stop", {
                 offset: 1,
-                "stop-color": "#bb5f14"
+                "stop-color": "#61a4fc"
             });
         return defs;
     });
@@ -363,12 +363,12 @@
     var LineSL3ctx = document.getElementById("custom-line-chart-sample-three").getContext("2d");
 
     var gradientStroke = LineSL3ctx.createLinearGradient(500, 0, 0, 200);
-    gradientStroke.addColorStop(0, "#bb5f14");
-    gradientStroke.addColorStop(1, "#F79543");
+    gradientStroke.addColorStop(0, "#61a4fc");
+    gradientStroke.addColorStop(1, "#015099");
 
     var gradientFill = LineSL3ctx.createLinearGradient(500, 0, 0, 200);
-    gradientFill.addColorStop(0, "#bb5f14");
-    gradientFill.addColorStop(1, "#F79543");
+    gradientFill.addColorStop(0, "#61a4fc");
+    gradientFill.addColorStop(1, "#015099");
 
     var SL3Chart = new Chart(LineSL3ctx, {
         type: "line",
