@@ -7,111 +7,105 @@
         M.toast({ html: "Olá! Eu sou um exemplo de Toast" });
     }, 2000);
 
-    // Donut chart
-    // -----------
-    var CurrentBalanceDonutChart = new Chartist.Pie(
-        "#current-balance-donut-chart",
-        {
-            labels: [1, 2],
-            series: [{ meta: "Completed", value: 80 }, { meta: "Remaining", value: 20 }]
-        },
-        {
-            donut: true,
-            donutWidth: 8,
-            showLabel: false,
-            plugins: [
-                Chartist.plugins.tooltip({ class: "current-balance-tooltip", appendToBody: true }),
-                Chartist.plugins.fillDonut({
-                    items: [
-                        {
-                            content: '<p class="small">Balance</p><h5 class="mt-0 mb-0">$ 10k</h5>'
-                        }
-                    ]
-                })
-            ]
-        }
-    )
 
+ //Get the context of the Chart canvas element we want to select
+ var ctx = $("#line-chart");
 
-    // Total Transaction
-    // -----------------
-    var TotalTransactionLine = new Chartist.Line(
-        "#total-transaction-line-chart",
-        {
-            series: [[3, 10, 4, 20, 7, 45, 5, 35, 20, 48, 30, 50]]
-        },
-        {
-            chartPadding: 0,
-            axisX: {
-                showLabel: true,
-                showGrid: false
-            },
-            axisY: {
-                showLabel: true,
-                showGrid: true,
-                low: 0,
-                high: 50,
-                scaleMinSpace: 40
-            },
-            lineSmooth: Chartist.Interpolation.simple({
-                divisor: 2
-            }),
-            plugins: [Chartist.plugins.tooltip({ class: "total-transaction-tooltip", appendToBody: true })],
-            fullWidth: true
-        }
-    );
+ // Chart Options
+ var chartOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+    legend: {
+       position: "bottom"
+    },
+    hover: {
+       mode: "label"
+    },
+    scales: {
+       xAxes: [
+          {
+             display: true,
+             gridLines: {
+                color: "#f3f3f3",
+                drawTicks: false
+             },
+             scaleLabel: {
+                display: true,
+                labelString: "Mês"
+             }
+          }
+       ],
+       yAxes: [
+          {
+             display: true,
+             gridLines: {
+                color: "#f3f3f3",
+                drawTicks: false
+             },
+             scaleLabel: {
+                display: true,
+                labelString: "Aulas"
+             }
+          }
+       ]
+    },
+    title: {
+       display: true,
+       text: "Frequência dos alunos por modalidade"
+    }
+ };
 
-    TotalTransactionLine.on("created", function (data) {
-        var defs = data.svg.querySelector("defs") || data.svg.elem("defs");
-        defs
-            .elem("linearGradient", {
-                id: "lineLinearStats",
-                x1: 0,
-                y1: 0,
-                x2: 1,
-                y2: 0
-            })
-            .elem("stop", {
-                offset: "0%",
-                "stop-color": "#61a4fc"
-            })
-            .parent()
-            .elem("stop", {
-                offset: "10%",
-                "stop-color": "#61a4fc"
-            })
-            .parent()
-            .elem("stop", {
-                offset: "30%",
-                "stop-color": "#61a4fc"
-            })
-            .parent()
-            .elem("stop", {
-                offset: "95%",
-                "stop-color": "#015099"
-            })
-            .parent()
-            .elem("stop", {
-                offset: "100%",
-                "stop-color": "#015099"
-            });
+ // Chart Data
+ var chartData = {
+    labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho"],
+    datasets: [
+       {
+          label: "Pilates",
+          data: [65, 59, 80, 81, 56, 55, 40],
+          fill: false,
+          borderColor: "#e91e63",
+          pointBorderColor: "#e91e63",
+          pointBackgroundColor: "#FFF",
+          pointBorderWidth: 2,
+          pointHoverBorderWidth: 2,
+          pointRadius: 4
+       },
+       {
+          label: "Funcional",
+          data: [28, 48, 40, 19, 86, 27, 90],
+          fill: false,
+          borderColor: "#03a9f4",
+          pointBorderColor: "#03a9f4",
+          pointBackgroundColor: "#FFF",
+          pointBorderWidth: 2,
+          pointHoverBorderWidth: 2,
+          pointRadius: 4
+       },
+       {
+          label: "Estética",
+          data: [45, 25, 16, 36, 67, 18, 76],
+          fill: false,
+          borderColor: "#ffc107",
+          pointBorderColor: "#ffc107",
+          pointBackgroundColor: "#FFF",
+          pointBorderWidth: 2,
+          pointHoverBorderWidth: 2,
+          pointRadius: 4
+       }
+    ]
+ };
 
-        return defs;
+ var config = {
+    type: "line",
 
-    }).on("draw", function (data) {
-        var circleRadius = 5;
-        if (data.type === "point") {
-            var circle = new Chartist.Svg("circle", {
-                cx: data.x,
-                cy: data.y,
-                "ct:value": data.y,
-                r: circleRadius,
-                class: data.value.y === 35 ? "ct-point ct-point-circle" : "ct-point ct-point-circle-transperent"
-            });
-            data.element.replace(circle);
-        }
-    });
+    // Chart Options
+    options: chartOptions,
 
+    data: chartData
+ };
+
+ // Create the chart
+ var lineChart = new Chart(ctx, config);
 
 
     // User Statics
@@ -200,12 +194,12 @@
             })
             .elem("stop", {
                 offset: 0,
-                "stop-color": "#015099"
+                "stop-color": "#F79543"
             })
             .parent()
             .elem("stop", {
                 offset: 1,
-                "stop-color": "#015099"
+                "stop-color": "#F79543"
             });
 
         defs
@@ -218,182 +212,50 @@
             })
             .elem("stop", {
                 offset: 0,
-                "stop-color": "#61a4fc"
+                "stop-color": "#bb5f14"
             })
             .parent()
             .elem("stop", {
                 offset: 1,
-                "stop-color": "#61a4fc"
+                "stop-color": "#bb5f14"
             });
         return defs;
     });
 
-    // Conversion Ratio
-    var ConversionRatioBarChart = new Chartist.Bar(
-        "#conversion-ration-bar-chart",
-        {
-            labels: ["Q1"],
-            series: [[55000], [35000], [10000]]
-        },
-        {
-            stackBars: true,
-            chartPadding: {
-                top: 0,
-                right: 50,
-                bottom: 0,
-                left: 0
-            },
-            axisX: {
-                showLabel: false,
-                showGrid: false
-            },
-            axisY: {
-                showGrid: false,
-                labelInterpolationFnc: function (value) {
-                    return value / 1000 + "k";
-                }
-            },
-            plugins: [Chartist.plugins.tooltip({ class: "user-statistics-tooltip", appendToBody: true })]
-        }
-    );
-    ConversionRatioBarChart.on("draw", function (data) {
-        if (data.type === "bar") {
-            data.element.attr({
-                style: "stroke-width: 40px",
-                x1: data.x1 + 0.001
-            });
-            data.group.append(
-                new Chartist.Svg("circle", {
-                    cx: data.x2,
-                    cy: data.y2
-                })
-            );
-
-
-            data.element.animate({
-                y2: {
-                    begin: 500,
-                    dur: 500,
-                    from: data.y1,
-                    to: data.y2,
-                    easing: Chartist.Svg.Easing.easeInBounce
-                }
-            });
-        }
+    $("#sales-bar-1").sparkline([2, 5, 3, 2, 2, 4, 6, 7, 5, 6, 7], {
+      type: 'bar',
+      height: '50',
+      width: '80',
+      barSpacing: 2,
+      barColor: '#FF4081',
+      //tooltipFormat: $.spformat('{{value}}', 'tooltip-class')
     });
 
-    ConversionRatioBarChart.on("created", function (data) {
-        var defs = data.svg.querySelector("defs") || data.svg.elem("defs");
-        defs
-            .elem("linearGradient", {
-                id: "barGradient1",
-                x1: 0,
-                y1: 0,
-                x2: 0,
-                y2: 1
-            })
-            .elem("stop", {
-                offset: 0,
-                "stop-color": "rgba(129,51,255,1)"
-            })
-            .parent()
-            .elem("stop", {
-                offset: 1,
-                "stop-color": "rgba(129,51,255, 0.6)"
-            });
-
-        defs
-            .elem("linearGradient", {
-                id: "barGradient2",
-                x1: 0,
-                y1: 0,
-                x2: 0,
-                y2: 1
-            })
-            .elem("stop", {
-                offset: 0,
-                "stop-color": "rgba(255,75,172,1)"
-            })
-            .parent()
-            .elem("stop", {
-                offset: 1,
-                "stop-color": "rgba(255,75,172, 0.6)"
-            });
-        return defs;
+    $("#sales-bar-2").sparkline([2, 5, 3, 2, 2, 4, 6, 7, 5, 6, 7], {
+      type: 'bar',
+      height: '50',
+      width: '80',
+      barSpacing: 2,
+      barColor: '#2196f3',
+      //tooltipFormat: $.spformat('{{value}}', 'tooltip-class')
     });
 
-    //Sampel Line Chart Three
-
-    // Options
-    var SLOption = {
-        responsive: true,
-        maintainAspectRatio: true,
-        datasetStrokeWidth: 3,
-        pointDotStrokeWidth: 4,
-        tooltipFillColor: "rgba(0,0,0,0.6)",
-        legend: {
-            display: false,
-            position: "bottom"
-        },
-        hover: {
-            mode: "label"
-        },
-        scales: {
-            xAxes: [
-                {
-                    display: false
-                }
-            ],
-            yAxes: [
-                {
-                    display: false
-                }
-            ]
-        },
-        title: {
-            display: false,
-            fontColor: "#FFF",
-            fullWidth: false,
-            fontSize: 40,
-            text: "82%"
-        }
-    };
-    var SLlabels = ["January", "February", "March", "April", "May", "June"];
-
-    var LineSL3ctx = document.getElementById("custom-line-chart-sample-three").getContext("2d");
-
-    var gradientStroke = LineSL3ctx.createLinearGradient(500, 0, 0, 200);
-    gradientStroke.addColorStop(0, "#61a4fc");
-    gradientStroke.addColorStop(1, "#015099");
-
-    var gradientFill = LineSL3ctx.createLinearGradient(500, 0, 0, 200);
-    gradientFill.addColorStop(0, "#61a4fc");
-    gradientFill.addColorStop(1, "#015099");
-
-    var SL3Chart = new Chart(LineSL3ctx, {
-        type: "line",
-        data: {
-            labels: SLlabels,
-            datasets: [
-                {
-                    label: "My Second dataset",
-                    borderColor: gradientStroke,
-                    pointColor: "#fff",
-                    pointBorderColor: gradientStroke,
-                    pointBackgroundColor: "#fff",
-                    pointHoverBackgroundColor: gradientStroke,
-                    pointHoverBorderColor: gradientStroke,
-                    pointRadius: 4,
-                    pointBorderWidth: 1,
-                    pointHoverRadius: 4,
-                    pointHoverBorderWidth: 1,
-                    fill: true,
-                    backgroundColor: gradientFill,
-                    borderWidth: 1,
-                    data: [24, 18, 20, 30, 40, 43]
-                }
-            ]
-        },
-        options: SLOption
+    $("#sales-bar-3").sparkline([2, 5, 3, 2, 2, 4, 6, 7, 5, 6, 7], {
+      type: 'bar',
+      height: '50',
+      width: '80',
+      barSpacing: 2,
+      barColor: '#8bc34a',
+      //tooltipFormat: $.spformat('{{value}}', 'tooltip-class')
     });
+
+    $("#sales-bar-4").sparkline([2, 5, 3, 2, 2, 4, 6, 7, 5, 6, 7], {
+      type: 'bar',
+      height: '50',
+      width: '80',
+      barSpacing: 2,
+      barColor: '#ffd740',
+      //tooltipFormat: $.spformat('{{value}}', 'tooltip-class')
+    });
+
 })(window, document, jQuery);
