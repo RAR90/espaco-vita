@@ -17,7 +17,7 @@
               </div>
               <div class="right">
                 <button class=" moveNextCarousel middle-indicator-text btn btn-flat orange-text waves-effect waves-light btn-next">
-                <span class="hide-on-small-only">Next</span> <i class="material-icons">navigate_next</i>
+                <span class="hide-on-small-only">Próximo</span> <i class="material-icons">navigate_next</i>
                 </button>
               </div>
             </div>

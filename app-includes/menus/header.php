@@ -10,8 +10,8 @@
             <li class="horizontal-menu-link <?=(strpos($self, 'dashboard-modern')>0?'active':'')?>">
               <a href="dashboard-modern.php"><span>Dashboard</span></a>
             </li>
-            <li class="horizontal-menu-link <?=(strpos($self, '---')>0?'active':'')?>">
-              <a href="dashboard-modern.php"><span>Alunos</span></a>
+            <li class="horizontal-menu-link <?=(strpos($self, 'alunos')>0?'active':'')?>">
+              <a href="alunos.php"><span>Alunos</span></a>
             </li>
             <li class="horizontal-menu-link <?=(strpos($self, '---')>0?'active':'')?>">
               <a href="dashboard-modern.php"><span>Professores</span></a>

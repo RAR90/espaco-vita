@@ -16,8 +16,6 @@
     ?>
 
     <!-- BEGIN: PAGE VENDOR CSS-->
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/animate-css/animate.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/chartist-js/chartist.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/chartist-js/chartist-plugin-tooltip.css">
     <!-- END: PAGE VENDOR CSS-->
@@ -77,7 +75,7 @@
         <li class="bold active"><a class="waves-effect waves-cyan " href="dashboard-modern.php">
           <i class="material-icons">home</i><span class="menu-title" data-i18n="">Home</span></a>
         </li>
-        <li class="bold"><a class="waves-effect waves-cyan " href="https://teclabs.com.br/contato">
+        <li class="bold"><a class="waves-effect waves-cyan " href="https://teclabs.com.br/contato" target="_blank">
           <i class="material-icons">help_outline</i><span class="menu-title" data-i18n="">Suporte</span></a>
         </li>
         <!-- <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="#">
@@ -383,7 +381,7 @@
                           </div>
                           <div class="right">
                             <button class=" moveNextCarousel middle-indicator-text btn btn-flat orange-text waves-effect waves-light btn-next">
-                            <span class="hide-on-small-only">Next</span> <i class="material-icons">navigate_next</i>
+                            <span class="hide-on-small-only">Próximo</span> <i class="material-icons">navigate_next</i>
                             </button>
                           </div>
                         </div>
