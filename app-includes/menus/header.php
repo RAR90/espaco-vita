@@ -8,22 +8,25 @@
             <ul>
 
             <li class="horizontal-menu-link <?=(strpos($self, 'dashboard-modern')>0?'active':'')?>">
-              <a href="dashboard-modern.php"><span>Dashboard</span></a>
+              <a href="dashboard_modern.php"><span>Dashboard</span></a>
+            </li>
+            <li class="horizontal-menu-link <?=(strpos($self, 'alunos')>0?'active':'')?>">
+              <a href="alunos_list.php"><span>Alunos</span></a>
+            </li>
+            <li class="horizontal-menu-link <?=(strpos($self, 'professores')>0?'active':'')?>">
+              <a href="professores_list.php"><span>Professores</span></a>
             </li>
             <li class="horizontal-menu-link <?=(strpos($self, 'aulas')>0?'active':'')?>">
               <a href="aulas.php"><span>Aulas</span></a>
             </li>
-            <li class="horizontal-menu-link <?=(strpos($self, 'alunos')>0?'active':'')?>">
-              <a href="alunos.php"><span>Alunos</span></a>
+            <li class="horizontal-menu-link <?=(strpos($self, '---')>0?'active':'')?>">
+              <a href="dashboard_modern.php"><span>Financeiro</span></a>
             </li>
             <li class="horizontal-menu-link <?=(strpos($self, '---')>0?'active':'')?>">
-              <a href="dashboard-modern.php"><span>Professores</span></a>
+              <a href="dashboard_modern.php"><span>Sistema</span></a>
             </li>
             <li class="horizontal-menu-link <?=(strpos($self, '---')>0?'active':'')?>">
-              <a href="dashboard-modern.php"><span>Sistema</span></a>
-            </li>
-            <li class="horizontal-menu-link <?=(strpos($self, '---')>0?'active':'')?>">
-              <a href="dashboard-modern.php"><span>Relatórios</span></a>
+              <a href="dashboard_modern.php"><span>Relatórios</span></a>
             </li>
 
             </ul>

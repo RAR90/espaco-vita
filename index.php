@@ -70,7 +70,7 @@
                 </div>
                 <div class="row">
                   <div class="input-field col s12 text-center" style="text-align: center">
-                    <a href="dashboard-modern.php" class="btn waves-effect waves-light border-round gradient-45deg-indigo-light-blue" >Entrar</a>
+                    <a href="dashboard_modern.php" class="btn waves-effect waves-light border-round gradient-45deg-indigo-light-blue" >Entrar</a>
                   </div>
                 </div>
               </form>

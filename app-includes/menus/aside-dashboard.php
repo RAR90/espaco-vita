@@ -21,7 +21,7 @@
     data-menu="menu-navigation"
     data-collapsible="menu-accordion"
   >
-    <li class="bold active"><a class="waves-effect waves-cyan " href="dashboard-modern.php">
+    <li class="bold active"><a class="waves-effect waves-cyan " href="dashboard_modern.php">
       <i class="material-icons">home</i><span class="menu-title" data-i18n="">Home</span></a>
     </li>
     <li class="bold"><a class="waves-effect waves-cyan " href="https://teclabs.com.br/contato" target="_blank">
