@@ -7,7 +7,7 @@
           <div class="horizontal-menu">
             <ul>
 
-            <li class="horizontal-menu-link <?=(strpos($self, 'dashboard-modern')>0?'active':'')?>">
+            <li class="horizontal-menu-link <?=(strpos($self, 'dashboard_modern')>0?'active':'')?>">
               <a href="dashboard_modern.php"><span>Dashboard</span></a>
             </li>
             <li class="horizontal-menu-link <?=(strpos($self, 'alunos')>0?'active':'')?>">
@@ -17,7 +17,7 @@
               <a href="professores_list.php"><span>Professores</span></a>
             </li>
             <li class="horizontal-menu-link <?=(strpos($self, 'aulas')>0?'active':'')?>">
-              <a href="aulas.php"><span>Aulas</span></a>
+              <a href="aulas_list.php"><span>Aulas</span></a>
             </li>
             <li class="horizontal-menu-link <?=(strpos($self, '---')>0?'active':'')?>">
               <a href="dashboard_modern.php"><span>Financeiro</span></a>
