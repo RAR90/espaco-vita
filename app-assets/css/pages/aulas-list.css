@@ -28,14 +28,14 @@
 
     padding: 17px 14px;
 
-    white-space: nowrap; 
+    white-space: nowrap;
 
     border-bottom: 1px solid #cfd8dc;
 }
 
 #main .section-data-tables .dataTables_wrapper table.dataTable tbody
 {
-    overflow: auto; 
+    overflow: auto;
 
     max-width: 100%;
     height: 300px;
@@ -45,7 +45,7 @@
 {
     padding: 8px 14px;
 
-    white-space: nowrap; 
+    white-space: nowrap;
 
     border: none !important;
 }
@@ -53,7 +53,7 @@
 #main .section-data-tables .dataTables_wrapper table.dataTable tbody tr th:before
 {
     font-size: .9rem;
-    line-height: 14px; 
+    line-height: 14px;
 
     top: 10px;
     left: -3px;
@@ -69,7 +69,7 @@
 {
     font-weight: 300;
 
-    white-space: nowrap; 
+    white-space: nowrap;
 
     border-top: 1px solid #cfd8dc;
 }
@@ -111,7 +111,7 @@
 #main .section-data-tables .dataTables_wrapper table [type='checkbox'] + span:not(.lever):before,
 #main .section-data-tables .dataTables_wrapper table [type='checkbox']:not(.filled-in) + span:not(.lever):after
 {
-    opacity: .5; 
+    opacity: .5;
     border-radius: 4px !important;
 }
 
@@ -131,7 +131,7 @@
 #main .section-data-tables .dataTables_wrapper .dataTables_length#page-length-option_length label input,
 #main .section-data-tables .dataTables_wrapper .dataTables_filter#page-length-option_filter label input
 {
-    width: auto; 
+    width: auto;
     height: auto;
 }
 
@@ -151,13 +151,13 @@
 #main .section-data-tables .dataTables_wrapper .dataTables_paginate,
 #main .section-data-tables .dataTables_wrapper #page-length-option_paginate
 {
-    margin-right: .35rem; 
+    margin-right: .35rem;
     margin-bottom: .75rem;
 }
 #main .section-data-tables .dataTables_wrapper .dataTables_paginate .paginate_button,
 #main .section-data-tables .dataTables_wrapper #page-length-option_paginate .paginate_button
 {
-    margin-top: .25rem; 
+    margin-top: .25rem;
     padding: .25em .65em;
 }
 #main .section-data-tables .dataTables_wrapper .dataTables_paginate .paginate_button.current,
@@ -181,4 +181,8 @@
     background: #2196f3;
     -webkit-box-shadow: 0 0 8px 0 #2196f3;
             box-shadow: 0 0 8px 0 #2196f3;
+}
+
+strong {
+    font-weight: bolder !important;
 }

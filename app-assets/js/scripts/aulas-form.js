@@ -17,25 +17,5 @@ $(function () {
    });
   });
 
-  // Page Length Option Table
-
-  $('#page-length-option').DataTable({
-    "responsive": true,
-    "lengthMenu": [
-      [16, 32, -1],
-      [16, 32, "Todos"]
-    ]
-  });
-
-  $('.modal').modal();
-
 });
-
-function openModal(modalId) {
-  $(modalId).modal('open');
-}
-
-function closeModal(modalId) {
-  $(modalId).modal('close');
-}
 

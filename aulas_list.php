@@ -47,7 +47,7 @@
 
     <?php
       include "app-includes/menus/header.php";
-      include "app-includes/menus/aside-professores.php";
+      include "app-includes/menus/aside-aulas.php";
     ?>
 
 
@@ -92,586 +92,415 @@
 
                         <div class="input-field col s12">
                           <h5>Selecione um data</h5>
-                          <input type="text" class="datepicker">
+                          <p>Selecione uma data para filtrar as aulas agendadas. Caso contrário será mostrado as aulas agendadas.</p>
+
+                          <div class="input-field col s12 l6">
+                            <i class="material-icons prefix">today</i>
+                            <input type="text" class="datepicker" placeholder="04/11/2019">
+                          </div>
                         </div>
 
                         <div class="col s12">
                           <table id="page-length-option" class="display">
                             <thead>
                               <tr>
-                                <th>Nome</th>
-                                <th style="width: 160px">Entrou em</th>
-                                <th class="text-center" style="width: 100px">Editar</th>
-                                <th class="text-center" style="width: 100px">Ativo</th>
+                                <th style="width: 120px">Data</th>
+                                <th style="width: 120px">Hora</th>
+                                <th>Aluno</th>
+                                <th>Professor</th>
+                                <th>Aula</th>
+                                <th class="text-center" style="width: 100px">Detalhes</th>
                               </tr>
                             </thead>
                             <tbody>
 
                               <tr>
+                                <td class="text-center">22/12/2019</td>
+                                <td class="text-center">08:00</td>
                                 <td>Rafael Antonio</td>
-                                <td>22/12/2019</td>
+                                <td>Alexandre Exemplo</td>
+                                <td>Pilates</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Hugo Rossetti Savoia</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">22/12/2019</td>
+                                <td class="text-center">08:30</td>
+                                <td>Hugo Savoia</td>
+                                <td>Alexandre Exemplo</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 0</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 1</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 2</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 3</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 4</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 5</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 6</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 7</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 8</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 9</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 10</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 11</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 12</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 13</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 14</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 15</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 16</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 17</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 18</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 19</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 20</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 21</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 22</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 23</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 24</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 25</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 26</td>
-                                <td>22/12/2019</td>
+                                <td class="text-center">23/12/2019</td>
+                                <td class="text-center">08:00</td>
+                                <td>Aluno Exemplo 0</td>
+                                <td>Professor Exemplo 0</td>
+                                <td>Funcional</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
+                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">search</i>
+                                  </button>
                                 </td>
                               </tr>
 
-                              <tr>
-                                <td>Nome de Exemplo 27</td>
-                                <td>22/12/2019</td>
-                                <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>Nome de Exemplo 28</td>
-                                <td>22/12/2019</td>
-                                <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
-                                </td>
-                              </tr>
 
                             </tbody>
                             <tfoot>
                               <tr>
-                                <th>Nome</th>
-                                <th>Entrou em</th>
-                                <th>Ativo</th>
-                                <th>Editar</th>
+                                <th style="width: 120px">Data</th>
+                                <th style="width: 120px">Hora</th>
+                                <th>Aluno</th>
+                                <th>Professor</th>
+                                <th>Aula</th>
+                                <th class="text-center" style="width: 100px">Detalhes</th>
                               </tr>
                             </tfoot>
                           </table>
@@ -685,13 +514,40 @@
 
             </div>
 
+            <!-- Modal Detalhes da Aula -->
+            <div id="detalhes-aula" class="modal" style="width: 310px">
+              <div class="modal-content">
+                <div class="col s12">
+                  <h5>Aula de Pilates</h5>
+                  <p>Detalhes sobre a aula de pilates</p>
+                </div>
+                <div class="col s12">
+                  <ul>
+                    <li><strong>Professor: </strong>Alexandre Exemplo</li>
+                    <li><strong>Aluno: </strong>Rafael Ribeiro</li>
+                  </ul>
+                  <ul>
+                    <li><strong>Data: </strong>22/12/2019</li>
+                    <li><strong>Horário: </strong>08:30</li>
+                  </ul>
+                </div>
+                <div class="col s12 pb-5 text-center">
+                  <a href="aulas_form.php" class="btn mb-5 mt-5 btn-small btn-flat waves-effect waves-light red accent-2 white-text">REAGENDAR</a>
+                </div>
+                <div class="col s12 pb-5 text-center">
+                  <a onclick="closeModal('#detalhes-aula')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">FECHAR</a>
+                </div>
+              </div>
+            </div>
+            <!--/ Modal Detalhes da Aula -->
+
             <?php
               include "app-includes/menus/aside-right.php";
             ?>
 
             <!-- FAB -->
             <div style="bottom: 50px; right: 19px;" class="fixed-action-btn direction-top">
-              <a href="professores_form.php" class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow">
+              <a href="aulas_form.php" class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow">
                 <i class="material-icons">add</i>
               </a>
             </div>

@@ -10,9 +10,9 @@ $(document).ready(function() {
       edge: "right"
    });
 
-   var ps_theme_customiser = new PerfectScrollbar(".theme-cutomizer", {
-      suppressScrollX: true
-   });
+   // var ps_theme_customiser = new PerfectScrollbar(".theme-cutomizer", {
+   //    suppressScrollX: true
+   // });
 
    if ($("body").hasClass("vertical-modern-menu") || $("body").hasClass("vertical-menu-nav-dark")) {
       $(".menu-bg-color").hide();
