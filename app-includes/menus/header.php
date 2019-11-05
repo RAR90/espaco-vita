@@ -19,8 +19,8 @@
             <li class="horizontal-menu-link <?=(strpos($self, 'aulas')>0?'active':'')?>">
               <a href="aulas_list.php"><span>Aulas</span></a>
             </li>
-            <li class="horizontal-menu-link <?=(strpos($self, '---')>0?'active':'')?>">
-              <a href="dashboard_modern.php"><span>Financeiro</span></a>
+            <li class="horizontal-menu-link <?=(strpos($self, 'financeiro')>0?'active':'')?>">
+              <a href="financeiro_contas_list.php"><span>Financeiro</span></a>
             </li>
             <li class="horizontal-menu-link <?=(strpos($self, '---')>0?'active':'')?>">
               <a href="dashboard_modern.php"><span>Sistema</span></a>
