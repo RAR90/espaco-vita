@@ -134,6 +134,20 @@
                               <label for="data" class="active">Valor</label>
                             </div>
 
+
+                            <div class="input-field col s12 mt-5">
+                              <label for="data" class="active pt-1">Documento da conta (PDF, PNG, JPG)</label>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Arquivo</span>
+                                  <input type="file">
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text">
+                                </div>
+                              </div>
+                            </div>
+
                             <div class="row">
                               <div class="input-field col s12">
                                 <button class="btn cyan waves-effect waves-light right" type="submit" name="action">

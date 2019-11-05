@@ -9,7 +9,7 @@
       include "app-includes/head/icons.php";
     ?>
 
-    <title>Sistema Espaço Vita - Adicionar Conta</title>
+    <title>Sistema Espaço Vita - Professores</title>
 
     <?php
       include "app-includes/head/vendors.css.php";
@@ -28,7 +28,7 @@
     <!-- BEGIN: Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-modern-menu-template/materialize.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-modern-menu-template/style.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/financeiro-recebiveis-form.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/sistema-usuarios-form.css">
     <!-- END: Page Level CSS-->
 
     <?php
@@ -47,7 +47,7 @@
 
     <?php
       include "app-includes/menus/header.php";
-      include "app-includes/menus/aside-financeiro.php";
+      include "app-includes/menus/aside-sistema.php";
     ?>
 
 
@@ -63,13 +63,13 @@
 
               <!-- Title & Breadcrumbs -->
               <div class="col s10 m6 l6">
-                <h5 class="breadcrumbs-title mt-0 mb-0">Incluir Recebível</h5>
+                <h5 class="breadcrumbs-title mt-0 mb-0">Adicionar Usuário</h5>
                 <ol class="breadcrumbs mb-0">
                   <li class="breadcrumb-item"><a href="dashboard_modern.php">Home</a>
                   </li>
-                  <li class="breadcrumb-item"><a href="aulas_list.php">Financeiro</a>
+                  <li class="breadcrumb-item"><a href="professores_list.php">Sistema</a>
                   </li>
-                  <li class="breadcrumb-item active">Incluir Recebível
+                  <li class="breadcrumb-item active">Adicionar Usuário
                   </li>
                 </ol>
               </div>
@@ -89,72 +89,36 @@
                 <div class="col s12 l6">
 
                   <!-- Informações Básicas -->
-                  <div class="card border-radius-6 pt-5">
+                  <div class="card border-radius-6">
+                    <div class="card-title pl-3 pt-2">
+                      <h6><i class="material-icons">desktop_windows</i> Informações</h6>
+                    </div>
                     <div class="card-content">
                       <div class="row">
                         <div class="col s12">
-                          <form action="financeiro_contas_list.php" class="pr-5">
-
-                            <div class="input-field col s12">
-                              <i class="material-icons prefix">today</i>
-                              <input id="data" type="text" class="datepicker" placeholder="04/11/2019">
-                              <label for="data" class="active">Data de vencimento</label>
+                          <form action="professores_form.php" class="pr-5">
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="name3" type="text">
+                                <label for="name3" class="active">Nome</label>
+                              </div>
                             </div>
-
-                            <div class="input-field col s12">
-                              <i class="material-icons prefix">assignment</i>
-                              <select>
-                                <option value="" disabled selected>Aluno</option>
-                                <option value="" disabled selected>Outros</option>
-                              </select>
-                              <label>Categoria</label>
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <i class="material-icons prefix">email</i>
+                                <input id="email3" type="email">
+                                <label for="email3" class="active">Email</label>
+                              </div>
                             </div>
-
-                            <div class="input-field col s12">
-                              <i class="material-icons prefix">assignment</i>
-                              <select>
-                                <option value="" disabled selected>Aluno</option>
-                                <option value="" disabled selected>Outros</option>
-                              </select>
-                              <label>Escolha um Aluno</label>
-                            </div>
-
-                            <div class="input-field col s12">
-                              <i class="material-icons prefix">attach_money</i>
-                              <input id="data" type="text" placeholder="50,00">
-                              <label for="data" class="active">Descrição</label>
-                            </div>
-
-                            <div class="input-field col s12">
-                              <i class="material-icons prefix">today</i>
-                              <select>
-                                <option value="" disabled selected>Mensal</option>
-                                <option value="" disabled selected>Semanal</option>
-                                <option value="" disabled selected>Único</option>
-                              </select>
-                              <label>Período</label>
-                            </div>
-
-                            <div class="input-field col s12">
-                              <i class="material-icons prefix">assignment_ind</i>
-                              <input id="data" type="text" placeholder="04/11/2019">
-                              <label for="data" class="active">Identificação</label>
-                            </div>
-
-                            <div class="input-field col s12">
-                              <i class="material-icons prefix">attach_money</i>
-                              <input id="data" type="text" placeholder="50,00">
-                              <label for="data" class="active">Valor</label>
-                            </div>
-
                             <div class="row">
                               <div class="input-field col s12">
                                 <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
-                                  Incluir
+                                  <i class="material-icons left">save</i>
+                                  GRAVAR
                                 </button>
                               </div>
                             </div>
-
                           </form>
 
                         </div>
@@ -162,6 +126,48 @@
                     </div>
                   </div>
                   <!--/ Informações Básicas -->
+
+                </div>
+
+                <div class="col s12 l6">
+
+                  <!-- Acesso App -->
+                  <div class="card border-radius-6">
+                    <div class="card-title pl-3 pt-2">
+                      <h6><i class="material-icons">desktop_windows</i> Acesso</h6>
+                    </div>
+                    <div class="card-content">
+                      <div class="row">
+                        <div class="col s12">
+                          <form action="index.php" class="pr-5">
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <i class="material-icons prefix">lock_outline</i>
+                                <input id="password3" type="password">
+                                <label for="password3" class="active">Senha</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <i class="material-icons prefix">lock_outline</i>
+                                <input id="password4" type="password">
+                                <label for="password4" class="active">Repita a senha</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Atualizar
+                                  <i class="material-icons left">save</i>
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <!--/ Acesso App -->
 
                 </div>
 
@@ -196,7 +202,7 @@
     ?>
 
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="app-assets/js/scripts/financeiro-recebiveis-form.js" type="text/javascript"></script>
+    <script src="app-assets/js/scripts/sistema-usuarios-form.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS-->
 
   </body>
