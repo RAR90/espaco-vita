@@ -123,8 +123,8 @@
 
                               <tr>
                                 <td>Hugo Rossetti Savoia</td>
-                                <td>22/12/2019</td>
                                 <td>hugo@espacovitarp.com.br</td>
+                                <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
                                     <label>

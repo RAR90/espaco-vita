@@ -97,6 +97,20 @@
                       <div class="row">
                         <div class="col s12">
                           <form action="professores_form.php" class="pr-5">
+                            <div class="row center-align">
+                              <img class="responsive-img circle z-depth-5" width="200" src="app-assets/images/user/12.jpg" alt="">
+                            </div>
+                            <div class="row">
+                              <div class="file-field input-field upload-profile-action">
+                                <div class="btn">
+                                  <span>Foto</span>
+                                  <input type="file">
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text">
+                                </div>
+                              </div>
+                            </div>
                             <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">account_circle</i>

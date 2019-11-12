@@ -34,6 +34,9 @@
     <li class="bold <?=(strpos($self, 'financeiro_recebiveis_form')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_recebiveis_form.php">
       <i class="material-icons">assistant</i><span class="menu-title" data-i18n="">Adicionar Recebível</span></a>
     </li>
+    <li class="bold <?=(strpos($self, 'contas_professor')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="contas_professor.php">
+      <i class="material-icons">school</i><span class="menu-title" data-i18n="">Contas Professor</span></a>
+    </li>
   </ul>
   <div class="navigation-background"></div><a class="sidenav-trigger btn-sidenav-toggle btn-floating btn-medium waves-effect waves-light hide-on-large-only" href="#" data-target="slide-out"><i class="material-icons">menu</i></a>
 </aside>
