@@ -25,20 +25,30 @@
     <li class="navigation-header">
       <a class="navigation-header-text">Contas a Pagar</a>
     </li>
-    <li class="bold <?=(strpos($self, 'financeiro_contas_list')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_contas_list.php">
-      <i class="material-icons">store</i><span class="menu-title" data-i18n="">Infraestrutura</span></a>
+    <li class="bold <?=(strpos($self, 'financeiro_contas_infra_list')>0?'active':'')?>">
+      <a class="waves-effect waves-cyan " href="financeiro_contas_infra_list.php">
+        <i class="material-icons">store</i><span class="menu-title" data-i18n="">Infraestrutura</span>
+      </a>
     </li>
-    <li class="bold <?=(strpos($self, '')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_contas_list.php">
-      <i class="material-icons">supervisor_account</i><span class="menu-title" data-i18n="">Funcionários</span></a>
+    <li class="bold <?=(strpos($self, 'financeiro_contas_funcionarios_list')>0?'active':'')?>">
+      <a class="waves-effect waves-cyan " href="financeiro_contas_funcionarios_list.php">
+        <i class="material-icons">supervisor_account</i><span class="menu-title" data-i18n="">Funcionários</span>
+      </a>
     </li>
-    <li class="bold <?=(strpos($self, '')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_contas_list.php">
-      <i class="material-icons">school</i><span class="menu-title" data-i18n="">Professores</span></a>
+    <li class="bold <?=(strpos($self, 'financeiro_contas_professores_list')>0?'active':'')?>">
+      <a class="waves-effect waves-cyan " href="financeiro_contas_professores_list.php">
+        <i class="material-icons">school</i><span class="menu-title" data-i18n="">Professores</span>
+      </a>
     </li>
-    <li class="bold <?=(strpos($self, '')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_contas_list.php">
-      <i class="material-icons">accessibility</i><span class="menu-title" data-i18n="">Terceirizados</span></a>
+    <li class="bold <?=(strpos($self, 'financeiro_contas_terceiros_list')>0?'active':'')?>">
+      <a class="waves-effect waves-cyan " href="financeiro_contas_terceiros_list.php">
+        <i class="material-icons">accessibility</i><span class="menu-title" data-i18n="">Terceirizados</span>
+      </a>
     </li>
-    <li class="bold <?=(strpos($self, '')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_contas_list.php">
-      <i class="material-icons">gesture</i><span class="menu-title" data-i18n="">Avulsos</span></a>
+    <li class="bold <?=(strpos($self, 'financeiro_contas_avulsos_list')>0?'active':'')?>">
+      <a class="waves-effect waves-cyan " href="financeiro_contas_avulsos_list.php">
+        <i class="material-icons">gesture</i><span class="menu-title" data-i18n="">Avulsos</span>
+      </a>
     </li>
 
     <li class="navigation-header">
