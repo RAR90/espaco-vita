@@ -94,15 +94,17 @@
                             <thead>
                               <tr>
                                 <th>Nome</th>
+                                <th style="width: 110px">Créditos Aula</th>
                                 <th style="width: 160px">Entrou em</th>
-                                <th class="text-center" style="width: 100px">Editar</th>
                                 <th class="text-center" style="width: 100px">Ativo</th>
+                                <th class="text-center" style="width: 100px">Editar</th>
                               </tr>
                             </thead>
                             <tbody>
 
                               <tr>
                                 <td>Rafael Antonio</td>
+                                <td class="text-center">35</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -121,6 +123,7 @@
 
                               <tr>
                                 <td>Hugo Rossetti Savoia</td>
+                                <td class="text-center">24</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -139,6 +142,7 @@
 
                               <tr>
                                 <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -156,7 +160,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 1</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -174,7 +179,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 2</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -192,7 +198,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 3</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -210,7 +217,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 4</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -228,7 +236,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 5</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -246,7 +255,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 6</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -264,7 +274,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 7</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -282,7 +293,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 8</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -300,7 +312,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 9</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -318,7 +331,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 10</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -336,7 +350,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 11</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -354,7 +369,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 12</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -372,7 +388,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 13</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -390,7 +407,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 14</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -408,7 +426,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 15</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -426,7 +445,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 16</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -444,7 +464,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 17</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -462,7 +483,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 18</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -480,7 +502,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 19</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -498,7 +521,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 20</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -516,7 +540,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 21</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -534,7 +559,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 22</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -552,7 +578,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 23</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -570,7 +597,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 24</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -588,7 +616,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 25</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -606,7 +635,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 26</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -624,7 +654,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 27</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -642,7 +673,8 @@
                               </tr>
 
                               <tr>
-                                <td>Nome de Exemplo 28</td>
+                                <td>Nome de Exemplo 0</td>
+                                <td class="text-center">0</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -658,11 +690,14 @@
                                   </a>
                                 </td>
                               </tr>
+
+
 
                             </tbody>
                             <tfoot>
                               <tr>
                                 <th>Nome</th>
+                                <th>Créditos Aula</th>
                                 <th>Entrou em</th>
                                 <th>Ativo</th>
                                 <th>Editar</th>

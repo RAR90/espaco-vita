@@ -79,24 +79,20 @@
           </div>
         </div>
 
-        <div class="col s12">
+        <div class="col l8 s12">
           <div class="container">
             <div class="section section-data-tables">
-
-              <!-- Page Length Options -->
               <div class="row">
 
-                <div class="col s12 l6">
-
-                  <!-- Informações Básicas -->
-                  <div class="card border-radius-6">
-                    <div class="card-title pl-3 pt-2">
-                      <h6><i class="material-icons">devices</i> Informações Básicas</h6>
-                    </div>
-                    <div class="card-content">
-                      <div class="row">
-                        <div class="col s12">
+                <!--Accordion-->
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="collapsible collapsible-accordion border-radius-6 white" style="overflow:hidden" data-collapsible="accordion">
+                      <li class="active">
+                        <div class="collapsible-header"><i class="material-icons">assignment</i> Informações Básicas</div>
+                        <div class="collapsible-body">
                           <form action="alunos_form.php" class="pr-5">
+
                             <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">account_circle</i>
@@ -118,31 +114,7 @@
                                 <label for="telefone" class="active">Telefone</label>
                               </div>
                             </div>
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
-                                  <i class="material-icons left">save</i>
-                                  GRAVAR
-                                </button>
-                              </div>
-                            </div>
-                          </form>
 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--/ Informações Básicas -->
-
-                  <!-- Endereço -->
-                  <div class="card border-radius-6">
-                    <div class="card-title pl-3 pt-2">
-                      <h6><i class="material-icons">devices</i> Endereço</h6>
-                    </div>
-                    <div class="card-content">
-                      <div class="row">
-                        <div class="col s12">
-                          <form action="alunos_form.php" class="pr-5">
                             <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">location_on</i>
@@ -151,7 +123,7 @@
                               </div>
                             </div>
                             <div class="row">
-                              <div class="pl-5 ml-3">
+                              <div class="pl-4">
                                 <div class="input-field col s12">
                                   <select>
                                     <option value="" disabled selected>Selecione seu estado</option>
@@ -161,7 +133,7 @@
                               </div>
                             </div>
                             <div class="row">
-                              <div class="pl-5 ml-3">
+                              <div class="pl-4">
                                 <div class="input-field col s12">
                                   <select>
                                     <option value="" disabled selected>Selecione sua cidade</option>
@@ -171,193 +143,142 @@
                               </div>
                             </div>
                             <div class="row">
-                              <div class="input-field col s12">
-                                <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
-                                  <i class="material-icons left">save</i>
-                                  GRAVAR
-                                </button>
-                              </div>
-                            </div>
-                          </form>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--/ Endereço -->
-
-                  <!-- Anamnese -->
-                  <div class="card border-radius-6">
-                    <div class="card-title pl-3 pt-2">
-                      <h6><i class="material-icons">devices</i> Anamnese</h6>
-                    </div>
-                    <div class="card-content">
-                      <div class="row">
-                        <div class="col s12">
-                          <form action="alunos_form.php" class="pr-5">
-
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input id="" type="text">
-                                <label for="" class="active">Idade</label>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input id="" type="text">
-                                <label for="" class="active">Peso</label>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <span for="" class="h3">Sexo</span>
-                                <p>
-                                  <label>
-                                    <input name="group1" type="radio" checked/>
-                                    <span>Masculino</span>
-                                  </label>
-                                  <label>
-                                    <input name="group1" type="radio" />
-                                    <span>Feminino</span>
-                                  </label>
-                                </p>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <span for="" class="h3">Sedentário</span>
-                                <p>
-                                  <label>
-                                    <input name="group1" type="radio" checked/>
-                                    <span>Sim</span>
-                                  </label>
-                                  <label>
-                                    <input name="group1" type="radio" />
-                                    <span>Não</span>
-                                  </label>
-                                </p>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <span for="" class="h3">Fumante</span>
-                                <p>
-                                  <label>
-                                    <input name="group1" type="radio" checked/>
-                                    <span>Sim</span>
-                                  </label>
-                                  <label>
-                                    <input name="group1" type="radio" />
-                                    <span>Não</span>
-                                  </label>
-                                </p>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input id="" type="text">
-                                <label for="" class="active">Pratica algum esporte? Qual?</label>
+                              <div class="col l12 text-center">
+                                <div class="input-field col s12">
+                                  <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
+                                    <i class="material-icons left">save</i>
+                                    GRAVAR
+                                  </button>
+                                </div>
                               </div>
                             </div>
 
                           </form>
-
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--/ Anamnese -->
+                      </li>
+                      <li>
+                        <div class="collapsible-header"><i class="material-icons">security</i> Alterar Senha</div>
+                        <div class="collapsible-body">
+                          <div class="row">
+                            <div class="col s12">
+                              <form action="index.php" class="pr-5">
+                                <div class="row">
+                                  <div class="input-field col s12">
+                                    <i class="material-icons prefix">lock_outline</i>
+                                    <input id="password3" type="password">
+                                    <label for="password3" class="active">Senha</label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="input-field col s12">
+                                    <i class="material-icons prefix">lock_outline</i>
+                                    <input id="password4" type="password">
+                                    <label for="password4" class="active">Repita a senha</label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="input-field col s12">
+                                    <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Atualizar
+                                      <i class="material-icons left">save</i>
+                                    </button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header"><i class="material-icons">fitness_center
+                        </i> Anamnese</div>
+                        <div class="collapsible-body">
+                          <div class="row">
+                            <div class="col s12">
+                              <form action="alunos_form.php" class="pr-5">
 
+                                <div class="row">
+                                  <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="" type="text">
+                                    <label for="" class="active">Idade</label>
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="" type="text">
+                                    <label for="" class="active">Peso</label>
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="input-field col s12">
+                                    <span for="" class="h3">Sexo</span>
+                                    <p>
+                                      <label>
+                                        <input name="group1" type="radio" checked/>
+                                        <span>Masculino</span>
+                                      </label>
+                                      <label>
+                                        <input name="group1" type="radio" />
+                                        <span>Feminino</span>
+                                      </label>
+                                    </p>
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="input-field col s12">
+                                    <span for="" class="h3">Sedentário</span>
+                                    <p>
+                                      <label>
+                                        <input name="group1" type="radio" checked/>
+                                        <span>Sim</span>
+                                      </label>
+                                      <label>
+                                        <input name="group1" type="radio" />
+                                        <span>Não</span>
+                                      </label>
+                                    </p>
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="input-field col s12">
+                                    <span for="" class="h3">Fumante</span>
+                                    <p>
+                                      <label>
+                                        <input name="group1" type="radio" checked/>
+                                        <span>Sim</span>
+                                      </label>
+                                      <label>
+                                        <input name="group1" type="radio" />
+                                        <span>Não</span>
+                                      </label>
+                                    </p>
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="" type="text">
+                                    <label for="" class="active">Pratica algum esporte? Qual?</label>
+                                  </div>
+                                </div>
+
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                    </ul>
+                  </div>
                 </div>
 
-                <div class="col s12 l6">
 
-                  <!-- Acesso App -->
-                  <div class="card border-radius-6">
-                    <div class="card-title pl-3 pt-2">
-                      <h6><i class="material-icons">devices</i> Acesso</h6>
-                    </div>
-                    <div class="card-content">
-                      <div class="row">
-                        <div class="col s12">
-                          <form action="index.php" class="pr-5">
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <i class="material-icons prefix">lock_outline</i>
-                                <input id="password3" type="password">
-                                <label for="password3" class="active">Senha</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <i class="material-icons prefix">lock_outline</i>
-                                <input id="password4" type="password">
-                                <label for="password4" class="active">Repita a senha</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Atualizar
-                                  <i class="material-icons left">save</i>
-                                </button>
-                              </div>
-                            </div>
-                          </form>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                   <!--/ Acesso App -->
-
-                   <!-- Enviar Mensagem -->
-                  <div class="card border-radius-6">
-                    <div class="card-title pl-3 pt-2">
-                      <h6><i class="material-icons">phone_iphone</i> Enviar Mensagem</h6>
-                    </div>
-                    <div class="card-content">
-                      <div class="row">
-                        <div class="col s12">
-                          <form action="index.php" class="pr-5">
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <i class="material-icons prefix">question_answer</i>
-                                <textarea id="message3" class="materialize-textarea"></textarea>
-                                <label for="message3">Escreva uma mensagem para esse usuário...</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
-                                  Enviar
-                                  <i class="material-icons right">send</i>
-                                </button>
-                              </div>
-                            </div>
-                          </form>
-
-                          <h6>Mensagens Enviadas</h6>
-                          <ul class="collection">
-                            <li class="collection-item">04/11/2019 13:30 - Olá, como foi seu treino ontem? De seu Feedback no app!</li>
-                            <li class="collection-item">04/11/2019 13:30 - Você esqueceu seu guarda chuvas!</li>
-                            <li class="collection-item">04/11/2019 13:30 - Bom dia! Hoje o treino foi cancelado devido as fortes chuvas!</li>
-                          </ul>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--/ Enviar Mensagem -->
-
-                </div>
 
               </div>
             </div>
@@ -368,6 +289,67 @@
 
           </div>
         </div>
+
+        <div class="col l4 s12">
+
+          <div class="card-target card animate fadeLeft border-radius-6">
+            <div class="card-content">
+              <h4 class="card-title mb-0">Créditos de Aulas</h4>
+              <p class="medium-small">O crédito de aula equivale a uma aula de 30 minutos nas modalidades contratadas pelo aluno.</p>
+              <div class="current-balance-container text-center">
+                <h2 class="center-align">
+                  <i class="material-icons" style="font-size:70px">grid_on</i>
+                  <br>
+                  58
+                </h2>
+              </div>
+              <a href="aulas_form.php" class="float-right pb-5">
+                Agendar Aula
+                <i class="material-icons">link</i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Enviar Mensagem -->
+          <div class="card border-radius-6">
+            <div class="card-title pl-3 pt-2">
+              <h6><i class="material-icons">phone_iphone</i> Enviar Mensagem</h6>
+            </div>
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12">
+                  <form action="index.php" class="pr-5 pb-5">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">question_answer</i>
+                        <textarea id="message3" class="materialize-textarea"></textarea>
+                        <label for="message3">Mensagem...</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
+                          <i class="material-icons right">send</i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+
+                  <h6>Mensagens Enviadas</h6>
+                  <ul class="collection">
+                    <li class="collection-item">04/11/2019 13:30 - Olá, como foi seu treino ontem? De seu Feedback no app!</li>
+                    <li class="collection-item">04/11/2019 13:30 - Você esqueceu seu guarda chuvas!</li>
+                    <li class="collection-item">04/11/2019 13:30 - Bom dia! Hoje o treino foi cancelado devido as fortes chuvas!</li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/ Enviar Mensagem -->
+
+        </div>
+
       </div>
 
     </div>

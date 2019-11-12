@@ -1,0 +1,4 @@
+- Incluído créditos aula na listagem de alunos;
+- Corrigido os nomes da coluna na listagem de alunos;
+- Formulários reorganizados no cadastro do aluno;
+- Incluído campo indicativo e link de créditos aula no cadastro do aluno;
