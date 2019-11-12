@@ -19,7 +19,7 @@
                 <a href="aulas_list.php"><span>Aulas</span></a>
               </li>
               <li class="horizontal-menu-link <?=(strpos($self, 'eventos')>0?'active':'')?>">
-                <a href="eventos.php"><span>Eventos</span></a>
+                <a href="eventos_list.php"><span>Eventos</span></a>
               </li>
               <li class="horizontal-menu-link <?=(strpos($self, 'financeiro')>0?'active':'')?>">
                 <a href="financeiro_contas_infra_list.php"><span>Financeiro</span></a>

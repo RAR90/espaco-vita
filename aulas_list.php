@@ -83,22 +83,39 @@
           <div class="container">
             <div class="section section-data-tables">
 
+
+
+
+
               <!-- Page Length Options -->
               <div class="row">
                 <div class="col s12">
                   <div class="card border-radius-6">
                     <div class="card-content">
                       <div class="row">
-
                         <div class="input-field col s12">
                           <h5>Selecione um data</h5>
                           <p>Selecione uma data para filtrar as aulas agendadas. Caso contrário será mostrado as aulas agendadas.</p>
 
-                          <div class="input-field col s12 l6">
+                          <div class="input-field col s12">
                             <i class="material-icons prefix">today</i>
                             <input type="text" class="datepicker" placeholder="04/11/2019">
                           </div>
                         </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Page Length Options -->
+              <div class="row">
+                <div class="col s12">
+                  <div class="card border-radius-6">
+                    <div class="card-content">
+                      <div class="row">
 
                         <div class="col s12">
                           <table id="page-length-option" class="display">
