@@ -61,7 +61,7 @@
       </a>
     </li>
 
-    <li class="bold <?=(strpos($self, '')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_recebiveis_list.php">
+    <li class="bold <?=(strpos($self, 'financeiro_recebiveis_events_list')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_recebiveis_events_list.php">
       <i class="material-icons">event</i><span class="menu-title" data-i18n="">Eventos</span></a>
     </li>
 
