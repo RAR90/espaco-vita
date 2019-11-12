@@ -96,6 +96,7 @@
                             <th style="width: 100px">Valor</th>
                             <th>Nome do Professor</th>
                             <th style="width: 100px">Status</th>
+                            <th class="text-center" style="width: 100px">Editar</th>
                             <th class="text-center" style="width: 100px">Detalhes</th>
                             <th class="text-center" style="width: 100px">Dar Baixa</th>
                           </tr>
@@ -108,39 +109,10 @@
                             <td>Nome do Professor de Exemplo</td>
                             <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
+                              <a href="financeiro_contas_profs_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
                             </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 13000,00</td>
-                            <td>Nome do Professor de Exemplo</td>
-                            <td class="blue-text text-center">Em dia</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 13000,00</td>
-                            <td>Nome do Professor de Exemplo</td>
-                            <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
                               <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
@@ -159,39 +131,10 @@
                             <td>Nome do Professor de Exemplo</td>
                             <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
+                              <a href="financeiro_contas_profs_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
                             </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 13000,00</td>
-                            <td>Nome do Professor de Exemplo</td>
-                            <td class="blue-text text-center">Em dia</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 13000,00</td>
-                            <td>Nome do Professor de Exemplo</td>
-                            <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
                               <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
@@ -210,39 +153,10 @@
                             <td>Nome do Professor de Exemplo</td>
                             <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
+                              <a href="financeiro_contas_profs_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
                             </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 13000,00</td>
-                            <td>Nome do Professor de Exemplo</td>
-                            <td class="blue-text text-center">Em dia</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 13000,00</td>
-                            <td>Nome do Professor de Exemplo</td>
-                            <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
                               <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
@@ -261,39 +175,10 @@
                             <td>Nome do Professor de Exemplo</td>
                             <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
+                              <a href="financeiro_contas_profs_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
                             </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 13000,00</td>
-                            <td>Nome do Professor de Exemplo</td>
-                            <td class="blue-text text-center">Em dia</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 13000,00</td>
-                            <td>Nome do Professor de Exemplo</td>
-                            <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
                               <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
@@ -312,6 +197,11 @@
                             <td>Nome do Professor de Exemplo</td>
                             <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
+                              <a href="financeiro_contas_profs_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
+                            </td>
+                            <td class="text-center">
                               <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
                               </button>
@@ -322,6 +212,227 @@
                               </button>
                             </td>
                           </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 13000,00</td>
+                            <td>Nome do Professor de Exemplo</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <a href="financeiro_contas_profs_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 13000,00</td>
+                            <td>Nome do Professor de Exemplo</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <a href="financeiro_contas_profs_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 13000,00</td>
+                            <td>Nome do Professor de Exemplo</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <a href="financeiro_contas_profs_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 13000,00</td>
+                            <td>Nome do Professor de Exemplo</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <a href="financeiro_contas_profs_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 13000,00</td>
+                            <td>Nome do Professor de Exemplo</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <a href="financeiro_contas_profs_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 13000,00</td>
+                            <td>Nome do Professor de Exemplo</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <a href="financeiro_contas_profs_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 13000,00</td>
+                            <td>Nome do Professor de Exemplo</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <a href="financeiro_contas_profs_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 13000,00</td>
+                            <td>Nome do Professor de Exemplo</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <a href="financeiro_contas_profs_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 13000,00</td>
+                            <td>Nome do Professor de Exemplo</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <a href="financeiro_contas_profs_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 13000,00</td>
+                            <td>Nome do Professor de Exemplo</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <a href="financeiro_contas_profs_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
 
                         </tbody>
                         <tfoot>
@@ -330,6 +441,7 @@
                             <th style="width: 100px">Valor</th>
                             <th>Nome do Professor</th>
                             <th style="width: 100px">Status</th>
+                            <th class="text-center" style="width: 100px">Editar</th>
                             <th class="text-center" style="width: 100px">Detalhes</th>
                             <th class="text-center" style="width: 100px">Dar Baixa</th>
                           </tr>

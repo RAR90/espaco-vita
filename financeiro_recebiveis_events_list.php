@@ -599,13 +599,6 @@
               include "app-includes/menus/aside-right.php";
             ?>
 
-            <!-- FAB -->
-            <div style="bottom: 50px; right: 19px;" class="fixed-action-btn direction-top">
-              <a href="financeiro_recebiveis_form.php" class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow">
-                <i class="material-icons">add</i>
-              </a>
-            </div>
-
           </div>
         </div>
       </div>
