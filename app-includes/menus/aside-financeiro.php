@@ -35,8 +35,8 @@
         <i class="material-icons">supervisor_account</i><span class="menu-title" data-i18n="">Funcionários</span>
       </a>
     </li>
-    <li class="bold <?=(strpos($self, 'financeiro_contas_professores_list')>0?'active':'')?>">
-      <a class="waves-effect waves-cyan " href="financeiro_contas_professores_list.php">
+    <li class="bold <?=(strpos($self, 'financeiro_contas_profs_list')>0?'active':'')?>">
+      <a class="waves-effect waves-cyan " href="financeiro_contas_profs_list.php">
         <i class="material-icons">school</i><span class="menu-title" data-i18n="">Professores</span>
       </a>
     </li>

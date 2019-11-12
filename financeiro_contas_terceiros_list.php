@@ -94,8 +94,8 @@
                           <tr>
                             <th style="width: 100px">Vencimento</th>
                             <th style="width: 100px">Valor</th>
-                            <th>Origem</th>
-                            <th style="width: 100px">Período</th>
+                            <th>Nome da Empresa</th>
+                            <th>Serviço</th>
                             <th style="width: 100px">Status</th>
                             <th class="text-center" style="width: 100px">Detalhes</th>
                             <th class="text-center" style="width: 100px">Dar Baixa</th>
@@ -106,8 +106,8 @@
                           <tr>
                             <td class="text-center">22/12/2019</td>
                             <td class="text-center">R$ 1800,00</td>
-                            <td>Conta de Luz - CPFL</td>
-                            <td>Mensal</td>
+                            <td>TECLABS</td>
+                            <td>Desenvolvimento do sistema intranet</td>
                             <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
                               <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
@@ -124,26 +124,8 @@
                           <tr>
                             <td class="text-center">22/12/2019</td>
                             <td class="text-center">R$ 1800,00</td>
-                            <td>Conta de Água - DAERP</td>
-                            <td>Mensal</td>
-                            <td class="red-text text-center">Atrasado</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 1800,00</td>
-                            <td>Conta de Luz - CPFL</td>
-                            <td>Mensal</td>
+                            <td>TECLABS</td>
+                            <td>Desenvolvimento do sistema intranet</td>
                             <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
                               <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
@@ -160,8 +142,8 @@
                           <tr>
                             <td class="text-center">22/12/2019</td>
                             <td class="text-center">R$ 1800,00</td>
-                            <td>Conta de Luz - CPFL</td>
-                            <td>Mensal</td>
+                            <td>TECLABS</td>
+                            <td>Desenvolvimento do sistema intranet</td>
                             <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
                               <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
@@ -178,8 +160,8 @@
                           <tr>
                             <td class="text-center">22/12/2019</td>
                             <td class="text-center">R$ 1800,00</td>
-                            <td>Conta de Luz - CPFL</td>
-                            <td>Mensal</td>
+                            <td>TECLABS</td>
+                            <td>Desenvolvimento do sistema intranet</td>
                             <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
                               <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
@@ -192,14 +174,249 @@
                               </button>
                             </td>
                           </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 1800,00</td>
+                            <td>TECLABS</td>
+                            <td>Desenvolvimento do sistema intranet</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 1800,00</td>
+                            <td>TECLABS</td>
+                            <td>Desenvolvimento do sistema intranet</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 1800,00</td>
+                            <td>TECLABS</td>
+                            <td>Desenvolvimento do sistema intranet</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 1800,00</td>
+                            <td>TECLABS</td>
+                            <td>Desenvolvimento do sistema intranet</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 1800,00</td>
+                            <td>TECLABS</td>
+                            <td>Desenvolvimento do sistema intranet</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 1800,00</td>
+                            <td>TECLABS</td>
+                            <td>Desenvolvimento do sistema intranet</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 1800,00</td>
+                            <td>TECLABS</td>
+                            <td>Desenvolvimento do sistema intranet</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 1800,00</td>
+                            <td>TECLABS</td>
+                            <td>Desenvolvimento do sistema intranet</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 1800,00</td>
+                            <td>TECLABS</td>
+                            <td>Desenvolvimento do sistema intranet</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 1800,00</td>
+                            <td>TECLABS</td>
+                            <td>Desenvolvimento do sistema intranet</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 1800,00</td>
+                            <td>TECLABS</td>
+                            <td>Desenvolvimento do sistema intranet</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 1800,00</td>
+                            <td>TECLABS</td>
+                            <td>Desenvolvimento do sistema intranet</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="text-center">22/12/2019</td>
+                            <td class="text-center">R$ 1800,00</td>
+                            <td>TECLABS</td>
+                            <td>Desenvolvimento do sistema intranet</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                <i class="material-icons">search</i>
+                              </button>
+                            </td>
+                            <td class="text-center">
+                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                                <i class="material-icons">assignment_turned_in</i>
+                              </button>
+                            </td>
+                          </tr>
+
 
                         </tbody>
                         <tfoot>
                           <tr>
                             <th style="width: 100px">Vencimento</th>
                             <th style="width: 100px">Valor</th>
-                            <th>Origem</th>
-                            <th style="width: 100px">Período</th>
+                            <th>Nome da Empresa</th>
+                            <th>Serviço</th>
                             <th style="width: 100px">Status</th>
                             <th class="text-center" style="width: 100px">Detalhes</th>
                             <th class="text-center" style="width: 100px">Dar Baixa</th>
