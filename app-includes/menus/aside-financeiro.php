@@ -35,7 +35,7 @@
         <i class="material-icons">supervisor_account</i><span class="menu-title" data-i18n="">Funcionários</span>
       </a>
     </li>
-    <li class="bold <?=(strpos($self, 'financeiro_contas_profs_list')>0?'active':'')?>">
+    <li class="bold <?=(strpos($self, 'financeiro_contas_profs')>0?'active':'')?>">
       <a class="waves-effect waves-cyan " href="financeiro_contas_profs_list.php">
         <i class="material-icons">school</i><span class="menu-title" data-i18n="">Professores</span>
       </a>
@@ -65,7 +65,7 @@
       <i class="material-icons">event</i><span class="menu-title" data-i18n="">Eventos</span></a>
     </li>
 
-    <li class="bold <?=(strpos($self, '')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_recebiveis_list.php">
+    <li class="bold <?=(strpos($self, 'financeiro_recebiveis_outros_list')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_recebiveis_outros_list.php">
       <i class="material-icons">developer_board</i><span class="menu-title" data-i18n="">Outras Fontes</span></a>
     </li>
 
