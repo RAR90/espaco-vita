@@ -55,8 +55,10 @@
       <a class="navigation-header-text">Recebíveis</a>
     </li>
 
-    <li class="bold <?=(strpos($self, 'financeiro_recebiveis_list')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_recebiveis_list.php">
-      <i class="material-icons">account_circle</i><span class="menu-title" data-i18n="">Alunos</span></a>
+    <li class="bold <?=(strpos($self, 'financeiro_recebiveis_aluns_list')>0?'active':'')?>">
+      <a class="waves-effect waves-cyan " href="financeiro_recebiveis_aluns_list.php">
+        <i class="material-icons">account_circle</i><span class="menu-title" data-i18n="">Alunos</span>
+      </a>
     </li>
 
     <li class="bold <?=(strpos($self, '')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_recebiveis_list.php">
