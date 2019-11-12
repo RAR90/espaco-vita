@@ -22,21 +22,41 @@
     data-menu="menu-navigation"
     data-collapsible="menu-accordion"
   >
+    <li class="navigation-header">
+      <a class="navigation-header-text">Contas a Pagar</a>
+    </li>
     <li class="bold <?=(strpos($self, 'financeiro_contas_list')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_contas_list.php">
-      <i class="material-icons">assignment_late</i><span class="menu-title" data-i18n="">Contas a Pagar</span></a>
+      <i class="material-icons">store</i><span class="menu-title" data-i18n="">Infraestrutura</span></a>
     </li>
-    <li class="bold <?=(strpos($self, 'financeiro_contas_form')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_contas_form.php">
-      <i class="material-icons">assignment</i><span class="menu-title" data-i18n="">Incluir Conta</span></a>
+    <li class="bold <?=(strpos($self, '')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_contas_list.php">
+      <i class="material-icons">supervisor_account</i><span class="menu-title" data-i18n="">Funcionários</span></a>
     </li>
+    <li class="bold <?=(strpos($self, '')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_contas_list.php">
+      <i class="material-icons">school</i><span class="menu-title" data-i18n="">Professores</span></a>
+    </li>
+    <li class="bold <?=(strpos($self, '')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_contas_list.php">
+      <i class="material-icons">accessibility</i><span class="menu-title" data-i18n="">Terceirizados</span></a>
+    </li>
+    <li class="bold <?=(strpos($self, '')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_contas_list.php">
+      <i class="material-icons">gesture</i><span class="menu-title" data-i18n="">Avulsos</span></a>
+    </li>
+
+    <li class="navigation-header">
+      <a class="navigation-header-text">Recebíveis</a>
+    </li>
+
     <li class="bold <?=(strpos($self, 'financeiro_recebiveis_list')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_recebiveis_list.php">
-      <i class="material-icons">assignment_returned</i><span class="menu-title" data-i18n="">Recebíveis</span></a>
+      <i class="material-icons">account_circle</i><span class="menu-title" data-i18n="">Alunos</span></a>
     </li>
-    <li class="bold <?=(strpos($self, 'financeiro_recebiveis_form')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_recebiveis_form.php">
-      <i class="material-icons">assistant</i><span class="menu-title" data-i18n="">Adicionar Recebível</span></a>
+
+    <li class="bold <?=(strpos($self, '')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_recebiveis_list.php">
+      <i class="material-icons">event</i><span class="menu-title" data-i18n="">Eventos</span></a>
     </li>
-    <li class="bold <?=(strpos($self, 'contas_professor')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="contas_professor.php">
-      <i class="material-icons">school</i><span class="menu-title" data-i18n="">Contas Professor</span></a>
+
+    <li class="bold <?=(strpos($self, '')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="financeiro_recebiveis_list.php">
+      <i class="material-icons">developer_board</i><span class="menu-title" data-i18n="">Outras Fontes</span></a>
     </li>
+
   </ul>
   <div class="navigation-background"></div><a class="sidenav-trigger btn-sidenav-toggle btn-floating btn-medium waves-effect waves-light hide-on-large-only" href="#" data-target="slide-out"><i class="material-icons">menu</i></a>
 </aside>

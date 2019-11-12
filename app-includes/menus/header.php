@@ -18,14 +18,14 @@
               <li class="horizontal-menu-link <?=(strpos($self, 'aulas')>0?'active':'')?>">
                 <a href="aulas_list.php"><span>Aulas</span></a>
               </li>
+              <li class="horizontal-menu-link <?=(strpos($self, 'eventos')>0?'active':'')?>">
+                <a href="eventos.php"><span>Eventos</span></a>
+              </li>
               <li class="horizontal-menu-link <?=(strpos($self, 'financeiro')>0?'active':'')?>">
                 <a href="financeiro_contas_list.php"><span>Financeiro</span></a>
               </li>
               <li class="horizontal-menu-link <?=(strpos($self, 'sistema')>0?'active':'')?>">
                 <a href="sistema_usuarios_list.php"><span>Sistema</span></a>
-              </li>
-              <li class="horizontal-menu-link <?=(strpos($self, 'eventos')>0?'active':'')?>">
-                <a href="eventos.php"><span>Eventos</span></a>
               </li>
               <li class="horizontal-menu-link <?=(strpos($self, 'relatorios.php')>0?'active':'')?>">
                 <a href="relatorios.php"><span>Relatórios</span></a>
