@@ -95,8 +95,9 @@
                               <tr>
                                 <th>Nome</th>
                                 <th style="width: 160px">Entrou em</th>
-                                <th class="text-center" style="width: 100px">Editar</th>
                                 <th class="text-center" style="width: 100px">Ativo</th>
+                                <th class="text-center" style="width: 100px">Editar</th>
+                                <th class="text-center" style="width: 100px">Relatório</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -117,10 +118,15 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
 
                               <tr>
-                                <td>Hugo Rossetti Savoia</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -135,10 +141,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 0</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -153,10 +163,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 1</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -171,10 +185,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 2</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -189,10 +207,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 3</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -207,10 +229,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 4</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -225,10 +251,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 5</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -243,10 +273,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 6</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -261,10 +295,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 7</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -279,10 +317,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 8</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -297,10 +339,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 9</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -315,10 +361,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 10</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -333,10 +383,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 11</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -351,10 +405,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 12</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -369,10 +427,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 13</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -387,10 +449,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 14</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -405,10 +471,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 15</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -423,10 +493,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 16</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -441,10 +515,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 17</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -459,10 +537,14 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
+                                <td class="text-center">
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
+                                  </a>
+                                </td>
                               </tr>
-
                               <tr>
-                                <td>Nome de Exemplo 18</td>
+                                <td>Rafael Antonio</td>
                                 <td>22/12/2019</td>
                                 <td class="text-center">
                                   <div class="switch">
@@ -477,184 +559,9 @@
                                     <i class="material-icons">content_copy</i>
                                   </a>
                                 </td>
-                              </tr>
-
-                              <tr>
-                                <td>Nome de Exemplo 19</td>
-                                <td>22/12/2019</td>
                                 <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>Nome de Exemplo 20</td>
-                                <td>22/12/2019</td>
-                                <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>Nome de Exemplo 21</td>
-                                <td>22/12/2019</td>
-                                <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>Nome de Exemplo 22</td>
-                                <td>22/12/2019</td>
-                                <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>Nome de Exemplo 23</td>
-                                <td>22/12/2019</td>
-                                <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>Nome de Exemplo 24</td>
-                                <td>22/12/2019</td>
-                                <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>Nome de Exemplo 25</td>
-                                <td>22/12/2019</td>
-                                <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>Nome de Exemplo 26</td>
-                                <td>22/12/2019</td>
-                                <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>Nome de Exemplo 27</td>
-                                <td>22/12/2019</td>
-                                <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
-                                  </a>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>Nome de Exemplo 28</td>
-                                <td>22/12/2019</td>
-                                <td class="text-center">
-                                  <div class="switch">
-                                    <label>
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td class="text-center">
-                                  <a href="professores_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="professores_relatorio.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                    <i class="material-icons">show_chart</i>
                                   </a>
                                 </td>
                               </tr>
@@ -666,6 +573,7 @@
                                 <th>Entrou em</th>
                                 <th>Ativo</th>
                                 <th>Editar</th>
+                                <th>Relatório</th>
                               </tr>
                             </tfoot>
                           </table>

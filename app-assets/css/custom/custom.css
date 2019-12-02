@@ -81,3 +81,7 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 {
 	box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .3);
 }
+
+.f16 {
+	font-size: 16px !important;
+}

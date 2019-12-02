@@ -88,6 +88,7 @@
                 <div class="row">
                   <div class="col s12">
                     <ul class="collapsible collapsible-accordion border-radius-6 white" style="overflow:hidden" data-collapsible="accordion">
+
                       <li class="active">
                         <div class="collapsible-header"><i class="material-icons">assignment</i> Informações Básicas</div>
                         <div class="collapsible-body">
@@ -100,6 +101,7 @@
                                 <label for="name3" class="active">Nome</label>
                               </div>
                             </div>
+
                             <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">email</i>
@@ -107,6 +109,7 @@
                                 <label for="email3" class="active">Email</label>
                               </div>
                             </div>
+
                             <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">phone</i>
@@ -115,33 +118,6 @@
                               </div>
                             </div>
 
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <i class="material-icons prefix">location_on</i>
-                                <input id="logradouro" type="text">
-                                <label for="logradouro" class="active">Logradouro</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="pl-4">
-                                <div class="input-field col s12">
-                                  <select>
-                                    <option value="" disabled selected>Selecione seu estado</option>
-                                  </select>
-                                  <label>Estado</label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="pl-4">
-                                <div class="input-field col s12">
-                                  <select>
-                                    <option value="" disabled selected>Selecione sua cidade</option>
-                                  </select>
-                                  <label>Cidade</label>
-                                </div>
-                              </div>
-                            </div>
                             <div class="row">
                               <div class="col l12 text-center">
                                 <div class="input-field col s12">
@@ -156,38 +132,7 @@
                           </form>
                         </div>
                       </li>
-                      <li>
-                        <div class="collapsible-header"><i class="material-icons">security</i> Alterar Senha</div>
-                        <div class="collapsible-body">
-                          <div class="row">
-                            <div class="col s12">
-                              <form action="index.php" class="pr-5">
-                                <div class="row">
-                                  <div class="input-field col s12">
-                                    <i class="material-icons prefix">lock_outline</i>
-                                    <input id="password3" type="password">
-                                    <label for="password3" class="active">Senha</label>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="input-field col s12">
-                                    <i class="material-icons prefix">lock_outline</i>
-                                    <input id="password4" type="password">
-                                    <label for="password4" class="active">Repita a senha</label>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="input-field col s12">
-                                    <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Atualizar
-                                      <i class="material-icons left">save</i>
-                                    </button>
-                                  </div>
-                                </div>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
+
                       <li>
                         <div class="collapsible-header"><i class="material-icons">fitness_center
                         </i> Anamnese</div>
@@ -291,96 +236,14 @@
         </div>
 
         <div class="col l4 s12">
-
           <div class="card-target card animate fadeLeft border-radius-6">
             <div class="card-content">
-              <h4 class="card-title mb-0">Créditos de Aulas</h4>
-              <p class="medium-small">O crédito de aula equivale a uma aula de 30 minutos nas modalidades contratadas pelo aluno.</p>
-              <div class="current-balance-container text-center pt-4">
-                <h5 class="center-align col l6">
-                  <i class="material-icons" style="font-size:70px">event_note</i>
-                  <br>
-                  <span class="f16">Aulas Longas</span>
-                  <br>
-                  58
-                </h5>
-                <h5 class="center-align col l6">
-                  <i class="material-icons" style="font-size:70px">event</i>
-                  <br>
-                  <span class="f16">Aulas Curtas</span>
-                  <br>
-                  34
-                </h5>
-              </div>
-              <a href="aulas_form.php" class="float-right pb-5 mt-4">
-                Agendar Aula
-                <i class="material-icons">link</i>
-              </a>
+              <h3 class="card-title mb-0">Converter aluno temporário</h3>
+              <p class="medium-small">Este aluno temporário pode ser convertido a aluno regular. Isso permitirá inclui-lo no sistema financeiro e vinculará a ele créditos de aulas.</p>
+              <a href="alunos_form.php" class="waves-effect waves-light btn-large mt-5"><i class="material-icons left">sync_problem</i>CONVERTER</a>
             </div>
           </div>
-
-          <div class="card-target card animate fadeLeft border-radius-6">
-            <div class="card-content">
-              <h4 class="card-title mb-0">Contrato</h4>
-              <p class="medium-small">Inclua aqui o contrato do aluno para fins de arquivamento.</p>
-              <form action="#">
-                <div class="file-field input-field">
-                  <div class="btn">
-                    <span>ESCOLHER</span>
-                    <input type="file">
-                  </div>
-                  <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text">
-                  </div>
-                </div>
-              </form>
-              <a href="contrato.pdf" class="mt-4">
-                <i class="material-icons">link</i> Baixar contrato do aluno - 22/09/2019
-              </a>
-            </div>
-          </div>
-
-          <!-- Enviar Mensagem -->
-          <div class="card border-radius-6">
-            <div class="card-title pl-3 pt-2">
-              <h6><i class="material-icons">phone_iphone</i> Enviar Mensagem</h6>
-            </div>
-            <div class="card-content">
-              <div class="row">
-                <div class="col s12">
-                  <form action="index.php" class="pr-5 pb-5">
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <i class="material-icons prefix">question_answer</i>
-                        <textarea id="message3" class="materialize-textarea"></textarea>
-                        <label for="message3">Mensagem...</label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
-                          <i class="material-icons right">send</i>
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-
-                  <h6>Mensagens Enviadas</h6>
-                  <ul class="collection">
-                    <li class="collection-item">04/11/2019 13:30 - Olá, como foi seu treino ontem? De seu Feedback no app!</li>
-                    <li class="collection-item">04/11/2019 13:30 - Você esqueceu seu guarda chuvas!</li>
-                    <li class="collection-item">04/11/2019 13:30 - Bom dia! Hoje o treino foi cancelado devido as fortes chuvas!</li>
-                  </ul>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--/ Enviar Mensagem -->
-
         </div>
-
-      </div>
 
     </div>
     <!-- END: Page Main-->

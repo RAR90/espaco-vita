@@ -688,7 +688,7 @@
 
             <!-- FAB -->
             <div style="bottom: 50px; right: 19px;" class="fixed-action-btn direction-top">
-              <a href="alunos_form.php" class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow">
+              <a href="alunos_temporarios_form.php" class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow">
                 <i class="material-icons">add</i>
               </a>
             </div>
