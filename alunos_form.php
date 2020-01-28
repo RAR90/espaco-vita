@@ -50,248 +50,268 @@
       include "app-includes/menus/aside-alunos.php";
     ?>
 
-
     <!-- BEGIN: Page Main-->
     <div id="main">
-
       <div class="row">
         <div class="content-wrapper-before gradient-45deg-indigo-light-blue"></div>
 
+        <!-- Title & Breadcrumbs -->
         <div class="breadcrumbs-dark pb-0 pt-2" id="breadcrumbs-wrapper">
           <div class="container">
             <div class="row">
-
-              <!-- Title & Breadcrumbs -->
               <div class="col s10 m6 l6">
                 <h5 class="breadcrumbs-title mt-0 mb-0">Aluno</h5>
                 <ol class="breadcrumbs mb-0">
-                  <li class="breadcrumb-item"><a href="dashboard_modern.php">Home</a>
+                  <li class="breadcrumb-item">
+                    <a href="dashboard_modern.php">Home</a>
                   </li>
-                  <li class="breadcrumb-item"><a href="alunos_list.php">Lista de Alunos</a>
+                  <li class="breadcrumb-item">
+                    <a href="alunos_list.php">Lista de Alunos</a>
                   </li>
-                  <li class="breadcrumb-item active">Aluno
+                  <li class="breadcrumb-item active">
+                    Aluno
                   </li>
                 </ol>
               </div>
-              <!--/ Title & Breadcrumbs -->
-
             </div>
           </div>
         </div>
+        <!--/ Title & Breadcrumbs -->
 
+        <!-- Forms Accordion -->
         <div class="col l8 s12">
           <div class="container">
             <div class="section section-data-tables">
               <div class="row">
+                <div class="col s12">
+                  <ul class="collapsible collapsible-accordion border-radius-6 white" style="overflow:hidden" data-collapsible="accordion">
 
-                <!--Accordion-->
-                <div class="row">
-                  <div class="col s12">
-                    <ul class="collapsible collapsible-accordion border-radius-6 white" style="overflow:hidden" data-collapsible="accordion">
-                      <li class="active">
-                        <div class="collapsible-header"><i class="material-icons">assignment</i> Informações Básicas</div>
-                        <div class="collapsible-body">
-                          <form action="alunos_form.php" class="pr-5">
+                    <!-- Form "Alunos" -->
+                    <li class="active">
+                      <div class="collapsible-header">
+                        <i class="material-icons">assignment</i> Informações Básicas
+                      </div>
+                      <div class="collapsible-body">
+                        <form action="alunos_form.php" class="pr-5">
 
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input id="name3" type="text">
-                                <label for="name3" class="active">Nome</label>
-                              </div>
+                          <!-- Nome -->
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <i class="material-icons prefix">account_circle</i>
+                              <input id="name3" type="text">
+                              <label for="name3" class="active">Nome</label>
                             </div>
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <i class="material-icons prefix">email</i>
-                                <input id="email3" type="email">
-                                <label for="email3" class="active">Email</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <i class="material-icons prefix">phone</i>
-                                <input id="telefone" type="text">
-                                <label for="telefone" class="active">Telefone</label>
-                              </div>
-                            </div>
+                          </div>
+                          <!--/ Nome -->
 
-                            <div class="row">
+                          <!-- Email -->
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <i class="material-icons prefix">email</i>
+                              <input id="email3" type="email">
+                              <label for="email3" class="active">Email</label>
+                            </div>
+                          </div>
+                          <!--/ Email -->
+
+                          <!-- Telefone -->
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <i class="material-icons prefix">phone</i>
+                              <input id="telefone" type="text">
+                              <label for="telefone" class="active">Telefone</label>
+                            </div>
+                          </div>
+                          <!--/ Telefone -->
+
+                          <!-- Logradouro -->
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <i class="material-icons prefix">location_on</i>
+                              <input id="logradouro" type="text">
+                              <label for="logradouro" class="active">Logradouro</label>
+                            </div>
+                          </div>
+                          <!--/ Logradouro -->
+
+                          <!-- Estado -->
+                          <div class="row">
+                            <div class="pl-4">
                               <div class="input-field col s12">
-                                <i class="material-icons prefix">location_on</i>
-                                <input id="logradouro" type="text">
-                                <label for="logradouro" class="active">Logradouro</label>
+                                <select>
+                                  <option value="" disabled selected>Selecione seu estado</option>
+                                </select>
+                                <label>Estado</label>
                               </div>
                             </div>
-                            <div class="row">
-                              <div class="pl-4">
+                          </div>
+                          <!--/ Estado -->
+
+                          <!-- Cidade -->
+                          <div class="row">
+                            <div class="pl-4">
+                              <div class="input-field col s12">
+                                <select>
+                                  <option value="" disabled selected>Selecione sua cidade</option>
+                                </select>
+                                <label>Cidade</label>
+                              </div>
+                            </div>
+                          </div>
+                          <!--/ Cidade -->
+
+                          <!-- Botão Gravar -->
+                          <div class="row">
+                            <div class="col l12 text-center">
+                              <div class="input-field col s12">
+                                <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
+                                  <i class="material-icons left">save</i>
+                                  GRAVAR
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <!--/ Botão Gravar -->
+
+                        </form>
+                      </div>
+                    </li>
+                    <!--/ Form "Alunos" -->
+
+                    <!-- Form "Segurança" -->
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">security</i> Alterar Senha</div>
+                      <div class="collapsible-body">
+                        <div class="row">
+                          <div class="col s12">
+                            <form action="index.php" class="pr-5">
+                              <div class="row">
                                 <div class="input-field col s12">
-                                  <select>
-                                    <option value="" disabled selected>Selecione seu estado</option>
-                                  </select>
-                                  <label>Estado</label>
+                                  <i class="material-icons prefix">lock_outline</i>
+                                  <input id="password3" type="password">
+                                  <label for="password3" class="active">Senha</label>
                                 </div>
                               </div>
-                            </div>
-                            <div class="row">
-                              <div class="pl-4">
+                              <div class="row">
                                 <div class="input-field col s12">
-                                  <select>
-                                    <option value="" disabled selected>Selecione sua cidade</option>
-                                  </select>
-                                  <label>Cidade</label>
+                                  <i class="material-icons prefix">lock_outline</i>
+                                  <input id="password4" type="password">
+                                  <label for="password4" class="active">Repita a senha</label>
                                 </div>
                               </div>
-                            </div>
-                            <div class="row">
-                              <div class="col l12 text-center">
+                              <div class="row">
                                 <div class="input-field col s12">
-                                  <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
+                                  <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Atualizar
                                     <i class="material-icons left">save</i>
-                                    GRAVAR
                                   </button>
                                 </div>
                               </div>
-                            </div>
-
-                          </form>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="collapsible-header"><i class="material-icons">security</i> Alterar Senha</div>
-                        <div class="collapsible-body">
-                          <div class="row">
-                            <div class="col s12">
-                              <form action="index.php" class="pr-5">
-                                <div class="row">
-                                  <div class="input-field col s12">
-                                    <i class="material-icons prefix">lock_outline</i>
-                                    <input id="password3" type="password">
-                                    <label for="password3" class="active">Senha</label>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="input-field col s12">
-                                    <i class="material-icons prefix">lock_outline</i>
-                                    <input id="password4" type="password">
-                                    <label for="password4" class="active">Repita a senha</label>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="input-field col s12">
-                                    <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Atualizar
-                                      <i class="material-icons left">save</i>
-                                    </button>
-                                  </div>
-                                </div>
-                              </form>
-                            </div>
+                            </form>
                           </div>
                         </div>
-                      </li>
-                      <li>
-                        <div class="collapsible-header"><i class="material-icons">fitness_center
-                        </i> Anamnese</div>
-                        <div class="collapsible-body">
-                          <div class="row">
-                            <div class="col s12">
-                              <form action="alunos_form.php" class="pr-5">
+                      </div>
+                    </li>
+                    <!--/ Form "Segurança" -->
 
-                                <div class="row">
-                                  <div class="input-field col s12">
-                                    <i class="material-icons prefix">account_circle</i>
-                                    <input id="" type="text">
-                                    <label for="" class="active">Idade</label>
-                                  </div>
+                    <!-- Form "Anamnese" -->
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">fitness_center
+                      </i> Anamnese</div>
+                      <div class="collapsible-body">
+                        <div class="row">
+                          <div class="col s12">
+                            <form action="alunos_form.php" class="pr-5">
+
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  <i class="material-icons prefix">account_circle</i>
+                                  <input id="" type="text">
+                                  <label for="" class="active">Idade</label>
                                 </div>
+                              </div>
 
-                                <div class="row">
-                                  <div class="input-field col s12">
-                                    <i class="material-icons prefix">account_circle</i>
-                                    <input id="" type="text">
-                                    <label for="" class="active">Peso</label>
-                                  </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  <i class="material-icons prefix">account_circle</i>
+                                  <input id="" type="text">
+                                  <label for="" class="active">Peso</label>
                                 </div>
+                              </div>
 
-                                <div class="row">
-                                  <div class="input-field col s12">
-                                    <span for="" class="h3">Sexo</span>
-                                    <p>
-                                      <label>
-                                        <input name="group1" type="radio" checked/>
-                                        <span>Masculino</span>
-                                      </label>
-                                      <label>
-                                        <input name="group1" type="radio" />
-                                        <span>Feminino</span>
-                                      </label>
-                                    </p>
-                                  </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  <span for="" class="h3">Sexo</span>
+                                  <p>
+                                    <label>
+                                      <input name="group1" type="radio" checked/>
+                                      <span>Masculino</span>
+                                    </label>
+                                    <label>
+                                      <input name="group1" type="radio" />
+                                      <span>Feminino</span>
+                                    </label>
+                                  </p>
                                 </div>
+                              </div>
 
-                                <div class="row">
-                                  <div class="input-field col s12">
-                                    <span for="" class="h3">Sedentário</span>
-                                    <p>
-                                      <label>
-                                        <input name="group1" type="radio" checked/>
-                                        <span>Sim</span>
-                                      </label>
-                                      <label>
-                                        <input name="group1" type="radio" />
-                                        <span>Não</span>
-                                      </label>
-                                    </p>
-                                  </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  <span for="" class="h3">Sedentário</span>
+                                  <p>
+                                    <label>
+                                      <input name="group1" type="radio" checked/>
+                                      <span>Sim</span>
+                                    </label>
+                                    <label>
+                                      <input name="group1" type="radio" />
+                                      <span>Não</span>
+                                    </label>
+                                  </p>
                                 </div>
+                              </div>
 
-                                <div class="row">
-                                  <div class="input-field col s12">
-                                    <span for="" class="h3">Fumante</span>
-                                    <p>
-                                      <label>
-                                        <input name="group1" type="radio" checked/>
-                                        <span>Sim</span>
-                                      </label>
-                                      <label>
-                                        <input name="group1" type="radio" />
-                                        <span>Não</span>
-                                      </label>
-                                    </p>
-                                  </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  <span for="" class="h3">Fumante</span>
+                                  <p>
+                                    <label>
+                                      <input name="group1" type="radio" checked/>
+                                      <span>Sim</span>
+                                    </label>
+                                    <label>
+                                      <input name="group1" type="radio" />
+                                      <span>Não</span>
+                                    </label>
+                                  </p>
                                 </div>
+                              </div>
 
-                                <div class="row">
-                                  <div class="input-field col s12">
-                                    <i class="material-icons prefix">account_circle</i>
-                                    <input id="" type="text">
-                                    <label for="" class="active">Pratica algum esporte? Qual?</label>
-                                  </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  <i class="material-icons prefix">account_circle</i>
+                                  <input id="" type="text">
+                                  <label for="" class="active">Pratica algum esporte? Qual?</label>
                                 </div>
+                              </div>
 
-                              </form>
-                            </div>
+                            </form>
                           </div>
                         </div>
-                      </li>
+                      </div>
+                    </li>
+                    <!-- Form "Anamnese" -->
 
-                    </ul>
-                  </div>
+                  </ul>
                 </div>
-
-
-
               </div>
             </div>
-
-            <?php
-              include "app-includes/menus/aside-right.php";
-            ?>
-
           </div>
         </div>
+        <!--/ Forms Accordion -->
 
         <div class="col l4 s12">
 
+          <!-- Credits -->
           <div class="card-target card animate fadeLeft border-radius-6">
             <div class="card-content">
               <h4 class="card-title mb-0">Créditos de Aulas</h4>
@@ -318,7 +338,9 @@
               </a>
             </div>
           </div>
+          <!--/ Credits -->
 
+          <!-- Contract -->
           <div class="card-target card animate fadeLeft border-radius-6">
             <div class="card-content">
               <h4 class="card-title mb-0">Contrato</h4>
@@ -339,6 +361,7 @@
               </a>
             </div>
           </div>
+          <!--/ Contract -->
 
           <!-- Enviar Mensagem -->
           <div class="card border-radius-6">
@@ -380,8 +403,12 @@
 
         </div>
 
-      </div>
+        <?php
+          // Notifications Menu
+          include "app-includes/menus/aside-right.php";
+        ?>
 
+      </div>
     </div>
     <!-- END: Page Main-->
 
