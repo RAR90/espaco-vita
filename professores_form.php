@@ -57,11 +57,10 @@
       <div class="row">
         <div class="content-wrapper-before gradient-45deg-indigo-light-blue"></div>
 
+        <!-- Title & Breadcrumbs -->
         <div class="breadcrumbs-dark pb-0 pt-2" id="breadcrumbs-wrapper">
           <div class="container">
             <div class="row">
-
-              <!-- Title & Breadcrumbs -->
               <div class="col s10 m6 l6">
                 <h5 class="breadcrumbs-title mt-0 mb-0">Professor</h5>
                 <ol class="breadcrumbs mb-0">
@@ -73,19 +72,18 @@
                   </li>
                 </ol>
               </div>
-              <!--/ Title & Breadcrumbs -->
-
             </div>
           </div>
         </div>
+        <!--/ Title & Breadcrumbs -->
 
+        <!-- Forms Areas -->
         <div class="col s12">
           <div class="container">
             <div class="section section-data-tables">
-
-              <!-- Page Length Options -->
               <div class="row">
 
+                <!-- Forms Left -->
                 <div class="col s12 l6">
 
                   <!-- Informações Básicas -->
@@ -97,6 +95,71 @@
                       <div class="row">
                         <div class="col s12">
                           <form action="professores_form.php" class="pr-5">
+
+                          <!-- TODO: Criar formulário com os campos abaixo e máscaras para os campos de telefone, celular, cpf e rg -->
+
+                          <!-- Informações Pessoais -->
+                          <!--
+                            funcID
+                            funcNome
+                            funcSexo
+                            funcCPF
+                            FuncUFIdentidade
+                            funcIdentidade
+                            funcDataNascimento
+                            funcObs
+                          -->
+
+                          <!-- Informações de contato -->
+                          <!--
+                            funcTelefone
+                            funcCelular
+                            FuncEmail
+                            funcDigitosCelular
+                          -->
+
+                          <!-- Informações de Endereço -->
+                          <!--
+                            funcEndereco
+                            funcBairro
+                            funcCidade
+                            funcCEP
+                            funcEstado
+                          -->
+
+                          <!-- Informações da empresa -->
+                          <!--
+                            funcSalarioFixo
+
+                            funcaoID	funcaoDescricao
+                            1	SÓCIO(A) PROPRIETÁRIO(A)
+                            2	PROFESSOR(A)
+                            3	SECRETÁRIO(A)
+                            4	ESTAGIÁRIO(A)
+
+                            funcSenha
+                            funcAdmissao
+                            funcDemissao
+                            funcSituacao
+                            funcProfessor
+                          -->
+
+                          <!-- Outras informações -->
+                          <!--
+                            funcTemCartao
+                            funcPFrequencia
+                            funcAcesso
+                            funcCartao
+                            funcExcluido
+                            funcCREF
+                            funcPCaixa
+                            funcPContasR
+                            funcPAlunos
+                            funcPRelatorios
+                            funcPMatriculas
+                            funcPPesquisa
+                          -->
+
                             <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">account_circle</i>
@@ -104,6 +167,7 @@
                                 <label for="name3" class="active">Nome</label>
                               </div>
                             </div>
+
                             <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">assignment</i>
@@ -111,6 +175,7 @@
                                 <label for="cpf" class="active">CPF</label>
                               </div>
                             </div>
+
                             <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">assignment</i>
@@ -118,6 +183,7 @@
                                 <label for="rg" class="active">RG</label>
                               </div>
                             </div>
+
                             <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">cake</i>
@@ -125,6 +191,7 @@
                                 <label for="rg" class="active">Nascimento</label>
                               </div>
                             </div>
+
                             <div class="row">
                               <div class="input-field col s12">
                                 <span for="" class="h3">Sexo</span>
@@ -140,6 +207,7 @@
                                 </p>
                               </div>
                             </div>
+
                             <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">email</i>
@@ -147,6 +215,7 @@
                                 <label for="email3" class="active">Email</label>
                               </div>
                             </div>
+
                             <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">phone</i>
@@ -154,6 +223,7 @@
                                 <label for="telefone" class="active">Telefone</label>
                               </div>
                             </div>
+
                             <div class="row">
                               <div class="input-field col s12">
                                 <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
@@ -162,8 +232,8 @@
                                 </button>
                               </div>
                             </div>
-                          </form>
 
+                          </form>
                         </div>
                       </div>
                     </div>
@@ -265,7 +335,9 @@
                   <!--/ Especialidades -->
 
                 </div>
+                <!--/ Forms Left -->
 
+                <!-- Forms Right -->
                 <div class="col s12 l6">
 
                   <!-- Acesso App -->
@@ -346,16 +418,19 @@
                   <!--/ Enviar Mensagem -->
 
                 </div>
+                <!--/ Forms Right -->
 
               </div>
             </div>
-
-            <?php
-              include "app-includes/menus/aside-right.php";
-            ?>
-
           </div>
         </div>
+        <!--/ Forms Areas -->
+
+        <?php
+          // Notifications Menu
+          include "app-includes/menus/aside-right.php";
+        ?>
+
       </div>
 
     </div>

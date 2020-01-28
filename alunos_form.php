@@ -86,7 +86,7 @@
                 <div class="col s12">
                   <ul class="collapsible collapsible-accordion border-radius-6 white" style="overflow:hidden" data-collapsible="accordion">
 
-                    <!-- Form "Alunos" -->
+                    <!-- Form "Informações Básicas" -->
                     <li class="active">
                       <div class="collapsible-header">
                         <i class="material-icons">assignment</i> Informações Básicas
@@ -94,12 +94,98 @@
                       <div class="collapsible-body">
                         <form action="alunos_form.php" class="pr-5">
 
+                          <!-- TODO: Criar formulário com os campos abaixo e máscaras para os campos de telefone, celular, cpf e rg -->
+                          <!-- TODO: replicar para a página "alunos_temporarios_form.php" -->
+
+                          <!-- Informações Pessoais -->
+                          <!--
+                            alunoID
+                            alunoMatricula
+                            alunoNome
+                            alunoSexo
+                            alunoDataNascimento
+                            alunoCPF
+                            alunoIdentidade
+                            alunoUFIdentidade
+                            alunoProfissao
+                            alunoEstadoCivil
+                            alunoEmpresa
+                            alunoTelefoneEmpresa
+                            alunoObs
+                          -->
+
+                          <!-- Informações de Contato -->
+                          <!--
+                            alunoTelefone
+                            alunoCelular
+                            alunoEmail
+                          -->
+
+                          <!-- Endereço -->
+                          <!--
+                            alunoEndereco
+                            alunoBairro
+                            alunoCidade
+                            alunoCEP
+                            alunoEstado
+                          -->
+
+                          <!-- Outras informações -->
+                          <!--
+                            alunoDataExame
+                            alunoDataAvaliacao
+                            alunoExcluido
+                            alunoDtCadastro
+                            alunoHorario
+                            alunoSenha
+                          -->
+
+                          <!-- Quiz -->
+                          <!--
+                            alunoObjetivo
+                            alunoSoubeAcademia
+                          -->
+
+                          <!-- Informações dos responsáveis -->
+                          <!--
+                            alunoResponsavel
+                            alunoTelefoneResponsavel
+                            alunoPai
+                            alunoMae
+                            alunoMaeCPF
+                            alunoPaiCPF
+                            alunoResponsavelCPF
+                            alunoTelefoneMae
+                            alunoTelefonePai
+                          -->
+
+                          <!-- Inputs Invisíveis -->
+                          <!--
+                            alunoTemCartao
+                            alunoCartao
+                            funcID
+                            alunoCatracaReentrada
+                            alunoCatracaMinutos
+                            alunoCatracaSegundos
+                            alunoCatracaSemana
+                            alunoCatracaVezesSemana
+                            alunoCatracaDia
+                            alunoCatracaVezesDia
+                            alunoDigitosCelular
+                            RecorrenteForma
+                            RecorrenteToken
+                            RecorrenteTruncado
+                            RecorrenteValidade
+                            recorrenteAtivo
+                            RecorrenteSeguranca
+                          -->
+
                           <!-- Nome -->
                           <div class="row">
                             <div class="input-field col s12">
                               <i class="material-icons prefix">account_circle</i>
-                              <input id="name3" type="text">
-                              <label for="name3" class="active">Nome</label>
+                              <input id="nome" type="text">
+                              <label for="nome" class="active">Nome</label>
                             </div>
                           </div>
                           <!--/ Nome -->
@@ -176,7 +262,7 @@
                         </form>
                       </div>
                     </li>
-                    <!--/ Form "Alunos" -->
+                    <!--/ Form "Informações Básicas" -->
 
                     <!-- Form "Segurança" -->
                     <li>
