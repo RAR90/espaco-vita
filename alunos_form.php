@@ -151,8 +151,6 @@ $alunoTelefoneMae = '';
                       <div class="collapsible-body">
                         <form action="alunos_form.php" class="pr-5">
 
-                          <!-- TODO: replicar para a página "alunos_temporarios_form.php" -->
-
                           <!-- Inputs Invisíveis -->
                           <input type="hidden" name="alunoID" value="<?=$alunoID;?>">
                           <input type="hidden" name="alunoExcluido" value="<?=$alunoExcluido;?>">
