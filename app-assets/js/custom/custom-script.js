@@ -1,11 +1,28 @@
-/*================================================================================
-	Item Name: Teclabs - Materialize Dashboard
-	Version: 5.0
-	Author: TECLABS
-	Author URL: https://teclabs.com.br
-================================================================================
+$('.maskCpf').formatter({
+  'pattern': '{{999}}.{{999}}.{{999}}-{{99}}',
+  'persistent': false
+});
 
-NOTE:
-------
-PLACE HERE YOUR OWN JS CODES AND IF NEEDED.
-WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR CUSTOM SCRIPT IT'S BETTER LIKE THIS. */
+$('.maskRg').formatter({
+  'pattern': '{{99}}.{{999}}.{{999}}-{{99}}',
+  'persistent': false
+});
+
+$('.maskCelular').formatter({
+  'pattern': '({{99}}) {{99999}}-{{9999}}',
+  'persistent': false
+});
+
+$('.maskPhone').formatter({
+  'patterns': [
+    { '^.{10}$': '({{99}}) {{9999}}-{{9999}}' },
+    { '*': '({{99}}) {{99999}}-{{9999}}' }
+  ],
+  'persistent': false
+});
+
+$('.datepicker').datepicker({
+  format: 'yyyy-mm-dd'
+});
+
+$('.timepicker').timepicker();

@@ -1,3 +1,45 @@
+<?php
+
+$funcNome = '';
+$funcSexo = 'm'; // 'm' ou 'f'
+$funcDataNascimento = '1990-03-26';
+$funcCPF = '';
+$funcIdentidade = '';
+$FuncUFIdentidade = '';
+$funcObs = '';
+$funcTelefone = '';
+$funcCelular = '';
+$FuncEmail = '';
+$funcEndereco = '';
+$funcCEP = '';
+$funcBairro = '';
+$funcSenhaRetype = '';
+$funcSenha = '';
+$funcao = '';
+$funcSalarioFixo = '';
+$funcAdmissao = '1990-03-26';
+$funcDemissao = '1990-03-26';
+$funcProfessor = '';
+$funcSituacao = '';
+$funcCREF = '';
+
+//Invisíveis
+$funcID = '';
+$funcTemCartao = '';
+$funcPFrequencia = '';
+$funcAcesso = '';
+$funcCartao = '';
+$funcExcluido = '';
+$funcPCaixa = '';
+$funcPContasR = '';
+$funcPAlunos = '';
+$funcPRelatorios = '';
+$funcPMatriculas = '';
+$funcPPesquisa = '';
+$funcDigitosCelular = '';
+
+?>
+
 <!DOCTYPE html>
 <html class="loading" lang="pt-Br" data-textdirection="ltr">
 
@@ -96,134 +138,131 @@
                         <div class="col s12">
                           <form action="professores_form.php" class="pr-5">
 
-                          <!-- TODO: Criar formulário com os campos abaixo e máscaras para os campos de telefone, celular, cpf e rg -->
+                            <!-- Inputs Invisíveis -->
+                            <input type="hidden" name="funcID" value="<?=$funcID;?>">
+                            <input type="hidden" name="funcTemCartao" value="<?=$funcTemCartao;?>">
+                            <input type="hidden" name="funcPFrequencia" value="<?=$funcPFrequencia;?>">
+                            <input type="hidden" name="funcAcesso" value="<?=$funcAcesso;?>">
+                            <input type="hidden" name="funcCartao" value="<?=$funcCartao;?>">
+                            <input type="hidden" name="funcExcluido" value="<?=$funcExcluido;?>">
+                            <input type="hidden" name="funcPCaixa" value="<?=$funcPCaixa;?>">
+                            <input type="hidden" name="funcPContasR" value="<?=$funcPContasR;?>">
+                            <input type="hidden" name="funcPAlunos" value="<?=$funcPAlunos;?>">
+                            <input type="hidden" name="funcPRelatorios" value="<?=$funcPRelatorios;?>">
+                            <input type="hidden" name="funcPMatriculas" value="<?=$funcPMatriculas;?>">
+                            <input type="hidden" name="funcPPesquisa" value="<?=$funcPPesquisa;?>">
+                            <input type="hidden" name="funcDigitosCelular" value="<?=$funcDigitosCelular;?>">
+                            <!--/ Inputs Invisíveis -->
 
-                          <!-- Informações Pessoais -->
-                          <!--
-                            funcID
-                            funcNome
-                            funcSexo
-                            funcCPF
-                            FuncUFIdentidade
-                            funcIdentidade
-                            funcDataNascimento
-                            funcObs
-                          -->
-
-                          <!-- Informações de contato -->
-                          <!--
-                            funcTelefone
-                            funcCelular
-                            FuncEmail
-                            funcDigitosCelular
-                          -->
-
-                          <!-- Informações de Endereço -->
-                          <!--
-                            funcEndereco
-                            funcBairro
-                            funcCidade
-                            funcCEP
-                            funcEstado
-                          -->
-
-                          <!-- Informações da empresa -->
-                          <!--
-                            funcSalarioFixo
-
-                            funcaoID	funcaoDescricao
-                            1	SÓCIO(A) PROPRIETÁRIO(A)
-                            2	PROFESSOR(A)
-                            3	SECRETÁRIO(A)
-                            4	ESTAGIÁRIO(A)
-
-                            funcSenha
-                            funcAdmissao
-                            funcDemissao
-                            funcSituacao
-                            funcProfessor
-                          -->
-
-                          <!-- Outras informações -->
-                          <!--
-                            funcTemCartao
-                            funcPFrequencia
-                            funcAcesso
-                            funcCartao
-                            funcExcluido
-                            funcCREF
-                            funcPCaixa
-                            funcPContasR
-                            funcPAlunos
-                            funcPRelatorios
-                            funcPMatriculas
-                            funcPPesquisa
-                          -->
-
+                            <!-- Nome -->
                             <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">account_circle</i>
-                                <input id="name3" type="text">
-                                <label for="name3" class="active">Nome</label>
+                                <input id="funcNome" name="funcNome" value="<?=$funcNome;?>" type="text">
+                                <label for="funcNome" class="active">Nome Completo</label>
                               </div>
                             </div>
+                            <!--/ Nome -->
 
+                            <!-- Sexo -->
                             <div class="row">
                               <div class="input-field col s12">
-                                <i class="material-icons prefix">assignment</i>
-                                <input id="cpf" type="text">
-                                <label for="cpf" class="active">CPF</label>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <i class="material-icons prefix">assignment</i>
-                                <input id="rg" type="email">
-                                <label for="rg" class="active">RG</label>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <i class="material-icons prefix">cake</i>
-                                <input id="rg" type="email">
-                                <label for="rg" class="active">Nascimento</label>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <span for="" class="h3">Sexo</span>
+                                <span for="funcSexo" class="h3">Sexo</span>
                                 <p>
                                   <label>
-                                    <input name="group1" type="radio" checked/>
+                                    <input name="funcSexo" type="radio" <?=$funcSexo == 'm' ? 'checked' : '';?> />
                                     <span>Masculino</span>
                                   </label>
                                   <label>
-                                    <input name="group1" type="radio" />
+                                    <input name="funcSexo" type="radio" <?=$funcSexo == 'f' ? 'checked' : '';?> />
                                     <span>Feminino</span>
                                   </label>
                                 </p>
                               </div>
                             </div>
+                            <!--/ Sexo -->
 
+                            <!-- Nascimento -->
                             <div class="row">
                               <div class="input-field col s12">
-                                <i class="material-icons prefix">email</i>
-                                <input id="email3" type="email">
-                                <label for="email3" class="active">Email</label>
+                                <i class="material-icons prefix">calendar_today</i>
+                                <input id="funcDataNascimento" name="funcDataNascimento" class="datepicker" value="<?=$funcDataNascimento;?>" type="date">
+                                <label for="funcDataNascimento" class="active">Data de Nascimento</label>
                               </div>
                             </div>
+                            <!--/ Nascimento -->
 
+                            <!-- CPF -->
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <i class="material-icons prefix">credit_card</i>
+                                <input id="funcCPF" name="funcCPF" class="maskCpf" value="<?=$funcCPF;?>" type="text">
+                                <label for="funcCPF" class="active">CPF</label>
+                              </div>
+                            </div>
+                            <!--/ CPF -->
+
+                            <!-- RG -->
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <i class="material-icons prefix">recent_actors</i>
+                                <input id="funcIdentidade" name="funcIdentidade" class="maskRg" value="<?=$funcIdentidade;?>" type="text">
+                                <label for="funcIdentidade" class="active">RG</label>
+                              </div>
+                            </div>
+                            <!--/ RG -->
+
+                            <!-- Orgão expedidor da identidade -->
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <i class="material-icons prefix">recent_actors</i>
+                                <input id="FuncUFIdentidade" name="FuncUFIdentidade" value="<?=$FuncUFIdentidade;?>" placeholder="Ex.: SSP" type="text">
+                                <label for="FuncUFIdentidade" class="active">Orgão expedidor da identidade</label>
+                              </div>
+                            </div>
+                            <!--/ Orgão expedidor da identidade -->
+
+                            <!-- Telefone -->
                             <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">phone</i>
-                                <input id="telefone" type="text">
-                                <label for="telefone" class="active">Telefone</label>
+                                <input id="funcTelefone" name="funcTelefone" class="maskPhone" value="<?=$funcTelefone;?>" type="text">
+                                <label for="funcTelefone" class="active">Telefone</label>
                               </div>
                             </div>
+                            <!--/ Telefone -->
 
+                            <!-- Celular -->
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <i class="material-icons prefix">stay_current_portrait</i>
+                                <input id="funcCelular" name="funcCelular" class="maskCelular" value="<?=$funcCelular;?>" type="text">
+                                <label for="funcCelular" class="active">Celular</label>
+                              </div>
+                            </div>
+                            <!--/ Celular -->
+
+                            <!-- E-Mail -->
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <i class="material-icons prefix">email</i>
+                                <input id="FuncEmail" name="FuncEmail" value="<?=$FuncEmail;?>" type="text">
+                                <label for="FuncEmail" class="active">E-Mail</label>
+                              </div>
+                            </div>
+                            <!--/ E-Mail -->
+
+                            <!-- Observação -->
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <i class="material-icons prefix">chrome_reader_mode</i>
+                                <textarea name="funcObs" id="funcObs" rows="10"><?=$funcObs;?></textarea>
+                                <label for="funcObs" class="active label-textarea">Observação sobre o professor</label>
+                              </div>
+                            </div>
+                            <!--/ Observação -->
+
+                            <!-- Gravar -->
                             <div class="row">
                               <div class="input-field col s12">
                                 <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
@@ -232,6 +271,7 @@
                                 </button>
                               </div>
                             </div>
+                            <!--/ Gravar -->
 
                           </form>
                         </div>
@@ -243,49 +283,78 @@
                   <!-- Endereço -->
                   <div class="card border-radius-6">
                     <div class="card-title pl-3 pt-2">
-                      <h6><i class="material-icons">devices</i> Endereço</h6>
+                      <h6><i class="material-icons">explore</i> Endereço</h6>
                     </div>
                     <div class="card-content">
                       <div class="row">
                         <div class="col s12">
                           <form action="professores_form.php" class="pr-5">
+
+                            <!-- Logradouro -->
                             <div class="row">
                               <div class="input-field col s12">
-                                <i class="material-icons prefix">location_on</i>
-                                <input id="logradouro" type="text">
-                                <label for="logradouro" class="active">Logradouro</label>
+                                <input id="funcEndereco" name="funcEndereco" value="<?=$funcEndereco;?>" placeholder="Ex.: Av. Paulista, 1400" type="text">
+                                <label for="funcEndereco" class="active">Logradouro</label>
                               </div>
                             </div>
+                            <!--/ Logradouro -->
+
+                            <!-- CEP -->
                             <div class="row">
-                              <div class="pl-5 ml-3">
+                              <div class="input-field col s12">
+                                <input id="funcCEP" name="funcCEP" value="<?=$funcCEP;?>" placeholder="Ex.: Av. Paulista, 1400" type="text">
+                                <label for="funcCEP" class="active">CEP</label>
+                              </div>
+                            </div>
+                            <!--/ CEP -->
+
+                            <!-- Bairro -->
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <input id="funcBairro" name="funcBairro" value="<?=$funcBairro;?>" type="text">
+                                <label for="funcBairro" class="active">Bairro</label>
+                              </div>
+                            </div>
+                            <!--/ Bairro -->
+
+                            <!-- Estado -->
+                            <div class="row">
+                              <div class="mt-2">
                                 <div class="input-field col s12">
-                                  <select>
+                                  <select name="funcEstado">
                                     <option value="" disabled selected>Selecione seu estado</option>
                                   </select>
                                   <label>Estado</label>
                                 </div>
                               </div>
                             </div>
+                            <!--/ Estado -->
+
+                            <!-- Cidade -->
                             <div class="row">
-                              <div class="pl-5 ml-3">
+                              <div class="mt-2">
                                 <div class="input-field col s12">
-                                  <select>
+                                  <select name="funcCidade">
                                     <option value="" disabled selected>Selecione sua cidade</option>
                                   </select>
                                   <label>Cidade</label>
                                 </div>
                               </div>
                             </div>
+                            <!--/ Cidade -->
+
+                            <!-- Gravar -->
                             <div class="row">
                               <div class="input-field col s12">
                                 <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
+                                  Gravar
                                   <i class="material-icons left">save</i>
-                                  GRAVAR
                                 </button>
                               </div>
                             </div>
-                          </form>
+                            <!--/ Gravar -->
 
+                          </form>
                         </div>
                       </div>
                     </div>
@@ -340,6 +409,111 @@
                 <!-- Forms Right -->
                 <div class="col s12 l6">
 
+                  <!-- Empresa -->
+                  <div class="card border-radius-6">
+                    <div class="card-title pl-3 pt-2">
+                      <h6><i class="material-icons">work</i> Empresa</h6>
+                    </div>
+                    <div class="card-content">
+                      <div class="row">
+                        <div class="col s12">
+                          <form action="index.php" class="pr-5">
+
+                            <!-- Cargo -->
+                            <div class="row">
+                              <div class="mt-2">
+                                <div class="input-field col s12">
+                                  <select name="funcao">
+                                    <option value="0" disabled selected>Selecione um cargo</option>
+                                    <option value="1">SÓCIO(A) PROPRIETÁRIO(A)</option>
+                                    <option value="2">PROFESSOR(A)</option>
+                                    <option value="3">SECRETÁRIO(A)</option>
+                                    <option value="4">ESTAGIÁRIO(A)</option>
+                                  </select>
+                                  <label>Cargo do colaborador</label>
+                                </div>
+                              </div>
+                            </div>
+                            <!--/ Cargo -->
+
+                            <!-- Salário Fixo -->
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <i class="material-icons prefix">monetization_on</i>
+                                <input id="funcSalarioFixo" name="funcSalarioFixo" value="<?=$funcSalarioFixo;?>" type="text">
+                                <label for="funcSalarioFixo" class="active">Salário Fixo</label>
+                              </div>
+                            </div>
+                            <!--/ Salário Fixo -->
+
+                            <!-- Data Contratação -->
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <i class="material-icons prefix">calendar_today</i>
+                                <input id="funcAdmissao" name="funcAdmissao" class="datepicker" value="<?=$funcAdmissao;?>" type="date">
+                                <label for="funcAdmissao" class="active">Data de Contratação</label>
+                              </div>
+                            </div>
+                            <!--/ Data Contratação -->
+
+                            <!-- Data Demissão -->
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <i class="material-icons prefix">calendar_today</i>
+                                <input id="funcDemissao" name="funcDemissao" class="datepicker" value="<?=$funcDemissao;?>" type="date">
+                                <label for="funcDemissao" class="active">Data de Demissão</label>
+                              </div>
+                            </div>
+                            <!--/ Data Demissão -->
+
+                            <!-- Professor -->
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <i class="material-icons prefix">contact_support</i>
+                                <input id="funcProfessor" name="funcProfessor" value="<?=$funcProfessor;?>" type="text">
+                                <label for="funcProfessor" class="active">Professor</label>
+                              </div>
+                            </div>
+                            <!--/ Professor -->
+
+                            <!-- Situação do Professor -->
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <i class="material-icons prefix">error</i>
+                                <input id="funcSituacao" name="funcSituacao" value="<?=$funcSituacao;?>" type="text">
+                                <label for="funcSituacao" class="active">Situação do Professor</label>
+                              </div>
+                            </div>
+                            <!--/ Situação do Professor -->
+
+                            <!-- CREF -->
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <i class="material-icons prefix">credit_card</i>
+                                <input id="funcCREF" name="funcCREF" value="<?=$funcCREF;?>" type="text">
+                                <label for="funcCREF" class="active">CREF</label>
+                              </div>
+                            </div>
+                            <!--/ CREF -->
+
+                            <!-- Gravar -->
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
+                                  Gravar
+                                  <i class="material-icons left">save</i>
+                                </button>
+                              </div>
+                            </div>
+                            <!--/ Gravar -->
+
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ Empresa -->
+
                   <!-- Acesso App -->
                   <div class="card border-radius-6">
                     <div class="card-title pl-3 pt-2">
@@ -349,34 +523,44 @@
                       <div class="row">
                         <div class="col s12">
                           <form action="index.php" class="pr-5">
+
+                            <!-- Senha -->
                             <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">lock_outline</i>
-                                <input id="password3" type="password">
-                                <label for="password3" class="active">Senha</label>
+                                <input id="funcSenha" name="funcSenha" value="<?=$funcSenha;?>" type="password">
+                                <label for="funcSenha" class="active">Senha</label>
                               </div>
                             </div>
+                            <!--/ Senha -->
+
+                            <!-- Repita a senha -->
                             <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">lock_outline</i>
-                                <input id="password4" type="password">
-                                <label for="password4" class="active">Repita a senha</label>
+                                <input id="funcSenhaRetype" name="funcSenhaRetype" value="<?=$funcSenhaRetype;?>" type="password">
+                                <label for="funcSenhaRetype" class="active">Repita a senha</label>
                               </div>
                             </div>
+                            <!--/ Repita a senha -->
+
+                            <!-- Gravar -->
                             <div class="row">
                               <div class="input-field col s12">
-                                <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Atualizar
+                                <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
+                                  Atualizar
                                   <i class="material-icons left">save</i>
                                 </button>
                               </div>
                             </div>
-                          </form>
+                            <!--/ Gravar -->
 
+                          </form>
                         </div>
                       </div>
                     </div>
                   </div>
-                   <!--/ Acesso App -->
+                  <!--/ Acesso App -->
 
                    <!-- Enviar Mensagem -->
                   <div class="card border-radius-6">
@@ -403,14 +587,12 @@
                               </div>
                             </div>
                           </form>
-
                           <h6>Mensagens Enviadas</h6>
                           <ul class="collection">
                             <li class="collection-item">04/11/2019 13:30 - Olá, como foi seu treino ontem? De seu Feedback no app!</li>
                             <li class="collection-item">04/11/2019 13:30 - Você esqueceu seu guarda chuvas!</li>
                             <li class="collection-item">04/11/2019 13:30 - Bom dia! Hoje o treino foi cancelado devido as fortes chuvas!</li>
                           </ul>
-
                         </div>
                       </div>
                     </div>
@@ -445,6 +627,7 @@
     <script src="app-assets/vendors/data-tables/js/jquery.dataTables.min.js" type="text/javascript"></script>
     <script src="app-assets/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
     <script src="app-assets/vendors/data-tables/js/dataTables.select.min.js" type="text/javascript"></script>
+    <script src="app-assets/vendors/formatter/jquery.formatter.min.js" type="text/javascript"></script>
     <!-- END PAGE VENDOR JS-->
 
     <?php
