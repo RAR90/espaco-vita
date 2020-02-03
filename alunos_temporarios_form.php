@@ -318,7 +318,7 @@ $alunoSoubeAcademia = '';
                           <div class="row">
                             <div class="input-field col s12">
                               <i class="material-icons prefix">phone</i>
-                              <input id="alunoTelefone" name="alunoTelefone" value="<?=$alunoTelefone;?>" type="text">
+                              <input id="alunoTelefone" name="alunoTelefone" class="maskPhone" value="<?=$alunoTelefone;?>" type="text">
                               <label for="alunoTelefone" class="active">Telefone</label>
                             </div>
                           </div>
@@ -328,7 +328,7 @@ $alunoSoubeAcademia = '';
                           <div class="row">
                             <div class="input-field col s12">
                               <i class="material-icons prefix">stay_current_portrait</i>
-                              <input id="alunoCelular" name="alunoCelular" value="<?=$alunoCelular;?>" type="text">
+                              <input id="alunoCelular" name="alunoCelular" class="maskCelular" value="<?=$alunoCelular;?>" type="text">
                               <label for="alunoCelular" class="active">Celular</label>
                             </div>
                           </div>

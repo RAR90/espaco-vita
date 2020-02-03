@@ -117,8 +117,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -135,8 +135,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -153,8 +153,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -171,8 +171,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -189,8 +189,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -207,8 +207,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -225,8 +225,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -243,8 +243,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -261,8 +261,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -279,8 +279,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -297,8 +297,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -315,8 +315,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -333,8 +333,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -351,8 +351,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -369,8 +369,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -387,8 +387,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -405,8 +405,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -423,8 +423,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -441,8 +441,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -459,8 +459,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -477,8 +477,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -495,8 +495,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -513,8 +513,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -531,8 +531,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -549,8 +549,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -567,8 +567,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -585,8 +585,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -603,8 +603,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -621,8 +621,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -639,8 +639,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
@@ -657,8 +657,8 @@
                                   </div>
                                 </td>
                                 <td class="text-center">
-                                  <a href="alunos_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                    <i class="material-icons">content_copy</i>
+                                  <a href="alunos_temporarios_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                    <i class="material-icons">edit</i>
                                   </a>
                                 </td>
                               </tr>
