@@ -166,7 +166,7 @@
         <!--/ Forms Accordion -->
 
         <div class="col l6 s12">
-          <div class="card-target card animate fadeLeft border-radius-6">
+          <div class="card-target card animate fadeLeft border-radius-6" style="overflow:visible">
             <div class="card-content">
               <h3 class="card-title mb-0">Informações sobre o pagamento</h3>
 
@@ -194,7 +194,6 @@
                 <!-- Valor pago -->
                 <div class="row">
                   <div class="input-field col s12">
-                    <i class="material-icons prefix">attach_money</i>
                     <input id="valorPago" name="valorPago" value="<?=$valorPago;?>" type="text">
                     <label for="valorPago" class="active">Valor Pago</label>
                   </div>
@@ -299,7 +298,7 @@
     ?>
 
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="app-assets/js/scripts/alunos-form.js" type="text/javascript"></script>
+    <script src="app-assets/js/scripts/financeiro-baixa-recebivel.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS-->
 
   </body>

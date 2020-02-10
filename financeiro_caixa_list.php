@@ -193,13 +193,13 @@
                       <table id="page-length-option" class="data-table">
                         <thead>
                           <tr>
-                            <th class="th-status" style="width: 30px">Status</th>
-                            <th class="th-vencimento" style="width: 80px">Vencimento</th>
-                            <th class="th-valor" style="width: 50px">Valor</th>
+                            <th class="th-status">Status</th>
+                            <th class="th-vencimento">Vencimento</th>
+                            <th class="th-valor">Valor</th>
                             <th class="th-origem">Origem</th>
-                            <th class="th-tipo" style="width: 50px;">Tipo</th>
-                            <th class="th-detalhes text-center" style="width: 50px">Detalhes</th>
-                            <th class="th-baixa text-center" style="width: 50px">Dar Baixa</th>
+                            <th class="th-tipo">Tipo</th>
+                            <th class="th-detalhes text-center">Detalhes</th>
+                            <th class="th-baixa text-center">Dar Baixa</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -297,13 +297,13 @@
                         </tbody>
                         <tfoot>
                           <tr>
-                            <th style="width: 30px">Status</th>
-                            <th style="width: 80px">Vencimento</th>
-                            <th style="width: 50px">Valor</th>
+                            <th>Status</th>
+                            <th>Vencimento</th>
+                            <th>Valor</th>
                             <th>Origem</th>
-                            <th style="width: 50px">Tipo</th>
-                            <th class="text-center" style="width: 50px">Detalhes</th>
-                            <th class="text-center" style="width: 50px">Dar Baixa</th>
+                            <th>Tipo</th>
+                            <th class="text-center">Detalhes</th>
+                            <th class="text-center">Dar Baixa</th>
                           </tr>
                         </tfoot>
                       </table>

@@ -147,13 +147,23 @@ table {
 	font-size: 13px !important;
 }
 
+.th-baixa,
+.th-detalhes {
+	background: none !important;
+	cursor: text !important;
+}
 
 .th-status {
 	width: 30px;
 }
 
-.th-baixa,
-.th-detalhes {
-	background: none !important;
-	cursor: text !important;
+.th-valor,
+.th-tipo,
+.th-detalhes,
+.th-baixa {
+	width: 50px;
+}
+
+.th-vencimento {
+	width: 80px;
 }
