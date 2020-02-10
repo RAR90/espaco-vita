@@ -8818,10 +8818,6 @@ nav.display-none.search-sm .nav-wrapper form .input-field input.search-box-sm:no
 
 .sidenav-active-square .sidenav li:not(.active) > a:hover
 {
-    margin: 0;
-    padding: 0 16px 0 20px !important;
-
-    border-radius: 0 5px 5px 0;
 }
 
 .sidenav-active-square .sidenav li > a,

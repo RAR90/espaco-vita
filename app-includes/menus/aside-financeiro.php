@@ -22,6 +22,34 @@
     data-menu="menu-navigation"
     data-collapsible="menu-accordion"
   >
+    <li class="bold <?=(strpos($self, 'financeiro_caixa_list')>0?'active':'')?>">
+      <a class="waves-effect waves-cyan " href="financeiro_caixa_list.php">
+        <i class="material-icons">meeting_room</i><span class="menu-title" data-i18n="">CAIXA</span>
+      </a>
+    </li>
+    <li class="navigation-header">
+      <a class="navigation-header-text">Inclusões</a>
+    </li>
+    <li class="bold <?=(strpos($self, 'planos_de_contas_list')>0?'active':'')?>">
+      <a class="waves-effect waves-cyan " href="planos_de_contas_list.php">
+        <i class="material-icons">menu_book</i><span class="menu-title" data-i18n="">Planos de Contas</span>
+      </a>
+    </li>
+    <li class="bold <?=(strpos($self, 'planos_de_contas_list')>0?'active':'')?>">
+      <a class="waves-effect waves-cyan " href="planos_de_contas_list.php">
+        <i class="material-icons">credit_card</i><span class="menu-title" data-i18n="">Contas Bancárias</span>
+      </a>
+    </li>
+    <li class="bold <?=(strpos($self, 'financeiro_contas_form')>0?'active':'')?>">
+      <a class="waves-effect waves-cyan " href="financeiro_contas_form.php">
+        <i class="material-icons">confirmation_number</i><span class="menu-title" data-i18n="">Lançar Conta</span>
+      </a>
+    </li>
+    <li class="bold <?=(strpos($self, 'financeiro_contas_form')>0?'active':'')?>">
+      <a class="waves-effect waves-cyan " href="financeiro_contas_form.php">
+        <i class="material-icons">local_atm</i><span class="menu-title" data-i18n="">Lançar Recebível</span>
+      </a>
+    </li>
     <li class="navigation-header">
       <a class="navigation-header-text">Contas a Pagar</a>
     </li>
