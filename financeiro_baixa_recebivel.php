@@ -59,7 +59,7 @@
 
     <?php
       include "app-includes/menus/header.php";
-      include "app-includes/menus/aside-alunos.php";
+      include "app-includes/menus/aside-financeiro.php";
     ?>
 
 
@@ -75,13 +75,13 @@
 
               <!-- Title & Breadcrumbs -->
               <div class="col s10 m6 l6">
-                <h5 class="breadcrumbs-title mt-0 mb-0">Aluno</h5>
+                <h5 class="breadcrumbs-title mt-0 mb-0">Financeiro</h5>
                 <ol class="breadcrumbs mb-0">
                   <li class="breadcrumb-item"><a href="dashboard_modern.php">Home</a>
                   </li>
-                  <li class="breadcrumb-item"><a href="alunos_list.php">Lista de Alunos</a>
+                  <li class="breadcrumb-item"><a href="financeiro_caixa_list.php">Caixa</a>
                   </li>
-                  <li class="breadcrumb-item active">Aluno
+                  <li class="breadcrumb-item active">Baixa Recebível
                   </li>
                 </ol>
               </div>
@@ -99,7 +99,7 @@
                 <div class="col s12">
                   <ul class="collapsible collapsible-accordion border-radius-6 white" style="overflow:hidden" data-collapsible="accordion">
 
-                    <!-- Form "Informações Pessoais" -->
+                    <!-- Form -->
                     <li class="active">
                       <div class="collapsible-header">
                         <i class="material-icons">receipt</i> DAR BAIXA
@@ -141,21 +141,10 @@
                           </div>
                           <!--/ Data do pagamento -->
 
-                          <!-- Gravar -->
-                          <div class="row">
-                            <div class="input-field col s12">
-                              <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
-                                Gravar
-                                <i class="material-icons left">save</i>
-                              </button>
-                            </div>
-                          </div>
-                          <!--/ Gravar -->
-
                         </form>
                       </div>
                     </li>
-                    <!--/ Form "Informações de Contato" -->
+                    <!--/ Form -->
 
                   </ul>
                 </div>
@@ -187,7 +176,6 @@
               </div>
               <!--/ Meio de Pagamento -->
 
-
               <!-- Dinheiro -->
               <div id="baixa-conta-dinheiro">
 
@@ -205,29 +193,213 @@
 
               <!-- Cartão de débito ou crédito -->
               <div id="baixa-conta-cartao">
+
+                <!-- Incluir parcela -->
+                <div class="row">
+                  <div class="input-field col s12">
+                    <button onclick="openModal('#cadastrar-pacela')" class="btn cyan waves-effect waves-light right" type="submit" name="action">
+                      <i class="material-icons left">add</i>
+                      Parcela
+                    </button>
+                  </div>
+                </div>
+                <!--/ Incluir parcela -->
+
+                <!-- Parcelas Cartão -->
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Parcela</th>
+                      <th>Valor</th>
+                      <th>Pago</th>
+                      <th>Comprovante</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>3 de 3</td>
+                      <td>R$ 300,00</td>
+                      <td class="text-center">
+                        <div class="switch">
+                          <label>
+                            <input type="checkbox">
+                            <span></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <input type="file">
+                      </td>
+                      <td class="text-center">
+                        <a class="text-red">
+                          <i class="material-icons">delete</i>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2 de 3</td>
+                      <td>R$ 300,00</td>
+                      <td class="text-center">
+                        <div class="switch">
+                          <label>
+                            <input type="checkbox" checked>
+                            <span></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <strong>comprovante_01.pdf</strong>
+                      </td>
+                      <td class="text-center">
+                        <a class="text-red">
+                          <i class="material-icons">delete</i>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1 de 3</td>
+                      <td>R$ 300,00</td>
+                      <td class="text-center">
+                        <div class="switch">
+                          <label>
+                            <input type="checkbox" checked>
+                            <span></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <strong>comprovante_02.pdf</strong>
+                      </td>
+                      <td class="text-center">
+                        <a class="text-red">
+                          <i class="material-icons">delete</i>
+                        </a>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+                <!--/ Parcelas Cartão -->
+
               </div>
               <!--/ Cartão de débito ou crédito -->
 
               <!-- Cheque -->
               <div id="baixa-conta-cheque">
 
-                <!-- Número do Cheque -->
+                <!-- Incluir Cheque -->
                 <div class="row">
                   <div class="input-field col s12">
-                    <input id="numCheque" name="numCheque" value="<?=$numCheque;?>" type="text">
-                    <label for="numCheque" class="active">Número do Cheque</label>
+                    <button onclick="openModal('#cadastrar-cheque')" class="btn cyan waves-effect waves-light right" type="submit" name="action">
+                      <i class="material-icons left">add</i>
+                      Cheque
+                    </button>
                   </div>
                 </div>
-                <!--/ Número do Cheque -->
+                <!--/ Incluir Cheque -->
 
-                <!-- Número do Banco -->
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input id="numBanco" name="numBanco" value="<?=$numBanco;?>" type="text">
-                    <label for="numBanco" class="active">Número do Banco</label>
-                  </div>
-                </div>
-                <!--/ Número do Banco -->
+                <!-- Cheques -->
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Bom Para</th>
+                      <th>Valor</th>
+                      <th>Compensado</th>
+                      <th>Arquivo</th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                      <td>26/03/2020</td>
+                      <td>R$ 300,00</td>
+                      <td class="text-center">
+                        <div class="switch">
+                          <label>
+                            <input type="checkbox">
+                            <span></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <input type="file">
+                      </td>
+                      <td class="text-center">
+                        <a onclick="openModal('#cadastrar-cheque')" class="text-cyan">
+                          <i class="material-icons">edit</i>
+                        </a>
+                      </td>
+                      <td class="text-center">
+                        <a class="text-red">
+                          <i class="material-icons">delete</i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>12/12/2019</td>
+                      <td>R$ 300,00</td>
+                      <td class="text-center">
+                        <div class="switch">
+                          <label>
+                            <input type="checkbox" checked>
+                            <span></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <input type="file">
+                      </td>
+                      <td class="text-center">
+                        <a onclick="openModal('#cadastrar-cheque')" class="text-cyan">
+                          <i class="material-icons">edit</i>
+                        </a>
+                      </td>
+                      <td class="text-center">
+                        <a class="text-red">
+                          <i class="material-icons">delete</i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>12/12/2019</td>
+                      <td>R$ 300,00</td>
+                      <td class="text-center">
+                        <div class="switch">
+                          <label>
+                            <input type="checkbox" checked>
+                            <span></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <input type="file">
+                      </td>
+                      <td class="text-center">
+                        <a onclick="openModal('#cadastrar-cheque')" class="text-cyan">
+                          <i class="material-icons">edit</i>
+                        </a>
+                      </td>
+                      <td class="text-center">
+                        <a class="text-red">
+                          <i class="material-icons">delete</i>
+                        </a>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+                <!--/ Cheques -->
+
+              </div>
+              <!--/ Cheque -->
+
+              <!-- Depósito -->
+              <div id="baixa-conta-deposito">
 
                 <!-- Agência -->
                 <div class="row">
@@ -247,29 +419,164 @@
                 </div>
                 <!--/ Conta -->
 
-                <!-- Bom Para (Data) -->
+                <!-- Data -->
                 <div class="row">
                   <div class="input-field col s12">
                     <input id="bomPara" name="bomPara" class="datepicker" value="<?=$bomPara;?>" type="date">
-                    <label for="bomPara" class="active strong">Bom Para (Data)</label>
+                    <label for="bomPara" class="active strong">Data</label>
                   </div>
                 </div>
-                <!--/ Bom Para (Data) -->
+                <!--/ Data -->
 
-              </div>
-              <!--/ Cheque -->
+                <!-- Valor -->
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="valorPago" name="valorPago" value="<?=$valorPago;?>" type="text">
+                    <label for="valorPago" class="active">Valor</label>
+                  </div>
+                </div>
+                <!--/ Valor -->
 
-              <!-- Depósito -->
-              <div id="baixa-conta-deposito">
-                <!-- TODO: incluir a poossibilidade de escolha dos bancos cadastrados como favorecidos -->
-                <!-- TODO: incluir campos da conta de origem conforme print -->
+                <!-- Favorecido -->
+                <div class="row">
+                  <div class="input-field col s12">
+                    <select name="meioPagamento" id="baixa-conta-meio-pagamento">
+                      <option value="0" disabled selected>Selecione a conta favorecida</option>
+                      <option value="">ITAÚ - CC.: 00000-1</option>
+                      <option value="">BB - CC.: 00000-1</option>
+                    </select>
+                    <label>Meio de Pagamento</label>
+                  </div>
+                </div>
+                <!--/ Favorecido -->
+
+                <!-- Comprovante -->
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>Comprovante</span>
+                    <input type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                  </div>
+                </div>
+                <!--/ Comprovante -->
+
               </div>
               <!--/ Depósito -->
 
+              <!-- Gravar -->
+              <div class="row">
+                <div class="input-field col s12">
+                  <button class="btn waves-effect waves-light right" type="submit" name="action">
+                    Gravar
+                    <i class="material-icons left">save</i>
+                  </button>
+                </div>
+              </div>
+              <!--/ Gravar -->
 
             </div>
           </div>
         </div>
+
+        <!-- Cadastrar Parcela -->
+        <div id="cadastrar-pacela" class="modal" style="width: 500px">
+          <div class="modal-content">
+            <h5>Cadastrar Parcela 4 de 4</h5>
+
+            <!-- Valor -->
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">attach_money</i>
+                <input id="valorPago" name="valorPago" value="<?=$valorPago;?>" type="text">
+                <label for="valorPago" class="active">Valor</label>
+              </div>
+            </div>
+            <!--/ Valor -->
+
+            <!-- Data -->
+            <div class="row pt-4">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">calendar_today</i>
+                <input id="dataPago" name="dataPago" class="datepicker" value="<?=$dataPago;?>" type="date">
+                <label for="dataPago" class="active strong">Data do pagamento</label>
+              </div>
+            </div>
+            <!--/ Data -->
+
+            <div class="col s12 pt-5 pb-5 text-center">
+              <a onclick="closeModal('#cadastrar-pacela')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">FECHAR</a>
+            </div>
+          </div>
+        </div>
+        <!--/ Cadastrar Parcela -->
+
+        <!-- Cadastrar Cheques -->
+        <div id="cadastrar-cheque" class="modal" style="width: 500px">
+          <div class="modal-content">
+            <h5>Cadastrar Cheque</h5>
+
+            <!-- Número do Cheque -->
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="numCheque" name="numCheque" value="<?=$numCheque;?>" type="text">
+                <label for="numCheque" class="active">Número do Cheque</label>
+              </div>
+            </div>
+            <!--/ Número do Cheque -->
+
+            <!-- Número do Banco -->
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="numBanco" name="numBanco" value="<?=$numBanco;?>" type="text">
+                <label for="numBanco" class="active">Número do Banco</label>
+              </div>
+            </div>
+            <!--/ Número do Banco -->
+
+            <!-- Agência -->
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="numAgencia" name="numAgencia" value="<?=$numAgencia;?>" type="text">
+                <label for="numAgencia" class="active">Número da Agência</label>
+              </div>
+            </div>
+            <!--/ Agência -->
+
+            <!-- Conta -->
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="numConta" name="numConta" value="<?=$numConta;?>" type="text">
+                <label for="numConta" class="active">Número da Conta</label>
+              </div>
+            </div>
+            <!--/ Conta -->
+
+            <!-- Bom Para (Data) -->
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="bomPara" name="bomPara" class="datepicker" value="<?=$bomPara;?>" type="date">
+                <label for="bomPara" class="active strong">Bom Para (Data)</label>
+              </div>
+            </div>
+            <!--/ Bom Para (Data) -->
+
+            <!-- Valor -->
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="valorPago" name="valorPago" value="<?=$valorPago;?>" type="text">
+                <label for="valorPago" class="active">Valor</label>
+              </div>
+            </div>
+            <!--/ Valor -->
+
+            <div class="col s12 pt-5 pb-5 text-center">
+              <a onclick="closeModal('#cadastrar-cheque')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">FECHAR</a>
+            </div>
+          </div>
+        </div>
+        <!--/ Cadastrar Cheques -->
 
         <?php
           // Notifications Menu

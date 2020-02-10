@@ -482,7 +482,6 @@
                 <div class="col s12">
                   <h5>Dar Baixa na Conta</h5>
                   <p>Para dar baixa na conta, preencha os dados e faça upload do comprovante.</p>
-
                   <form action="#">
                     <div class="file-field input-field">
                       <div class="btn">
@@ -494,7 +493,6 @@
                       </div>
                     </div>
                   </form>
-
                 </div>
                 <div class="col s12 pb-5 text-center">
                   <a onclick="closeModal('#baixar-conta')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">FECHAR</a>

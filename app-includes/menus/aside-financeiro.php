@@ -35,8 +35,8 @@
         <i class="material-icons">menu_book</i><span class="menu-title" data-i18n="">Planos de Contas</span>
       </a>
     </li>
-    <li class="bold <?=(strpos($self, 'planos_de_contas_list')>0?'active':'')?>">
-      <a class="waves-effect waves-cyan " href="planos_de_contas_list.php">
+    <li class="bold <?=(strpos($self, 'contas_bancarias')>0?'active':'')?>">
+      <a class="waves-effect waves-cyan " href="contas_bancarias.php">
         <i class="material-icons">credit_card</i><span class="menu-title" data-i18n="">Contas Bancárias</span>
       </a>
     </li>

@@ -167,3 +167,7 @@ table {
 .th-vencimento {
 	width: 80px;
 }
+
+table td a {
+	cursor: pointer !important;
+}
