@@ -1,3 +1,13 @@
+<?php
+
+$planoDeConta = '';
+
+if (isset($_GET['planoDeConta'])) {
+  $planoDeConta = $_GET['planoDeConta'];
+}
+
+?>
+
 <!DOCTYPE html>
 <html class="loading" lang="pt-Br" data-textdirection="ltr">
 
@@ -63,7 +73,7 @@
 
               <!-- Title & Breadcrumbs -->
               <div class="col s10 m6 l6">
-                <h5 class="breadcrumbs-title mt-0 mb-0">Contas a Pagar - Avulsos</h5>
+                <h5 class="breadcrumbs-title mt-0 mb-0">Contas a Pagar - <?=$planoDeConta;?></h5>
                 <ol class="breadcrumbs mb-0">
                   <li class="breadcrumb-item"><a href="dashboard_modern.php">Home</a>
                   </li>
@@ -95,8 +105,8 @@
                             <th style="width: 100px">Vencimento</th>
                             <th style="width: 100px">Valor</th>
                             <th>Origem</th>
-                            <th style="width: 100px">Período</th>
                             <th style="width: 100px">Status</th>
+                            <th class="text-center" style="width: 100px">Editar</th>
                             <th class="text-center" style="width: 100px">Detalhes</th>
                             <th class="text-center" style="width: 100px">Dar Baixa</th>
                           </tr>
@@ -105,10 +115,14 @@
 
                           <tr>
                             <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 1800,00</td>
-                            <td>Conta de Luz - CPFL</td>
-                            <td>Mensal</td>
+                            <td class="text-center">R$ 13000,00</td>
+                            <td>Nome de origem de conta, montado automaticamente através das opções escolhidas no lançamento.</td>
                             <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <a href="financeiro_contas_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
+                            </td>
                             <td class="text-center">
                               <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
@@ -123,10 +137,14 @@
 
                           <tr>
                             <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 1800,00</td>
-                            <td>Conta de Água - DAERP</td>
-                            <td>Mensal</td>
-                            <td class="red-text text-center">Atrasado</td>
+                            <td class="text-center">R$ 13000,00</td>
+                            <td>Nome de origem de conta, montado automaticamente através das opções escolhidas no lançamento.</td>
+                            <td class="blue-text text-center">Em dia</td>
+                            <td class="text-center">
+                              <a href="financeiro_contas_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
+                            </td>
                             <td class="text-center">
                               <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
@@ -141,46 +159,14 @@
 
                           <tr>
                             <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 1800,00</td>
-                            <td>Conta de Luz - CPFL</td>
-                            <td>Mensal</td>
+                            <td class="text-center">R$ 13000,00</td>
+                            <td>Nome de origem de conta, montado automaticamente através das opções escolhidas no lançamento.</td>
                             <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
+                              <a href="financeiro_contas_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                <i class="material-icons">edit</i>
+                              </a>
                             </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 1800,00</td>
-                            <td>Conta de Luz - CPFL</td>
-                            <td>Mensal</td>
-                            <td class="blue-text text-center">Em dia</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 1800,00</td>
-                            <td>Conta de Luz - CPFL</td>
-                            <td>Mensal</td>
-                            <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
                               <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
@@ -198,9 +184,9 @@
                           <tr>
                             <th style="width: 100px">Vencimento</th>
                             <th style="width: 100px">Valor</th>
-                            <th>Origem</th>
-                            <th style="width: 100px">Período</th>
+                            <th>Nome do Professor</th>
                             <th style="width: 100px">Status</th>
+                            <th class="text-center" style="width: 100px">Editar</th>
                             <th class="text-center" style="width: 100px">Detalhes</th>
                             <th class="text-center" style="width: 100px">Dar Baixa</th>
                           </tr>
@@ -214,27 +200,33 @@
 
             </div>
 
+
             <!-- Modal Detalhes da Conta -->
-            <div id="detalhes-conta" class="modal" style="width: 310px">
+            <div id="detalhes-conta" class="modal" style="width: 500px">
               <div class="modal-content">
-                <div class="col s12">
-                  <h5>Detalhes da Conta</h5>
-                  <p>Detalhes da conta e o arquivo anexado.</p>
-                </div>
-                <!-- <div class="col s12">
-                  <ul>
-                    <li><strong>Professor: </strong>Alexandre Exemplo</li>
-                    <li><strong>Aluno: </strong>Rafael Ribeiro</li>
-                  </ul>
-                  <ul>
-                    <li><strong>Data: </strong>22/12/2019</li>
-                    <li><strong>Horário: </strong>08:30</li>
-                  </ul>
-                </div> -->
-                <!-- <div class="col s12 pb-5 text-center">
-                  <a href="aulas_form.php" class="btn mb-5 mt-5 btn-small btn-flat waves-effect waves-light red accent-2 white-text">REAGENDAR</a>
-                </div> -->
-                <div class="col s12 pb-5 text-center">
+                <h5>Detalhes da Conta</h5>
+                <h6>Status: <span class="text-red">Atrasado</span></h6>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><strong>Tipo:</strong></td>
+                      <td>Conta a Pagar</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Origem:</strong></td>
+                      <td>Salário do professor Rafael Antônio</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Vencimento:</strong></td>
+                      <td>22/12/2019</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Valor Total:</strong></td>
+                      <td>R$ 1500,00</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="col s12 pt-5 pb-5 text-center">
                   <a onclick="closeModal('#detalhes-conta')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">FECHAR</a>
                 </div>
               </div>
@@ -242,27 +234,100 @@
             <!--/ Modal Detalhes da Conta -->
 
             <!-- Modal Baixar Conta -->
-            <div id="baixar-conta" class="modal" style="width: 400px">
+            <div id="baixar-conta" class="modal" style="width: 600px">
               <div class="modal-content">
                 <div class="col s12">
                   <h5>Dar Baixa na Conta</h5>
                   <p>Para dar baixa na conta, preencha os dados e faça upload do comprovante.</p>
 
-                  <form action="#">
-                    <div class="file-field input-field">
-                      <div class="btn">
-                        <span>Comprovante</span>
-                        <input type="file">
-                      </div>
-                      <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text">
-                      </div>
+                  <table class="mb-5">
+                    <tbody>
+                      <tr>
+                        <td><strong>Tipo:</strong></td>
+                        <td>Conta a Pagar</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Origem:</strong></td>
+                        <td>Salário do professor Rafael Antônio</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Vencimento:</strong></td>
+                        <td>22/12/2019</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Valor Total:</strong></td>
+                        <td>R$ 1500,00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="file-field input-field">
+                    <label class="active">Anexar Comprovante</label>
+                    <div class="btn mb-5 mt-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                      <span>Escolher Comprovante</span>
+                      <input type="file">
                     </div>
-                  </form>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text">
+                    </div>
+                  </div>
+
+                  <!-- Meio de Pagamento -->
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">credit_card</i>
+                      <select name="meioPagamento" id="baixa-conta-meio-pagamento">
+                        <option value="0" disabled selected>Selecione o meio de pagamento</option>
+                        <option value="dinheiro">Dinheiro</option>
+                        <option value="cartao">Cartão</option>
+                        <option value="cheque">Cheque</option>
+                        <option value="deposito">Deposito</option>
+                      </select>
+                      <label>Meio de Pagamento</label>
+                    </div>
+                  </div>
+                  <!--/ Meio de Pagamento -->
+
+                  <!-- Sacado -->
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">card_membership</i>
+                      <select name="meioPagamento" id="baixa-conta-meio-pagamento">
+                        <option value="0" disabled selected>Selecione o sacado</option>
+                        <option value="">ITAÚ - CC.: 00000-1</option>
+                        <option value="">BB - CC.: 00000-1</option>
+                      </select>
+                      <label>Sacado</label>
+                    </div>
+                  </div>
+                  <!--/ Sacado -->
+
+                  <!-- Data do pagamento -->
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">calendar_today</i>
+                      <input id="dataPago" name="dataPago" class="datepicker" value="<?=$dataPago;?>" type="date">
+                      <label for="dataPago" class="active strong">Data do pagamento</label>
+                    </div>
+                  </div>
+                  <!--/ Data do pagamento -->
+
+                  <!-- Valor pago -->
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">attach_money</i>
+                      <input id="valorPago" name="valorPago" value="" type="text">
+                      <label for="valorPago" class="active">Valor Pago</label>
+                    </div>
+                  </div>
+                  <!--/ Valor pago -->
 
                 </div>
                 <div class="col s12 pb-5 text-center">
-                  <a onclick="closeModal('#baixar-conta')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">FECHAR</a>
+                  <button onclick="closeModal('#baixar-conta')" class="btn waves-effect waves-light right mr-1" type="submit" name="action">
+                    Gravar
+                    <i class="material-icons left">save</i>
+                  </button>
                 </div>
               </div>
             </div>

@@ -209,7 +209,7 @@
                 <table class="table">
                   <thead>
                     <tr>
-                      <th>Parcela</th>
+                      <th>Data</th>
                       <th>Valor</th>
                       <th>Pago</th>
                       <th>Comprovante</th>
@@ -218,16 +218,9 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>3 de 3</td>
+                      <td>20/03/2020</td>
                       <td>R$ 300,00</td>
-                      <td class="text-center">
-                        <div class="switch">
-                          <label>
-                            <input type="checkbox">
-                            <span></span>
-                          </label>
-                        </div>
-                      </td>
+                      <td class="text-center"></td>
                       <td>
                         <input type="file">
                       </td>
@@ -238,12 +231,12 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>2 de 3</td>
+                      <td>20/02/2020</td>
                       <td>R$ 300,00</td>
                       <td class="text-center">
                         <div class="switch">
                           <label>
-                            <input type="checkbox" checked>
+                            <input type="checkbox" checked disabled>
                             <span></span>
                           </label>
                         </div>
@@ -258,12 +251,12 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>1 de 3</td>
+                      <td>20/01/2020</td>
                       <td>R$ 300,00</td>
                       <td class="text-center">
                         <div class="switch">
                           <label>
-                            <input type="checkbox" checked>
+                            <input type="checkbox" checked disabled>
                             <span></span>
                           </label>
                         </div>
@@ -468,7 +461,11 @@
               <!-- Gravar -->
               <div class="row">
                 <div class="input-field col s12">
-                  <button class="btn waves-effect waves-light right" type="submit" name="action">
+                  <button class="btn waves-effect blue waves-light right" type="submit" name="action">
+                    Imprimir Recibo
+                    <i class="material-icons left">print</i>
+                  </button>
+                  <button class="btn waves-effect waves-light right mr-1" type="submit" name="action">
                     Gravar
                     <i class="material-icons left">save</i>
                   </button>

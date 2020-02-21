@@ -113,9 +113,9 @@
                               </button>
                             </td>
                             <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                              <a href="financeiro_baixa_recebivel.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
                                 <i class="material-icons">assignment_turned_in</i>
-                              </button>
+                              </a>
                             </td>
                           </tr>
 
@@ -130,9 +130,9 @@
                               </button>
                             </td>
                             <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                              <a href="financeiro_baixa_recebivel.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
                                 <i class="material-icons">assignment_turned_in</i>
-                              </button>
+                              </a>
                             </td>
                           </tr>
 
@@ -147,317 +147,12 @@
                               </button>
                             </td>
                             <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                              <a href="financeiro_baixa_recebivel.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
                                 <i class="material-icons">assignment_turned_in</i>
-                              </button>
+                              </a>
                             </td>
                           </tr>
 
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="text-center">22/12/2019</td>
-                            <td class="text-center">R$ 690,00</td>
-                            <td>Exemplo de Aluno</td>
-                            <td class="text-center">Pago</td>
-                            <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
-                                <i class="material-icons">assignment_turned_in</i>
-                              </button>
-                            </td>
-                          </tr>
 
 
                         </tbody>
@@ -481,58 +176,41 @@
             </div>
 
             <!-- Modal Detalhes da Conta -->
-            <div id="detalhes-conta" class="modal" style="width: 310px">
+            <div id="detalhes-conta" class="modal" style="width: 500px">
               <div class="modal-content">
-                <div class="col s12">
-                  <h5>Detalhes da Conta</h5>
-                  <p>Detalhes da conta e o arquivo anexado.</p>
-                </div>
-                <!-- <div class="col s12">
-                  <ul>
-                    <li><strong>Professor: </strong>Alexandre Exemplo</li>
-                    <li><strong>Aluno: </strong>Rafael Ribeiro</li>
-                  </ul>
-                  <ul>
-                    <li><strong>Data: </strong>22/12/2019</li>
-                    <li><strong>Horário: </strong>08:30</li>
-                  </ul>
-                </div> -->
-                <!-- <div class="col s12 pb-5 text-center">
-                  <a href="aulas_form.php" class="btn mb-5 mt-5 btn-small btn-flat waves-effect waves-light red accent-2 white-text">REAGENDAR</a>
-                </div> -->
-                <div class="col s12 pb-5 text-center">
+                <h5>Detalhes da Conta</h5>
+                <h6>Status: <span class="text-red">Atrasado</span></h6>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><strong>Tipo:</strong></td>
+                      <td>Recebível</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Origem:</strong></td>
+                      <td>Pagamento Trimestral</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Aluno:</strong></td>
+                      <td>Maria Antonieta Delas Neves</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Vencimento:</strong></td>
+                      <td>22/12/2019</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Valor Total:</strong></td>
+                      <td>R$ 1500,00</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="col s12 pt-5 pb-5 text-center">
                   <a onclick="closeModal('#detalhes-conta')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">FECHAR</a>
                 </div>
               </div>
             </div>
             <!--/ Modal Detalhes da Conta -->
-
-            <!-- Modal Baixar Conta -->
-            <div id="baixar-conta" class="modal" style="width: 400px">
-              <div class="modal-content">
-                <div class="col s12">
-                  <h5>Dar Baixa na Conta</h5>
-                  <p>Para dar baixa na conta, preencha os dados e faça upload do comprovante.</p>
-
-                  <form action="#">
-                    <div class="file-field input-field">
-                      <div class="btn">
-                        <span>Comprovante</span>
-                        <input type="file">
-                      </div>
-                      <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text">
-                      </div>
-                    </div>
-                  </form>
-
-                </div>
-                <div class="col s12 pb-5 text-center">
-                  <a onclick="closeModal('#baixar-conta')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">FECHAR</a>
-                </div>
-              </div>
-            </div>
-            <!--/ Modal Baixar Conta -->
 
             <?php
               include "app-includes/menus/aside-right.php";

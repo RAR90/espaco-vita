@@ -22,7 +22,10 @@
     data-menu="menu-navigation"
     data-collapsible="menu-accordion"
   >
-    <li class="bold <?=(strpos($self, 'aulas_list')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="alunos_list.php">
+    <li class="bold <?=(strpos($self, 'modalidades_list')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="modalidades_list.php">
+      <i class="material-icons">fitness_center</i><span class="menu-title" data-i18n="">Modalidades</span></a>
+    </li>
+    <li class="bold <?=(strpos($self, 'aulas_list')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="aulas_list.php">
       <i class="material-icons">library_books</i><span class="menu-title" data-i18n="">Lista de Aulas</span></a>
     </li>
     <li class="bold <?=(strpos($self, 'aulas_form')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="aulas_form.php">

@@ -47,7 +47,7 @@
 
     <?php
       include "app-includes/menus/header.php";
-      include "app-includes/menus/aside-alunos.php";
+      include "app-includes/menus/aside-aulas.php";
     ?>
 
 
@@ -95,6 +95,20 @@
                         <div class="col s12">
                           <form action="aulas_list.php" class="pr-5">
 
+                            <div class="input-field col s12 mb-0">
+                              <i class="material-icons prefix">account_circle</i>
+                              <select>
+                                <option value="" disabled selected></option>
+                                <option value="" disabled selected>Rafael Ribeiro</option>
+                              </select>
+                              <label>Selecione um aluno</label>
+                            </div>
+
+                            <div class="input-field col s12 mb-5 pb-5 pt-0">
+                              <i class="material-icons prefix">local_activity</i>
+                              <label class="black-text">Esse aluno possui 50 créditos de 1 hora e 34 créditos de 30 minutos.</label>
+                            </div>
+
                             <div class="input-field col s12">
                               <i class="material-icons prefix">today</i>
                               <input id="data" type="text" class="datepicker" placeholder="04/11/2019">
@@ -127,15 +141,6 @@
                                 <option value="" disabled selected>Alexandre Exemplo</option>
                               </select>
                               <label>Selecione um Professor</label>
-                            </div>
-
-                            <div class="input-field col s12">
-                              <i class="material-icons prefix">account_circle</i>
-                              <select>
-                                <option value="" disabled selected></option>
-                                <option value="" disabled selected>Rafael Ribeiro</option>
-                              </select>
-                              <label>Selecione um aluno</label>
                             </div>
 
                             <div class="row">

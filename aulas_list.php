@@ -83,10 +83,6 @@
           <div class="container">
             <div class="section section-data-tables">
 
-
-
-
-
               <!-- Page Length Options -->
               <div class="row">
                 <div class="col s12">
@@ -108,7 +104,6 @@
                   </div>
                 </div>
               </div>
-
 
               <!-- Page Length Options -->
               <div class="row">

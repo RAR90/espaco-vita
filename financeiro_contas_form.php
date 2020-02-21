@@ -63,13 +63,13 @@
 
               <!-- Title & Breadcrumbs -->
               <div class="col s10 m6 l6">
-                <h5 class="breadcrumbs-title mt-0 mb-0">Incluir Conta</h5>
+                <h5 class="breadcrumbs-title mt-0 mb-0">Lançar Conta</h5>
                 <ol class="breadcrumbs mb-0">
                   <li class="breadcrumb-item"><a href="dashboard_modern.php">Home</a>
                   </li>
                   <li class="breadcrumb-item"><a href="aulas_list.php">Financeiro</a>
                   </li>
-                  <li class="breadcrumb-item active">Incluir Conta
+                  <li class="breadcrumb-item active">Lançar Conta
                   </li>
                 </ol>
               </div>
@@ -86,80 +86,82 @@
               <!-- Page Length Options -->
               <div class="row">
 
-                <div class="col s12 l6">
+                <div class="col s12">
 
                   <!-- Informações Básicas -->
-                  <div class="card border-radius-6 pt-5">
+                  <div class="card border-radius-6">
                     <div class="card-content">
+
                       <div class="row">
-                        <div class="col s12">
+                        <div class="col s12 pt-2">
                           <form action="financeiro_contas_list.php" class="pr-5">
 
+                            <!-- Plano de Contas -->
+                            <div class="input-field col s12">
+                              <i class="material-icons prefix">menu_book</i>
+                              <select>
+                                <option value="" disabled selected>Escolha um plano de contas</option>
+                                <option value="">Infraestrutura</option>
+                                <option value="">Funcionários</option>
+                                <option value="">Terceirizados</option>
+                                <option value="">Avulsos</option>
+                              </select>
+                              <label>Plano de Contas</label>
+                            </div>
+                            <!--/ Plano de Contas -->
+
+                            <!-- Funcionário ou Professor -->
+                            <div class="input-field col s12">
+                              <i class="material-icons prefix">account_circle</i>
+                              <select>
+                                <option value="" disabled selected>Escolha um Funcionário ou Professor</option>
+                                <option value="">Hugo Savoia</option>
+                                <option value="">Rafael Ribeiro</option>
+                                <option value="">Raquel Pacheco</option>
+                              </select>
+                              <label>Funcionário ou Professor (opcional)</label>
+                            </div>
+                            <!--/ Funcionário ou Professor -->
+
+                            <!-- Vencimento -->
                             <div class="input-field col s12">
                               <i class="material-icons prefix">today</i>
                               <input id="data" type="text" class="datepicker" placeholder="04/11/2019">
                               <label for="data" class="active">Data de vencimento</label>
                             </div>
+                            <!--/ Vencimento -->
 
-                            <div class="input-field col s12">
-                              <i class="material-icons prefix">assignment</i>
-                              <select>
-                                <option value="" disabled selected>Infraestrutura</option>
-                                <option value="" disabled selected>Funcionários</option>
-                                <option value="" disabled selected>Terceirizados</option>
-                                <option value="" disabled selected>Avulsos</option>
-                              </select>
-                              <label>Categoria</label>
-                            </div>
-
-                            <div class="input-field col s12">
-                              <i class="material-icons prefix">today</i>
-                              <select>
-                                <option value="" disabled selected>Mensal</option>
-                                <option value="" disabled selected>Semanal</option>
-                                <option value="" disabled selected>Único</option>
-                              </select>
-                              <label>Período</label>
-                            </div>
-
-                            <div class="input-field col s12">
-                              <i class="material-icons prefix">assignment_ind</i>
-                              <input id="data" type="text" placeholder="04/11/2019">
-                              <label for="data" class="active">Identificação</label>
-                            </div>
-
+                            <!-- Valor -->
                             <div class="input-field col s12">
                               <i class="material-icons prefix">attach_money</i>
                               <input id="data" type="text" placeholder="50,00">
                               <label for="data" class="active">Valor</label>
                             </div>
+                            <!--/ Valor -->
 
-
-                            <div class="input-field col s12 mt-5">
-                              <label for="data" class="active pt-1">Documento da conta (PDF, PNG, JPG)</label>
-                              <div class="file-field input-field">
-                                <div class="btn">
-                                  <span>Arquivo</span>
-                                  <input type="file">
-                                </div>
-                                <div class="file-path-wrapper">
-                                  <input class="file-path validate" type="text">
-                                </div>
-                              </div>
+                            <!-- Observação -->
+                            <div class="input-field col s12">
+                              <i class="material-icons prefix">book</i>
+                              <textarea name="alunoObs" id="alunoObs" rows="10"></textarea>
+                              <label for="alunoObs" class="active label-textarea">Observação</label>
                             </div>
+                            <!--/ Observação -->
 
+                            <!-- Botão Lançar -->
                             <div class="row">
                               <div class="input-field col s12">
-                                <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
-                                  Incluir
+                                <button class="waves-effect waves-light btn-large float-right mr-1 mb-1">
+                                  LANÇAR
                                 </button>
                               </div>
                             </div>
+                            <!--/ Botão Lançar -->
 
                           </form>
 
                         </div>
                       </div>
+
                     </div>
                   </div>
                   <!--/ Informações Básicas -->
