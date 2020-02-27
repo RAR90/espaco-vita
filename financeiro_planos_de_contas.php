@@ -1,57 +1,8 @@
 <?php
 
-// Inputs Invisíveis
-$alunoID = '';
-
-// Informações Pessoais
-$alunoMatricula = '';
-$alunoNome = '';
-$alunoSexo = 'm'; // 'm' ou 'f'
-$alunoDataNascimento = '1990-03-26';
-$alunoCPF = '405.953.048-42';
-$alunoIdentidade = '';
-$alunoUFIdentidade = '';
-$alunoEstadoCivil = 'a'; // 'c', 's' ou 'a'
-$alunoProfissao = '';
-$alunoEmpresa = '';
-$alunoTelefoneEmpresa = '';
-$alunoObs = '';
-
-// Informações de Contato
-$alunoTelefone = '';
-$alunoCelular = '';
-$alunoEmail = '';
-
-// Endereço
-$alunoEndereco = '';
-$alunoBairro = '';
-$alunoCidade = '';
-$alunoCEP = '';
-$alunoEstado = '';
-
-// Outras informações
-$alunoDataExame = '1990-03-26';
-$alunoDataAvaliacao = '1990-03-26';
-$alunoHorario = '04:20 PM';
-$alunoSenha = '';
-$alunoSenhaRetype = '';
-
-//Quiz
-$alunoObjetivo = '';
-$alunoSoubeAcademia = '';
-
-// Responsáveis
-
-// Informações dos responsáveis
-$alunoResponsavel = '';
-$alunoResponsavelCPF = '';
-$alunoTelefoneResponsavel = '';
-$alunoPai = '';
-$alunoPaiCPF = '';
-$alunoTelefonePai = '';
-$alunoMae = '';
-$alunoMaeCPF = '';
-$alunoTelefoneMae = '';
+$planoNome = '';
+$planoIcone = '';
+$planoDescricao = '';
 
 ?>
 
@@ -114,11 +65,10 @@ $alunoTelefoneMae = '';
       <div class="row">
         <div class="content-wrapper-before gradient-45deg-indigo-light-blue"></div>
 
+        <!-- Title & Breadcrumbs -->
         <div class="breadcrumbs-dark pb-0 pt-2" id="breadcrumbs-wrapper">
           <div class="container">
             <div class="row">
-
-              <!-- Title & Breadcrumbs -->
               <div class="col s10 m6 l6">
                 <h5 class="breadcrumbs-title mt-0 mb-0">Planos de Contas</h5>
                 <ol class="breadcrumbs mb-0">
@@ -130,17 +80,17 @@ $alunoTelefoneMae = '';
                   </li>
                 </ol>
               </div>
-              <!--/ Title & Breadcrumbs -->
-
             </div>
           </div>
         </div>
+        <!--/ Title & Breadcrumbs -->
 
+        <!-- Conteúdo -->
         <div class="col s12">
           <div class="container">
-            <div class="section section-data-tables">
 
-              <!-- Page Length Options -->
+            <!-- Tabela de Dados -->
+            <div class="section section-data-tables">
               <div class="row">
                 <div class="col s12">
                   <div class="card border-radius-6">
@@ -247,8 +197,8 @@ $alunoTelefoneMae = '';
                   </div>
                 </div>
               </div>
-
             </div>
+            <!--/ Tabela de Dados -->
 
             <!-- Novo Plano de Conta -->
             <div id="plano-de-conta" class="modal" style="width: 600px; overflow:visible">
@@ -262,8 +212,8 @@ $alunoTelefoneMae = '';
                     <!-- Nome -->
                     <div class="row">
                       <div class="input-field col s12">
-                        <input id="alunoNome" name="alunoNome" value="<?=$alunoNome;?>" type="text">
-                        <label for="alunoNome" class="active">Nome</label>
+                        <input id="planoNome" name="planoNome" value="<?=$planoNome;?>" type="text">
+                        <label for="planoNome" class="active">Nome</label>
                       </div>
                     </div>
                     <!--/ Nome -->
@@ -271,8 +221,8 @@ $alunoTelefoneMae = '';
                     <!-- Ícones -->
                     <div class="row">
                       <div class="input-field col s12">
-                        <label for="filtroTipo" class="active strong">Ícone</label>
-                        <select name="" id="filtroTipo">
+                        <label for="planoIcone" class="active strong">Ícone</label>
+                        <select name="filtroTipo" id="filtroTipo">
                           <option value="" selected>Selecione um Ícone</option>
                           <option value="3d_rotation">3d_rotation</option>
                           <option value="ac_unit">ac_unit</option>
@@ -1214,8 +1164,8 @@ $alunoTelefoneMae = '';
                     <!-- Descrição -->
                     <div class="row">
                       <div class="input-field col s12">
-                        <textarea name="alunoObs" id="alunoObs" rows="10"><?=$alunoObs;?></textarea>
-                        <label for="alunoObs" class="active label-textarea">Descrição</label>
+                        <textarea name="planoDescricao" id="planoDescricao" rows="10"><?=$planoDescricao;?></textarea>
+                        <label for="planoDescricao" class="active label-textarea">Descrição</label>
                       </div>
                     </div>
                     <!--/ Descrição -->

@@ -1,8 +1,14 @@
 <?php
   $filtroData = date('Y-m-d');
+  $filtroTipo = '';
   $fechamentoObs = '';
   $retiradaObs = '';
   $valorRetirada = '';
+  $caixaValorEntradas = 'R$ 7291,90';
+  $caixaValorSaldo = 'R$ 7291,90';
+  $caixaValorSaidas = 'R$ 00,00';
+  $caixaValorInicial = 'R$ 00,00';
+  $caixaAberturaDataHora = '25/12/2019 às 08:00';
 ?>
 
 <!DOCTYPE html>
@@ -139,24 +145,29 @@
                 <div class="col s12 xl6">
                   <div class="card border-radius-6 mb-0 overflow-visible">
                     <div class="card-content">
+
+                      <!-- Abertura do Caixa -->
                       <div class="row">
                         <div class="col s12">
                           <strong>Abertura do Caixa</strong> <br>
                           <i class="material-icons float-left">access_time</i>
-                          <span class="float-left ml-1" style="margin-top:1px">25/12/2019 às 08:00</span>
+                          <span class="float-left ml-1" style="margin-top:1px"><?=$caixaAberturaDataHora;?></span>
                         </div>
                       </div>
+                      <!--/ Abertura do Caixa -->
+
+                      <!-- Tabela Caixa -->
                       <div class="row">
                         <div class="col m6">
                           <table>
                             <tbody>
                               <tr>
                                 <td><strong>Inicial:</strong></td>
-                                <td>R$ 00,00</td>
+                                <td><?=$caixaValorInicial;?></td>
                               </tr>
                               <tr>
-                                <td><strong>Entrada:</strong></td>
-                                <td>R$ 7291,90</td>
+                                <td><strong>Entradas:</strong></td>
+                                <td><?=$caixaValorEntradas;?></td>
                               </tr>
                             </tbody>
                           </table>
@@ -165,17 +176,19 @@
                           <table>
                             <tbody>
                               <tr>
-                                <td><strong>Saída:</strong></td>
-                                <td>R$ 00,00</td>
+                                <td><strong>Saídas:</strong></td>
+                                <td><?=$caixaValorSaidas;?></td>
                               </tr>
                               <tr>
                                 <td><strong>Saldo:</strong></td>
-                                <td>R$ 7291,90</td>
+                                <td><?=$caixaValorSaldo;?></td>
                               </tr>
                             </tbody>
                           </table>
                         </div>
                       </div>
+                      <!--/ Tabela Caixa -->
+
                     </div>
                   </div>
                 </div>

@@ -1,3 +1,10 @@
+<?php
+
+$modalidadeNome = '';
+$modalidadeCredito = '';
+
+?>
+
 <!DOCTYPE html>
 <html class="loading" lang="pt-Br" data-textdirection="ltr">
 
@@ -53,15 +60,14 @@
 
     <!-- BEGIN: Page Main-->
     <div id="main">
-
       <div class="row">
         <div class="content-wrapper-before gradient-45deg-indigo-light-blue"></div>
 
+        <!-- Title & Breadcrumbs -->
         <div class="breadcrumbs-dark pb-0 pt-2" id="breadcrumbs-wrapper">
           <div class="container">
             <div class="row">
 
-              <!-- Title & Breadcrumbs -->
               <div class="col s10 m6 l6">
                 <h5 class="breadcrumbs-title mt-0 mb-0">Modalidades</h5>
                 <ol class="breadcrumbs mb-0">
@@ -73,17 +79,18 @@
                   </li>
                 </ol>
               </div>
-              <!--/ Title & Breadcrumbs -->
 
             </div>
           </div>
         </div>
+        <!--/ Title & Breadcrumbs -->
 
+        <!-- Conteúdo -->
         <div class="col s12">
           <div class="container">
-            <div class="section section-data-tables">
 
-              <!-- Page Length Options -->
+            <!-- Tabela de dados -->
+            <div class="section section-data-tables">
               <div class="row">
                 <div class="col s12">
                   <div class="card border-radius-6">
@@ -151,8 +158,8 @@
                   </div>
                 </div>
               </div>
-
             </div>
+            <!--/ Tabela de dados -->
 
             <!-- Modal Detalhes da Aula -->
             <div id="editar-modalidade" class="modal" style="width: 600px">
@@ -165,23 +172,27 @@
 
                   <form action="aulas_list.php" class="pr-5">
 
+                    <!-- Nome da Modalidade -->
                     <div class="input-field col s12">
                       <i class="material-icons prefix">fitness_center</i>
-                      <input id="name3" type="text">
-                      <label for="name3" class="active">Nome da Modalidade</label>
+                      <input id="modalidadeNome" type="text" value="<?=$modalidadeNome;?>">
+                      <label for="modalidadeNome" class="active">Nome da Modalidade</label>
                     </div>
+                    <!--/ Nome da Modalidade -->
 
+                    <!-- Tipo de Crédito -->
                     <div class="input-field col s12 mb-0">
                       <i class="material-icons prefix">access_time</i>
-                      <select>
+                      <select name="modalidadeCredito">
                         <option value="" disabled selected>Selecione o Tipo de Crédito</option>
                         <option value="" disabled selected>Uma Hora</option>
                         <option value="" disabled selected>Meia Hora</option>
                       </select>
                       <label>Tipo de Crédito</label>
                     </div>
+                    <!--/ Tipo de Crédito -->
 
-
+                    <!-- Gravar -->
                     <div class="row mb-5">
                       <div class="input-field col s12">
                         <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
@@ -190,6 +201,7 @@
                         </button>
                       </div>
                     </div>
+                    <!--/ Gravar -->
 
                   </form>
 
@@ -211,8 +223,9 @@
 
           </div>
         </div>
-      </div>
+        <!--/ Conteúdo -->
 
+      </div>
     </div>
     <!-- END: Page Main-->
 

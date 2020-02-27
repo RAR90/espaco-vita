@@ -1,60 +1,10 @@
 <?php
 
-// Inputs Invisíveis
-$alunoID = '';
-
-// Informações Pessoais
-$alunoMatricula = '';
-$alunoNome = '';
-$alunoSexo = 'm'; // 'm' ou 'f'
-$alunoDataNascimento = '1990-03-26';
-$alunoCPF = '405.953.048-42';
-$alunoIdentidade = '';
-$alunoUFIdentidade = '';
-$alunoEstadoCivil = 'a'; // 'c', 's' ou 'a'
-$alunoProfissao = '';
-$alunoEmpresa = '';
-$alunoTelefoneEmpresa = '';
-$alunoObs = '';
-
-// Informações de Contato
-$alunoTelefone = '';
-$alunoCelular = '';
-$alunoEmail = '';
-
-// Endereço
-$alunoEndereco = '';
-$alunoBairro = '';
-$alunoCidade = '';
-$alunoCEP = '';
-$alunoEstado = '';
-
-// Outras informações
-$alunoDataExame = '1990-03-26';
-$alunoDataAvaliacao = '1990-03-26';
-$alunoHorario = '04:20 PM';
-$alunoSenha = '';
-$alunoSenhaRetype = '';
-
-//Quiz
-$alunoObjetivo = '';
-$alunoSoubeAcademia = '';
-
-// Responsáveis
-
-// Informações dos responsáveis
-$alunoResponsavel = '';
-$alunoResponsavelCPF = '';
-$alunoTelefoneResponsavel = '';
-$alunoPai = '';
-$alunoPaiCPF = '';
-$alunoTelefonePai = '';
-$alunoMae = '';
-$alunoMaeCPF = '';
-$alunoTelefoneMae = '';
-
-$numAgencia = '';
-$numConta = '';
+$contaTitular = '';
+$contaTitularCPF = '';
+$contaAgencia = '';
+$contaNumero = '';
+$contaObs = '';
 
 ?>
 
@@ -117,11 +67,10 @@ $numConta = '';
       <div class="row">
         <div class="content-wrapper-before gradient-45deg-indigo-light-blue"></div>
 
+        <!-- Title & Breadcrumbs -->
         <div class="breadcrumbs-dark pb-0 pt-2" id="breadcrumbs-wrapper">
           <div class="container">
             <div class="row">
-
-              <!-- Title & Breadcrumbs -->
               <div class="col s10 m6 l6">
                 <h5 class="breadcrumbs-title mt-0 mb-0">Contas Bancárias</h5>
                 <ol class="breadcrumbs mb-0">
@@ -133,17 +82,18 @@ $numConta = '';
                   </li>
                 </ol>
               </div>
-              <!--/ Title & Breadcrumbs -->
-
             </div>
           </div>
         </div>
+        <!--/ Title & Breadcrumbs -->
 
+        <!-- Conteúdo -->
         <div class="col s12">
           <div class="container">
+
+            <!-- Tabela de dados -->
             <div class="section section-data-tables">
 
-              <!-- Page Length Options -->
               <div class="row">
                 <div class="col s12">
                   <div class="card border-radius-6">
@@ -241,6 +191,7 @@ $numConta = '';
               </div>
 
             </div>
+            <!--/ Tabela de dados -->
 
             <!-- Novo Plano de Conta -->
             <div id="plano-de-conta" class="modal" style="width: 600px">
@@ -251,20 +202,20 @@ $numConta = '';
 
                   <form action="#">
 
-                    <!-- Nome -->
+                    <!-- Títular da Conta -->
                     <div class="row">
                       <div class="input-field col s12">
-                        <input id="alunoNome" name="alunoNome" value="<?=$alunoNome;?>" type="text">
-                        <label for="alunoNome" class="active">Títular</label>
+                        <input id="contaTitular" name="contaTitular" value="<?=$contaTitular;?>" type="text">
+                        <label for="contaTitular" class="active">Títular</label>
                       </div>
                     </div>
-                    <!--/ Nome -->
+                    <!--/ Títular da Conta -->
 
                     <!-- CPF -->
                     <div class="row">
                       <div class="input-field col s12">
-                        <input id="alunoCPF" name="alunoCPF" class="maskCpf" value="<?=$alunoCPF;?>" type="text">
-                        <label for="alunoCPF" class="active">CPF do Títular</label>
+                        <input id="contaTitularCPF" name="contaTitularCPF" class="maskCpf" value="<?=$contaTitularCPF;?>" type="text">
+                        <label for="contaTitularCPF" class="active">CPF do Títular</label>
                       </div>
                     </div>
                     <!--/ CPF -->
@@ -272,8 +223,8 @@ $numConta = '';
                     <!-- Agência -->
                     <div class="row">
                       <div class="input-field col s12">
-                        <input id="numAgencia" name="numAgencia" value="<?=$numAgencia;?>" type="text">
-                        <label for="numAgencia" class="active">Número da Agência</label>
+                        <input id="contaAgencia" name="contaAgencia" value="<?=$contaAgencia;?>" type="text">
+                        <label for="contaAgencia" class="active">Número da Agência</label>
                       </div>
                     </div>
                     <!--/ Agência -->
@@ -281,8 +232,8 @@ $numConta = '';
                     <!-- Conta -->
                     <div class="row">
                       <div class="input-field col s12">
-                        <input id="numConta" name="numConta" value="<?=$numConta;?>" type="text">
-                        <label for="numConta" class="active">Número da Conta</label>
+                        <input id="contaNumero" name="contaNumero" value="<?=$contaNumero;?>" type="text">
+                        <label for="contaNumero" class="active">Número da Conta</label>
                       </div>
                     </div>
                     <!--/ Conta -->
@@ -290,8 +241,8 @@ $numConta = '';
                     <!-- Observação -->
                     <div class="row">
                       <div class="input-field col s12">
-                        <textarea name="alunoObs" id="alunoObs" rows="10"><?=$alunoObs;?></textarea>
-                        <label for="alunoObs" class="active label-textarea">Observação</label>
+                        <textarea name="contaObs" id="contaObs" rows="10"><?=$contaObs;?></textarea>
+                        <label for="contaObs" class="active label-textarea">Observação</label>
                       </div>
                     </div>
                     <!--/ Observação -->
@@ -319,6 +270,8 @@ $numConta = '';
 
           </div>
         </div>
+        <!--/ Conteúdo -->
+
       </div>
 
     </div>

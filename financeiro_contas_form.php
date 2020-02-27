@@ -1,3 +1,13 @@
+<?php
+
+$planoDeContas = '';
+$professor = '';
+$valor = '';
+$vencimento = '1990-03-26';
+$obs = '';
+
+?>
+
 <!DOCTYPE html>
 <html class="loading" lang="pt-Br" data-textdirection="ltr">
 
@@ -99,7 +109,7 @@
                             <!-- Plano de Contas -->
                             <div class="input-field col s12">
                               <i class="material-icons prefix">menu_book</i>
-                              <select>
+                              <select name="planoDeContas">
                                 <option value="" disabled selected>Escolha um plano de contas</option>
                                 <option value="">Infraestrutura</option>
                                 <option value="">Funcionários</option>
@@ -113,7 +123,7 @@
                             <!-- Funcionário ou Professor -->
                             <div class="input-field col s12">
                               <i class="material-icons prefix">account_circle</i>
-                              <select>
+                              <select name="professor">
                                 <option value="" disabled selected>Escolha um Funcionário ou Professor</option>
                                 <option value="">Hugo Savoia</option>
                                 <option value="">Rafael Ribeiro</option>
@@ -123,27 +133,27 @@
                             </div>
                             <!--/ Funcionário ou Professor -->
 
+                            <!-- Valor -->
+                            <div class="input-field col s4">
+                              <i class="material-icons prefix">attach_money</i>
+                              <input id="valor" name="valor" type="text" placeholder="50,00" value="<?=$valor;?>">
+                              <label for="valor" class="active">Valor</label>
+                            </div>
+                            <!--/ Valor -->
+
                             <!-- Vencimento -->
                             <div class="input-field col s12">
                               <i class="material-icons prefix">today</i>
-                              <input id="data" type="text" class="datepicker" placeholder="04/11/2019">
-                              <label for="data" class="active">Data de vencimento</label>
+                              <input id="vencimento" name="vencimento" type="date" class="datepicker" value="<?=$vencimento;?>">
+                              <label for="vencimento" class="active">Data de vencimento</label>
                             </div>
                             <!--/ Vencimento -->
-
-                            <!-- Valor -->
-                            <div class="input-field col s12">
-                              <i class="material-icons prefix">attach_money</i>
-                              <input id="data" type="text" placeholder="50,00">
-                              <label for="data" class="active">Valor</label>
-                            </div>
-                            <!--/ Valor -->
 
                             <!-- Observação -->
                             <div class="input-field col s12">
                               <i class="material-icons prefix">book</i>
-                              <textarea name="alunoObs" id="alunoObs" rows="10"></textarea>
-                              <label for="alunoObs" class="active label-textarea">Observação</label>
+                              <textarea name="obs" id="obs" rows="10"><?=$obs;?></textarea>
+                              <label for="obs" class="active label-textarea">Observação</label>
                             </div>
                             <!--/ Observação -->
 

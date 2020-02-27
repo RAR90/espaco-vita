@@ -1,3 +1,27 @@
+<?php
+
+// Alunos
+$recebivelAluno = '';
+$recebivelAlunoModalidade = '';
+$valorRecebivel = '';
+$recebivelDesconto = '';
+$recebivelAlunosCreditos = '';
+$recebivelValorTotal = '';
+$recebivelVencimento = '1990-03-26';
+
+// Eventos
+$recebivelEventoAluno = '';
+$recebivelEvento = '';
+$valorRecebivelEvento = '';
+$recebivelEventoVencimento = '1990-03-26';
+
+// Outros
+$recebivelOutrosOrigem = '';
+$valorRecebivelOutros = '';
+$recebivelOutrosVencimento = '1990-03-26';
+
+?>
+
 <!DOCTYPE html>
 <html class="loading" lang="pt-Br" data-textdirection="ltr">
 
@@ -57,11 +81,10 @@
       <div class="row">
         <div class="content-wrapper-before gradient-45deg-indigo-light-blue"></div>
 
+        <!-- Title & Breadcrumbs -->
         <div class="breadcrumbs-dark pb-0 pt-2" id="breadcrumbs-wrapper">
           <div class="container">
             <div class="row">
-
-              <!-- Title & Breadcrumbs -->
               <div class="col s10 m6 l6">
                 <h5 class="breadcrumbs-title mt-0 mb-0">Lançar Recebível</h5>
                 <ol class="breadcrumbs mb-0">
@@ -73,27 +96,23 @@
                   </li>
                 </ol>
               </div>
-              <!--/ Title & Breadcrumbs -->
-
             </div>
           </div>
         </div>
+        <!--/ Title & Breadcrumbs -->
 
+        <!-- Conteúdo -->
         <div class="col s12">
           <div class="container">
+
             <div class="section section-data-tables">
-
-              <!-- Page Length Options -->
               <div class="row">
-
                 <div class="col s12">
-
-                  <!-- Informações Básicas -->
                   <div class="card border-radius-6">
                     <div class="card-content">
-
-
                       <div class="row">
+
+                        <!-- Tabs Menu -->
                         <div class="col s12 mb-3">
                           <ul class="tabs">
                             <li class="tab col"><a class="active" href="#tab-alunos">Alunos</a></li>
@@ -101,6 +120,9 @@
                             <li class="tab col"><a href="#tab-outros">Outras Fontes</a></li>
                           </ul>
                         </div>
+                        <!--/ Tabs Menu -->
+
+                        <!-- Alunos Tab -->
                         <div id="tab-alunos" class="col s12">
                           <div class="row">
                             <div class="col s12">
@@ -109,7 +131,7 @@
                                 <!-- Aluno -->
                                 <div class="input-field col s12">
                                   <i class="material-icons prefix">account_circle</i>
-                                  <select name="meioPagamento" id="baixa-conta-meio-pagamento">
+                                  <select name="recebivelAluno" id="baixa-conta-meio-pagamento">
                                     <option value="0" disabled selected>Selecione um Aluno</option>
                                     <option value="dinheiro">Hugo Savoia</option>
                                     <option value="dinheiro">Rafael Antonio</option>
@@ -121,7 +143,7 @@
                                 <!-- Modalidade -->
                                 <div class="input-field col s12">
                                   <i class="material-icons prefix">content_paste</i>
-                                  <select name="meioPagamento" id="baixa-conta-meio-pagamento">
+                                  <select name="recebivelAlunoModalidade" id="baixa-conta-meio-pagamento">
                                     <option value="0" disabled selected>Selecione uma Modalidade</option>
                                     <option value="dinheiro">Pilates (Trimestral)</option>
                                     <option value="dinheiro">Funcional (Trimestral)</option>
@@ -134,44 +156,45 @@
                                 <!-- Valor -->
                                 <div class="input-field col s4">
                                   <i class="material-icons prefix">attach_money</i>
-                                  <input id="data" type="text" placeholder="50,00">
-                                  <label for="data" class="active">Valor</label>
+                                  <input id="valorRecebivel" name="valorRecebivel" type="text" placeholder="50,00" value="<?=$valorRecebivel;?>">
+                                  <label for="valorRecebivel" class="active">Valor</label>
                                 </div>
                                 <!--/ Valor -->
 
                                 <!-- Desconto (%) -->
                                 <div class="input-field col s4">
                                   <i class="material-icons prefix">local_atm</i>
-                                  <input id="data" type="text" placeholder="500">
-                                  <label for="data" class="active">Desconto (%)</label>
+                                  <input id="recebivelDesconto" name="recebivelDesconto" type="text" placeholder="500" value="<?=$recebivelDesconto;?>">
+                                  <label for="recebivelDesconto" class="active">Desconto (%)</label>
                                 </div>
                                 <!--/ Desconto (%) -->
 
                                 <!-- Créditos -->
                                 <div class="input-field col s4">
                                   <i class="material-icons prefix">confirmation_number</i>
-                                  <input id="data" type="text" placeholder="500">
-                                  <label for="data" class="active">Créditos</label>
+                                  <input id="recebivelAlunosCreditos" name="recebivelAlunosCreditos" type="text" placeholder="500" value="<?=$recebivelAlunosCreditos;?>">
+                                  <label for="recebivelAlunosCreditos" class="active">Créditos</label>
                                 </div>
                                 <!--/ Créditos -->
 
                                 <!-- Valor Total -->
+                                <!-- TODO: Esse campo deve ser calculado automaticamente -->
                                 <div class="input-field col s12">
                                   <i class="material-icons prefix">attach_money</i>
-                                  <input id="data" type="text" placeholder="50,00" disabled>
-                                  <label for="data" class="active">Valor Total</label>
+                                  <input id="recebivelValorTotal" name="recebivelValorTotal" type="text" placeholder="50,00" value="<?=$recebivelValorTotal;?>" disabled>
+                                  <label for="recebivelValorTotal" class="active">Valor Total</label>
                                 </div>
                                 <!--/ Valor Total -->
-
 
                                 <!-- Vencimento -->
                                 <div class="input-field col s12">
                                   <i class="material-icons prefix">today</i>
-                                  <input id="data" type="text" class="datepicker" placeholder="04/11/2019">
-                                  <label for="data" class="active">Data de vencimento</label>
+                                  <input id="recebivelVencimento" name="recebivelVencimento" type="date" class="datepicker" value="<?=$recebivelVencimento;?>">
+                                  <label for="recebivelVencimento" class="active">Data de vencimento</label>
                                 </div>
                                 <!--/ Vencimento -->
 
+                                <!-- Botão Lançar -->
                                 <div class="row">
                                   <div class="input-field col s12">
                                     <button class="waves-effect waves-light btn-large float-right mr-1 mb-1">
@@ -179,12 +202,16 @@
                                     </button>
                                   </div>
                                 </div>
+                                <!-- Botão Lançar -->
 
                               </form>
 
                             </div>
                           </div>
                         </div>
+                        <!-- Alunos Tab -->
+
+                        <!-- Eventos Tab -->
                         <div id="tab-eventos" class="col s12">
                           <div class="row">
                             <div class="col s12">
@@ -193,7 +220,7 @@
                                 <!-- Aluno -->
                                 <div class="input-field col s12">
                                   <i class="material-icons prefix">account_circle</i>
-                                  <select name="meioPagamento" id="baixa-conta-meio-pagamento">
+                                  <select name="recebivelEventoAluno" id="baixa-conta-meio-pagamento">
                                     <option value="0" disabled selected>Selecione um Aluno</option>
                                     <option value="dinheiro">Hugo Savoia</option>
                                     <option value="dinheiro">Rafael Antonio</option>
@@ -205,28 +232,28 @@
                                 <!-- Evento -->
                                 <div class="input-field col s12">
                                   <i class="material-icons prefix">today</i>
-                                  <select name="meioPagamento" id="baixa-conta-meio-pagamento">
+                                  <select name="recebivelEvento" id="baixa-conta-meio-pagamento">
                                     <option value="0" disabled selected>Selecione um Evento</option>
-                                    <option value="dinheiro">Corrida de Exemplo</option>
-                                    <option value="dinheiro">Pedal de Exemplo</option>
+                                    <option value="">Corrida de Exemplo</option>
+                                    <option value="">Pedal de Exemplo</option>
                                   </select>
                                   <label>Selecione um Evento</label>
                                 </div>
                                 <!--/ Evento -->
 
                                 <!-- Valor -->
-                                <div class="input-field col s12">
+                                <div class="input-field col s4">
                                   <i class="material-icons prefix">attach_money</i>
-                                  <input id="data" type="text" placeholder="50,00">
-                                  <label for="data" class="active">Valor</label>
+                                  <input id="valorRecebivelEvento" name="valorRecebivelEvento" type="text" placeholder="50,00" value="<?=$valorRecebivelEvento;?>">
+                                  <label for="valorRecebivelEvento" class="active">Valor</label>
                                 </div>
                                 <!--/ Valor -->
 
                                 <!-- Vencimento -->
                                 <div class="input-field col s12">
                                   <i class="material-icons prefix">today</i>
-                                  <input id="data" type="text" class="datepicker" placeholder="04/11/2019">
-                                  <label for="data" class="active">Data de vencimento</label>
+                                  <input id="recebivelEventoVencimento" name="recebivelEventoVencimento" type="date" class="datepicker" value="<?=$recebivelEventoVencimento;?>">
+                                  <label for="recebivelEventoVencimento" class="active">Data de vencimento</label>
                                 </div>
                                 <!--/ Vencimento -->
 
@@ -245,6 +272,9 @@
                             </div>
                           </div>
                         </div>
+                        <!--/ Eventos Tab -->
+
+                        <!-- Outros Tab -->
                         <div id="tab-outros" class="col s12">
                           <div class="row">
                             <div class="col s12">
@@ -253,24 +283,24 @@
                                 <!-- Origem -->
                                 <div class="input-field col s12">
                                   <i class="material-icons prefix">input</i>
-                                  <input id="data" type="text" placeholder="Descreva a origem do recebível">
-                                  <label for="data" class="active">Origem</label>
+                                  <input id="recebivelOutrosOrigem" name="recebivelOutrosOrigem" type="text" placeholder="Descreva a origem do recebível" value="<?=$recebivelOutrosOrigem;?>">
+                                  <label for="recebivelOutrosOrigem" class="active">Origem</label>
                                 </div>
                                 <!--/ Origem -->
 
                                 <!-- Valor -->
-                                <div class="input-field col s12">
+                                <div class="input-field col s4">
                                   <i class="material-icons prefix">attach_money</i>
-                                  <input id="data" type="text" placeholder="50,00">
-                                  <label for="data" class="active">Valor</label>
+                                  <input id="valorRecebivelOutros" name="valorRecebivelOutros" type="text" placeholder="50,00" value="<?=$valorRecebivelOutros;?>">
+                                  <label for="valorRecebivelOutros" class="active">Valor</label>
                                 </div>
                                 <!--/ Valor -->
 
                                 <!-- Vencimento -->
                                 <div class="input-field col s12">
                                   <i class="material-icons prefix">today</i>
-                                  <input id="data" type="text" class="datepicker" placeholder="04/11/2019">
-                                  <label for="data" class="active">Data de vencimento</label>
+                                  <input id="recebivelOutrosVencimento" name="recebivelOutrosVencimento" type="date" class="datepicker" value="<?=$recebivelOutrosVencimento;?>">
+                                  <label for="recebivelOutrosVencimento" class="active">Data de vencimento</label>
                                 </div>
                                 <!--/ Vencimento -->
 
@@ -289,15 +319,12 @@
                             </div>
                           </div>
                         </div>
+                        <!--/ Outros Tab -->
+
                       </div>
-
-
                     </div>
                   </div>
-                  <!--/ Informações Básicas -->
-
                 </div>
-
               </div>
             </div>
 
@@ -307,6 +334,8 @@
 
           </div>
         </div>
+        <!--/ Conteúdo -->
+
       </div>
 
     </div>

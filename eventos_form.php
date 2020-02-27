@@ -1,3 +1,20 @@
+<?php
+
+// Inputs Invisíveis
+$eventoId = '';
+$eventoNome = '';
+$eventoData = '1990-03-26';
+$eventoHora = '';
+$eventoVagas = '';
+$eventoValorInscricao = '';
+$eventoLogradouro = '';
+$eventoBairro = '';
+$eventoCidade = '';
+$eventoCEP = '';
+$eventoEstado = '';
+
+?>
+
 <!DOCTYPE html>
 <html class="loading" lang="pt-Br" data-textdirection="ltr">
 
@@ -57,11 +74,10 @@
       <div class="row">
         <div class="content-wrapper-before gradient-45deg-indigo-light-blue"></div>
 
+        <!-- Title & Breadcrumbs -->
         <div class="breadcrumbs-dark pb-0 pt-2" id="breadcrumbs-wrapper">
           <div class="container">
             <div class="row">
-
-              <!-- Title & Breadcrumbs -->
               <div class="col s10 m6 l6">
                 <h5 class="breadcrumbs-title mt-0 mb-0">Criar Evento</h5>
                 <ol class="breadcrumbs mb-0">
@@ -73,98 +89,129 @@
                   </li>
                 </ol>
               </div>
-              <!--/ Title & Breadcrumbs -->
-
             </div>
           </div>
         </div>
+        <!--/ Title & Breadcrumbs -->
 
         <div class="col s12">
           <div class="container">
+
+            <!-- Conteúdo -->
             <div class="section section-data-tables">
-
-              <!-- Page Length Options -->
               <div class="row">
-
                 <div class="col s12 l6">
 
-                  <!-- Informações Básicas -->
+                  <!-- Formulários -->
                   <div class="card border-radius-6 pt-5">
                     <div class="card-content">
                       <div class="row">
                         <div class="col s12">
+
                           <form action="aulas_list.php" class="pr-5">
 
+                            <!-- Data da Aula -->
                             <div class="input-field col s12">
                               <i class="material-icons prefix">today</i>
-                              <input id="data" type="text" class="datepicker" placeholder="04/11/2019">
-                              <label for="data" class="active">Data do Evento</label>
+                              <input id="eventoData" name="eventoData" class="datepicker" value="<?=$eventoData;?>" type="date">
+                              <label for="eventoData" class="active">Data do Evento</label>
                             </div>
+                            <!--/ Data da Aula -->
 
+                            <!-- Horário da Aula -->
                             <div class="input-field col s12">
                               <i class="material-icons prefix">access_time</i>
-                              <select>
+                              <select name="eventoHora">
                                 <option value="" disabled selected></option>
-                                <option value="" disabled selected>08:00</option>
-                                <option value="" disabled selected>08:30</option>
+                                <option value="08:00" disabled selected>08:00</option>
+                                <option value="08:30" disabled selected>08:30</option>
                               </select>
                               <label>Selecione um horário</label>
                             </div>
+                            <!--/ Horário da Aula -->
 
+                            <!-- Nome do Evento -->
                             <div class="input-field col s12">
                               <i class="material-icons prefix">account_circle</i>
-                              <input id="name3" type="text">
-                              <label for="name3" class="active">Nome do Evento</label>
+                              <input id="eventoNome" type="text" value="<?=$eventoNome;?>">
+                              <label for="eventoNome" class="active">Nome do Evento</label>
                             </div>
+                            <!--/ Nome do Evento -->
 
+                            <!-- Quantidade de Vagas -->
+                            <!-- TODO: Incluir mascara somente números -->
                             <div class="input-field col s12">
                               <i class="material-icons prefix">import_contacts</i>
-                              <input id="name3" type="text">
-                              <label for="name3" class="active">Quantidade de Vagas</label>
+                              <input id="eventoVagas" type="text" value="<?=$eventoVagas;?>">
+                              <label for="eventoVagas" class="active">Quantidade de Vagas</label>
                             </div>
+                            <!--/ Quantidade de Vagas -->
 
+                            <!-- Valor da Inscrição -->
+                            <!-- TODO: Incluir mascara de valor em R$ -->
                             <div class="input-field col s12">
                               <i class="material-icons prefix">local_atm</i>
-                              <input id="name3" type="text">
-                              <label for="name3" class="active">Valor da Inscrição</label>
+                              <input id="eventoValorInscricao" type="text" value="<?=$eventoValorInscricao;?>">
+                              <label for="eventoValorInscricao" class="active">Valor da Inscrição</label>
                             </div>
+                            <!--/ Valor da Inscrição -->
 
+                            <!-- Logradouro -->
                             <div class="input-field col s12">
                               <i class="material-icons prefix">location_on</i>
-                              <input id="logradouro" type="text">
-                              <label for="logradouro" class="active">Logradouro</label>
+                              <input id="eventoLogradouro" type="text" value="<?=$eventoLogradouro;?>">
+                              <label for="eventoLogradouro" class="active">Logradouro</label>
                             </div>
+                            <!--/ Logradouro -->
 
-                            <div class="row">
-                              <div class="pl-4">
-                                <div class="input-field col s12">
-                                  <select>
-                                    <option value="" disabled selected>Selecione seu estado</option>
-                                  </select>
-                                  <label>Estado</label>
-                                </div>
-                              </div>
+                            <!-- CEP -->
+                            <div class="input-field col s12">
+                              <i class="material-icons prefix" style="opacity:0">location_on</i>
+                              <input id="eventoCEP" name="eventoCEP" value="<?=$eventoCEP;?>" type="text">
+                              <label for="eventoCEP" class="active">CEP</label>
                             </div>
-                            <div class="row">
-                              <div class="pl-4">
-                                <div class="input-field col s12">
-                                  <select>
-                                    <option value="" disabled selected>Selecione sua cidade</option>
-                                  </select>
-                                  <label>Cidade</label>
-                                </div>
-                              </div>
+                            <!--/ CEP -->
+
+                            <!-- Bairro -->
+                            <div class="input-field col s12">
+                              <i class="material-icons prefix" style="opacity:0">location_on</i>
+                              <input id="eventoBairro" name="eventoBairro" value="<?=$eventoBairro;?>" type="text">
+                              <label for="eventoBairro" class="active">Bairro</label>
                             </div>
+                            <!--/ Bairro -->
 
-
-                            <div class="row">
+                            <!-- Estado -->
+                            <div class="mt-2">
                               <div class="input-field col s12">
-                                <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
-                                  <i class="material-icons left">today</i>
-                                  Agendar
-                                </button>
+                                <i class="material-icons prefix" style="opacity:0">location_on</i>
+                                <select name="eventoEstado">
+                                  <option value="" disabled selected>Selecione seu estado</option>
+                                </select>
+                                <label>Estado</label>
                               </div>
                             </div>
+                            <!--/ Estado -->
+
+                            <!-- Cidade -->
+                            <div class="mt-2">
+                              <div class="input-field col s12">
+                                <i class="material-icons prefix" style="opacity:0">location_on</i>
+                                <select name="eventoCidade">
+                                  <option value="" disabled selected>Selecione sua cidade</option>
+                                </select>
+                                <label>Cidade</label>
+                              </div>
+                            </div>
+                            <!--/ Cidade -->
+
+                            <!-- Botão Agendar -->
+                            <div class="input-field col s12">
+                              <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
+                                <i class="material-icons left">today</i>
+                                Agendar
+                              </button>
+                            </div>
+                            <!--/ Botão Agendar -->
 
                           </form>
 
@@ -172,12 +219,13 @@
                       </div>
                     </div>
                   </div>
-                  <!--/ Informações Básicas -->
+                  <!--/ Formulários -->
 
                 </div>
 
               </div>
             </div>
+            <!--/ Conteúdo -->
 
             <?php
               include "app-includes/menus/aside-right.php";
