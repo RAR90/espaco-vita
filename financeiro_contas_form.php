@@ -6,6 +6,13 @@ $valor = '';
 $vencimento = '1990-03-26';
 $obs = '';
 
+$pageTitle = 'Lançar Conta';
+
+if (isset($_GET['action']) && $_GET['action'] == 'edit') {
+  $pageTitle = 'Editar Conta';
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -73,13 +80,14 @@ $obs = '';
 
               <!-- Title & Breadcrumbs -->
               <div class="col s10 m6 l6">
-                <h5 class="breadcrumbs-title mt-0 mb-0">Lançar Conta</h5>
+                <h5 class="breadcrumbs-title mt-0 mb-0"><?=$pageTitle;?></h5>
                 <ol class="breadcrumbs mb-0">
                   <li class="breadcrumb-item"><a href="dashboard_modern.php">Home</a>
                   </li>
                   <li class="breadcrumb-item"><a href="aulas_list.php">Financeiro</a>
                   </li>
-                  <li class="breadcrumb-item active">Lançar Conta
+                  <li class="breadcrumb-item active">
+                    <?=$pageTitle;?>
                   </li>
                 </ol>
               </div>
@@ -104,7 +112,7 @@ $obs = '';
 
                       <div class="row">
                         <div class="col s12 pt-2">
-                          <form action="financeiro_contas_list.php" class="pr-5">
+                          <form action="financeiro_contas_form.php" class="pr-5">
 
                             <!-- Plano de Contas -->
                             <div class="input-field col s12">
@@ -160,7 +168,7 @@ $obs = '';
                             <!-- Botão Lançar -->
                             <div class="row">
                               <div class="input-field col s12">
-                                <button class="waves-effect waves-light btn-large float-right mr-1 mb-1">
+                                <button type="submit" class="waves-effect waves-light btn-large float-right mr-1 mb-1">
                                   LANÇAR
                                 </button>
                               </div>

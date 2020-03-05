@@ -9,6 +9,22 @@
   $caixaValorSaidas = 'R$ 00,00';
   $caixaValorInicial = 'R$ 00,00';
   $caixaAberturaDataHora = '25/12/2019 às 08:00';
+
+  if (isset($_GET['action'])) {
+
+    // Altera a data no campo após o submit do filtro por data
+    if ($_GET['action'] == "filtrar_por_data") {
+      $filtroData = $_GET['filtroData'];
+    }
+
+    // Altera o valor selecionado no campo após o submit do filtro por tipo
+    if ($_GET['action'] == "filtrar_por_tipo") {
+      $filtroTipo = $_GET['filtroTipo'];
+    }
+
+  }
+
+
 ?>
 
 <!DOCTYPE html>
@@ -84,7 +100,7 @@
               <div class="col s12 m9">
                 <button class="waves-effect waves-light btn-large float-right mr-1 mb-1" onclick="openModal('#fechar-caixa')"><i class="material-icons right">no_meeting_room</i>Fechar Caixa</button>
                 <a class="waves-effect waves-light btn-large float-right mr-1 mb-1" onclick="openModal('#retirar-dinheiro')"><i class="material-icons right">local_atm</i>Retirar</a>
-                <a class="waves-effect waves-light btn-large float-right mr-1 mb-1" href=""><i class="material-icons right">add_to_photos</i>Lançar</a>
+                <a class="waves-effect waves-light btn-large float-right mr-1 mb-1" href="financeiro_recebiveis_form.php"><i class="material-icons right">add_to_photos</i>Lançar</a>
               </div>
               <!--/ Controles -->
 
@@ -109,30 +125,36 @@
                       <div class="row mt-5 mb-4">
 
                         <!-- Filtro de Data -->
-                        <div class="input-field col s6">
-                          <i class="material-icons prefix">calendar_today</i>
-                          <input id="filtroData" name="filtroData" class="datepicker" value="<?=$filtroData;?>" type="date">
-                          <label for="filtroData" class="active strong">Exibir registros:</label>
-                        </div>
+                        <form action="financeiro_caixa_list.php" method="get" id="date_filter_form">
+                          <input type="hidden" name="action" value="filtrar_por_data">
+                          <div class="input-field col s6">
+                            <i class="material-icons prefix">calendar_today</i>
+                            <input id="filtroData" name="filtroData" class="datepicker" value="<?=$filtroData;?>" type="date" onchange="submit('date_filter_form');">
+                            <label for="filtroData" class="active strong">Exibir registros:</label>
+                          </div>
+                        </form>
                         <!--/ Filtro de Data -->
 
                         <!-- Filtro de tipo -->
-                        <div class="input-field col s6">
-                          <i class="material-icons prefix">filter_list</i>
-                          <label for="filtroTipo" class="active strong">Mostrar</label>
-                          <select name="" id="filtroTipo">
-                            <option value="" selected>Tudo</option>
-                            <option value="">Recebíveis</option>
-                            <option value="">Contas a pagar</option>
-                            <option value="">Infraestrutura</option>
-                            <option value="">Funcionários</option>
-                            <option value="">Professores</option>
-                            <option value="">Terceirizados</option>
-                            <option value="">Avulsos</option>
-                            <option value="">Alunos</option>
-                            <option value="">Eventos</option>
-                          </select>
-                        </div>
+                        <form action="financeiro_caixa_list.php" method="get" id="tipo_filter_form">
+                          <input type="hidden" name="action" value="filtrar_por_tipo">
+                          <div class="input-field col s6">
+                            <i class="material-icons prefix">filter_list</i>
+                            <label for="filtroTipo" class="active strong">Mostrar</label>
+                            <select name="filtroTipo" id="filtroTipo" onchange="submit('tipo_filter_form');">
+                              <option value="tudo" <?=$filtroTipo=='tudo'?'selected':''?>>Tudo</option>
+                              <option value="recebiveis" <?=$filtroTipo=='recebiveis'?'selected':''?>>Recebíveis</option>
+                              <option value="contas" <?=$filtroTipo=='contas'?'selected':''?>>Contas a pagar</option>
+                              <option value="infraestrutura" <?=$filtroTipo=='infraestrutura'?'selected':''?>>Infraestrutura</option>
+                              <option value="funcionarios" <?=$filtroTipo=='funcionarios'?'selected':''?>>Funcionários</option>
+                              <option value="professores" <?=$filtroTipo=='professores'?'selected':''?>>Professores</option>
+                              <option value="terceirizados" <?=$filtroTipo=='terceirizados'?'selected':''?>>Terceirizados</option>
+                              <option value="avulsos" <?=$filtroTipo=='avulsos'?'selected':''?>>Avulsos</option>
+                              <option value="alunos" <?=$filtroTipo=='alunos'?'selected':''?>>Alunos</option>
+                              <option value="eventos" <?=$filtroTipo=='eventos'?'selected':''?>>Eventos</option>
+                            </select>
+                          </div>
+                        </form>
                         <!-- Filtro de tipo -->
 
                       </div>
@@ -371,6 +393,12 @@
             <div id="fechar-caixa" class="modal pb-2" style="width: 600px">
               <div class="modal-content">
                 <form action="financeiro_caixa_list.php">
+
+                  <input type="hidden" name="caixaValorInicial" value="<?=$caixaValorInicial;?>">
+                  <input type="hidden" name="caixaValorEntradas" value="<?=$caixaValorEntradas;?>">
+                  <input type="hidden" name="caixaValorSaidas" value="<?=$caixaValorSaidas;?>">
+                  <input type="hidden" name="caixaValorSaldo" value="<?=$caixaValorSaldo;?>">
+
                   <div class="col s12">
                     <h5>Fechar Caixa</h5>
                     <p>
@@ -385,11 +413,11 @@
                           <tbody>
                             <tr>
                               <td><strong>Inicial:</strong></td>
-                              <td>R$ 00,00</td>
+                              <td><?=$caixaValorInicial;?></td>
                             </tr>
                             <tr>
-                              <td><strong>Entrada:</strong></td>
-                              <td>R$ 7291,90</td>
+                              <td><strong>Entradas:</strong></td>
+                              <td><?=$caixaValorEntradas;?></td>
                             </tr>
                           </tbody>
                         </table>
@@ -398,12 +426,12 @@
                         <table>
                           <tbody>
                             <tr>
-                              <td><strong>Saída:</strong></td>
-                              <td>R$ 00,00</td>
+                              <td><strong>Saídas:</strong></td>
+                              <td><?=$caixaValorSaidas;?></td>
                             </tr>
                             <tr>
                               <td><strong>Saldo:</strong></td>
-                              <td>R$ 7291,90</td>
+                              <td><?=$caixaValorSaldo;?></td>
                             </tr>
                           </tbody>
                         </table>
@@ -414,7 +442,7 @@
                     <div class="row">
                       <div class="input-field col s12">
                         <i class="material-icons prefix">chrome_reader_mode</i>
-                        <textarea name="fechamentoObs" id="fechamentoObs" style="height:125px"><?=$fechamentoObs;?></textarea>
+                        <textarea name="fechamentoObs" id="fechamentoObs" style="height:125px" required><?=$fechamentoObs;?></textarea>
                         <label for="fechamentoObs" class="active label-textarea">Observação sobre o fechamento</label>
                       </div>
                     </div>
@@ -447,7 +475,7 @@
                     <div class="row pt-2">
                       <div class="input-field col s12">
                         <i class="material-icons prefix">attach_money</i>
-                        <input id="valorRetirada" name="valorRetirada" value="<?=$valorRetirada;?>" type="text">
+                        <input id="valorRetirada" name="valorRetirada" class="maskMoney" value="<?=$valorRetirada;?>" type="text" required>
                         <label for="valorRetirada" class="active">Valor da Retirada</label>
                       </div>
                     </div>
@@ -457,7 +485,7 @@
                     <div class="row">
                       <div class="input-field col s12">
                         <i class="material-icons prefix">chrome_reader_mode</i>
-                        <textarea name="retiradaObs" id="retiradaObs" style="height:100px"><?=$retiradaObs;?></textarea>
+                        <textarea name="retiradaObs" id="retiradaObs" style="height:100px" required><?=$retiradaObs;?></textarea>
                         <label for="retiradaObs" class="active label-textarea">Motivo da Retirada</label>
                       </div>
                     </div>
@@ -532,6 +560,7 @@
     <!-- BEGIN PAGE VENDOR JS-->
     <script src="app-assets/vendors/data-tables/js/jquery.dataTables.min.js" type="text/javascript"></script>
     <script src="app-assets/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
+    <script src="app-assets/vendors/formatter/jquery.formatter.min.js" type="text/javascript"></script>
     <!-- END PAGE VENDOR JS-->
 
     <?php

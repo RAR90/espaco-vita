@@ -170,7 +170,7 @@ $modalidadeCredito = '';
                 </div>
                 <div class="col s12">
 
-                  <form action="aulas_list.php" class="pr-5">
+                  <form action="modalidades_list.php" class="pr-5">
 
                     <!-- Nome da Modalidade -->
                     <div class="input-field col s12">

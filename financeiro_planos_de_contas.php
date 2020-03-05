@@ -111,7 +111,7 @@ $planoDescricao = '';
                             <td>Infraestrutura</td>
                             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
                             <td class="text-center">
-                              <button onclick="openModal('#plano-de-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                              <button onclick="editModal('#plano-de-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                 <i class="material-icons">edit</i>
                               </button>
                             </td>
@@ -126,7 +126,7 @@ $planoDescricao = '';
                             <td>Funcionários</td>
                             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
                             <td class="text-center">
-                              <button onclick="openModal('#plano-de-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                              <button onclick="editModal('#plano-de-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                 <i class="material-icons">edit</i>
                               </button>
                             </td>
@@ -141,7 +141,7 @@ $planoDescricao = '';
                             <td>Professores</td>
                             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
                             <td class="text-center">
-                              <button onclick="openModal('#plano-de-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                              <button onclick="editModal('#plano-de-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                 <i class="material-icons">edit</i>
                               </button>
                             </td>
@@ -156,7 +156,7 @@ $planoDescricao = '';
                             <td>Terceirizados</td>
                             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
                             <td class="text-center">
-                              <button onclick="openModal('#plano-de-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                              <button onclick="editModal('#plano-de-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                 <i class="material-icons">edit</i>
                               </button>
                             </td>
@@ -171,7 +171,7 @@ $planoDescricao = '';
                             <td>Avulsos</td>
                             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
                             <td class="text-center">
-                              <button onclick="openModal('#plano-de-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                              <button onclick="editModal('#plano-de-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                 <i class="material-icons">edit</i>
                               </button>
                             </td>
@@ -203,11 +203,12 @@ $planoDescricao = '';
             <!-- Novo Plano de Conta -->
             <div id="plano-de-conta" class="modal" style="width: 600px; overflow:visible">
               <div class="modal-content">
-                <div class="col s12">
-                  <h5>Planos de Contas</h5>
-                  <p>Preencha os dados para criar um novo plano de conta.</p>
 
-                  <form action="#">
+                <form action="financeiro_planos_de_contas.php">
+                  <div class="col s12">
+
+                    <h5>Planos de Contas</h5>
+                    <p>Preencha os dados para criar um novo plano de conta.</p>
 
                     <!-- Nome -->
                     <div class="row">
@@ -1170,12 +1171,13 @@ $planoDescricao = '';
                     </div>
                     <!--/ Descrição -->
 
-                  </form>
-                </div>
-                <div class="col s12 pb-5 text-center">
-                  <button type="submit" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">CADASTRAR</button>
-                  <a onclick="closeModal('#baixar-conta')" class="btn mb-5 btn-small btn-flat waves-effect waves-light grey light-2 white-text">FECHAR</a>
-                </div>
+                  </div>
+                  <div class="col s12 pb-5 text-center">
+                    <button type="submit" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">CADASTRAR</button>
+                    <a onclick="closeModal('#plano-de-conta')" class="btn mb-5 btn-small btn-flat waves-effect waves-light grey light-2 white-text">FECHAR</a>
+                  </div>
+                </form>
+
               </div>
             </div>
             <!--/ Novo Plano de Conta -->

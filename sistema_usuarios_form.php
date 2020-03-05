@@ -109,7 +109,7 @@ $usuarioSenhaRetype = '';
                       <div class="row">
                         <div class="col s12">
 
-                          <form action="professores_form.php" class="pr-5">
+                          <form action="sistema_usuarios_form.php" class="pr-5">
 
                             <!-- Foto do usuário -->
                             <div class="row center-align">
@@ -188,7 +188,7 @@ $usuarioSenhaRetype = '';
                       <div class="row">
                         <div class="col s12">
 
-                          <form action="index.php" class="pr-5">
+                          <form action="sistema_usuarios_form.php" class="pr-5">
 
                             <!-- Senha -->
                             <div class="row">
@@ -247,7 +247,7 @@ $usuarioSenhaRetype = '';
                       <div class="row">
                         <div class="col s12">
 
-                          <form action="index.php" class="pr-5">
+                          <form action="sistema_usuarios_form.php" class="pr-5">
 
                             <div class="row">
 

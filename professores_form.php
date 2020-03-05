@@ -417,7 +417,7 @@ $funcDigitosCelular = '';
                     <div class="card-content">
                       <div class="row">
                         <div class="col s12">
-                          <form action="index.php" class="pr-5">
+                          <form action="professores_form.php" class="pr-5">
 
                             <!-- Cargo -->
                             <div class="row">
@@ -522,7 +522,7 @@ $funcDigitosCelular = '';
                     <div class="card-content">
                       <div class="row">
                         <div class="col s12">
-                          <form action="index.php" class="pr-5">
+                          <form action="professores_form.php" class="pr-5">
 
                             <!-- Senha -->
                             <div class="row">
@@ -570,7 +570,7 @@ $funcDigitosCelular = '';
                     <div class="card-content">
                       <div class="row">
                         <div class="col s12">
-                          <form action="index.php" class="pr-5">
+                          <form action="professores_form.php" class="pr-5">
                             <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">question_answer</i>

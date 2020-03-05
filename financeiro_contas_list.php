@@ -1,6 +1,14 @@
 <?php
 
 $planoDeConta = '';
+$dataPago = date('Y-m-d');
+$valorPago = '5.000,00';
+
+
+$tipo = 'Conta a Pagar';
+$origem =	'Salário do professor Rafael Antônio';
+$vencimento =	'22/12/2019';
+$valorTotal = 'R$ 1500,00';
 
 if (isset($_GET['planoDeConta'])) {
   $planoDeConta = $_GET['planoDeConta'];
@@ -119,7 +127,7 @@ if (isset($_GET['planoDeConta'])) {
                             <td>Nome de origem de conta, montado automaticamente através das opções escolhidas no lançamento.</td>
                             <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
-                              <a href="financeiro_contas_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                              <a href="financeiro_contas_form.php?action=edit" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                 <i class="material-icons">edit</i>
                               </a>
                             </td>
@@ -141,7 +149,7 @@ if (isset($_GET['planoDeConta'])) {
                             <td>Nome de origem de conta, montado automaticamente através das opções escolhidas no lançamento.</td>
                             <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
-                              <a href="financeiro_contas_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                              <a href="financeiro_contas_form.php?action=edit" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                 <i class="material-icons">edit</i>
                               </a>
                             </td>
@@ -163,7 +171,7 @@ if (isset($_GET['planoDeConta'])) {
                             <td>Nome de origem de conta, montado automaticamente através das opções escolhidas no lançamento.</td>
                             <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
-                              <a href="financeiro_contas_form.php" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                              <a href="financeiro_contas_form.php?action=edit" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                 <i class="material-icons">edit</i>
                               </a>
                             </td>
@@ -210,19 +218,19 @@ if (isset($_GET['planoDeConta'])) {
                   <tbody>
                     <tr>
                       <td><strong>Tipo:</strong></td>
-                      <td>Conta a Pagar</td>
+                      <td><?=$tipo;?></td>
                     </tr>
                     <tr>
                       <td><strong>Origem:</strong></td>
-                      <td>Salário do professor Rafael Antônio</td>
+                      <td><?=$origem;?></td>
                     </tr>
                     <tr>
                       <td><strong>Vencimento:</strong></td>
-                      <td>22/12/2019</td>
+                      <td><?=$vencimento;?></td>
                     </tr>
                     <tr>
                       <td><strong>Valor Total:</strong></td>
-                      <td>R$ 1500,00</td>
+                      <td><?=$valorTotal;?></td>
                     </tr>
                   </tbody>
                 </table>
@@ -235,101 +243,105 @@ if (isset($_GET['planoDeConta'])) {
 
             <!-- Modal Baixar Conta -->
             <div id="baixar-conta" class="modal" style="width: 600px">
-              <div class="modal-content">
-                <div class="col s12">
-                  <h5>Dar Baixa na Conta</h5>
-                  <p>Para dar baixa na conta, preencha os dados e faça upload do comprovante.</p>
+              <form action="financeiro_contas_list.php" method="get">
+                <div class="modal-content">
+                  <div class="col s12">
+                    <h5>Dar Baixa na Conta</h5>
+                    <p>Para dar baixa na conta, preencha os dados e faça upload do comprovante.</p>
 
-                  <table class="mb-5">
-                    <tbody>
-                      <tr>
-                        <td><strong>Tipo:</strong></td>
-                        <td>Conta a Pagar</td>
-                      </tr>
-                      <tr>
-                        <td><strong>Origem:</strong></td>
-                        <td>Salário do professor Rafael Antônio</td>
-                      </tr>
-                      <tr>
-                        <td><strong>Vencimento:</strong></td>
-                        <td>22/12/2019</td>
-                      </tr>
-                      <tr>
-                        <td><strong>Valor Total:</strong></td>
-                        <td>R$ 1500,00</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                    <table class="mb-5">
+                      <tbody>
+                        <tr>
+                          <td><strong>Tipo:</strong></td>
+                          <td><?=$tipo;?></td>
+                        </tr>
+                        <tr>
+                          <td><strong>Origem:</strong></td>
+                          <td><?=$origem;?></td>
+                        </tr>
+                        <tr>
+                          <td><strong>Vencimento:</strong></td>
+                          <td><?=$vencimento;?></td>
+                        </tr>
+                        <tr>
+                          <td><strong>Valor Total:</strong></td>
+                          <td><?=$valorTotal;?></td>
+                        </tr>
+                      </tbody>
+                    </table>
 
-                  <div class="file-field input-field">
-                    <label class="active">Anexar Comprovante</label>
-                    <div class="btn mb-5 mt-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
-                      <span>Escolher Comprovante</span>
-                      <input type="file">
+                    <div class="file-field input-field">
+                      <label class="active">Anexar Comprovante</label>
+                      <div class="btn mb-5 mt-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                        <span>Escolher Comprovante</span>
+                        <input type="file">
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                      </div>
                     </div>
-                    <div class="file-path-wrapper">
-                      <input class="file-path validate" type="text">
+
+                    <!-- Meio de Pagamento -->
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">credit_card</i>
+                        <select name="meioPagamento" id="baixa-conta-meio-pagamento">
+                          <option value="0" disabled selected>Selecione o meio de pagamento</option>
+                          <option value="dinheiro">Dinheiro</option>
+                          <option value="cartao">Cartão</option>
+                          <option value="cheque">Cheque</option>
+                          <option value="deposito">Deposito</option>
+                        </select>
+                        <label>Meio de Pagamento</label>
+                      </div>
                     </div>
+                    <!--/ Meio de Pagamento -->
+
+                    <!-- Sacado -->
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">card_membership</i>
+                        <select name="meioPagamento" id="baixa-conta-meio-pagamento">
+                          <option value="0" disabled selected>Selecione o sacado</option>
+                          <option value="">ITAÚ - CC.: 00000-1</option>
+                          <option value="">BB - CC.: 00000-1</option>
+                        </select>
+                        <label>Sacado</label>
+                      </div>
+                    </div>
+                    <!--/ Sacado -->
+
+                    <!-- Data do pagamento -->
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">calendar_today</i>
+                        <input id="dataPago" name="dataPago" class="datepicker" value="<?=$dataPago;?>" type="date">
+                        <label for="dataPago" class="active strong">Data do pagamento</label>
+                      </div>
+                    </div>
+                    <!--/ Data do pagamento -->
+
+                    <!-- Valor pago -->
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">attach_money</i>
+                        <input id="valorPago" name="valorPago" value="<?=$valorPago;?>" type="text" class="maskMoney">
+                        <label for="valorPago" class="active">Valor Pago</label>
+                      </div>
+                    </div>
+                    <!--/ Valor pago -->
+
                   </div>
 
-                  <!-- Meio de Pagamento -->
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">credit_card</i>
-                      <select name="meioPagamento" id="baixa-conta-meio-pagamento">
-                        <option value="0" disabled selected>Selecione o meio de pagamento</option>
-                        <option value="dinheiro">Dinheiro</option>
-                        <option value="cartao">Cartão</option>
-                        <option value="cheque">Cheque</option>
-                        <option value="deposito">Deposito</option>
-                      </select>
-                      <label>Meio de Pagamento</label>
-                    </div>
+                  <!-- Gravar -->
+                  <div class="col s12 pb-5 text-center">
+                    <button onclick="submit('form-contas-bancarias')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">DAR BAIXA</button>
+                    <a onclick="closeModal('#conta-bancaria')" class="btn mb-5 btn-small btn-flat waves-effect waves-light grey light-2 white-text">FECHAR</a>
                   </div>
-                  <!--/ Meio de Pagamento -->
-
-                  <!-- Sacado -->
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">card_membership</i>
-                      <select name="meioPagamento" id="baixa-conta-meio-pagamento">
-                        <option value="0" disabled selected>Selecione o sacado</option>
-                        <option value="">ITAÚ - CC.: 00000-1</option>
-                        <option value="">BB - CC.: 00000-1</option>
-                      </select>
-                      <label>Sacado</label>
-                    </div>
-                  </div>
-                  <!--/ Sacado -->
-
-                  <!-- Data do pagamento -->
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">calendar_today</i>
-                      <input id="dataPago" name="dataPago" class="datepicker" value="<?=$dataPago;?>" type="date">
-                      <label for="dataPago" class="active strong">Data do pagamento</label>
-                    </div>
-                  </div>
-                  <!--/ Data do pagamento -->
-
-                  <!-- Valor pago -->
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">attach_money</i>
-                      <input id="valorPago" name="valorPago" value="" type="text">
-                      <label for="valorPago" class="active">Valor Pago</label>
-                    </div>
-                  </div>
-                  <!--/ Valor pago -->
+                  <!--/ Gravar -->
 
                 </div>
-                <div class="col s12 pb-5 text-center">
-                  <button onclick="closeModal('#baixar-conta')" class="btn waves-effect waves-light right mr-1" type="submit" name="action">
-                    Gravar
-                    <i class="material-icons left">save</i>
-                  </button>
-                </div>
-              </div>
+              </form>
             </div>
             <!--/ Modal Baixar Conta -->
 
@@ -339,7 +351,7 @@ if (isset($_GET['planoDeConta'])) {
 
             <!-- FAB -->
             <div style="bottom: 50px; right: 19px;" class="fixed-action-btn direction-top">
-              <a href="financeiro_contas_form.php" class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow">
+              <a href="financeiro_contas_form.php?action=edit" class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow">
                 <i class="material-icons">add</i>
               </a>
             </div>

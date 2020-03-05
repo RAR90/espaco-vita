@@ -521,7 +521,7 @@ $alunoTelefoneMae = '';
                       <div class="collapsible-body">
                         <div class="row">
                           <div class="col s12">
-                            <form action="index.php" class="pr-5">
+                            <form action="alunos_form.php" class="pr-5">
 
                               <!-- Senha -->
                               <div class="row">
@@ -761,7 +761,7 @@ $alunoTelefoneMae = '';
             <div class="card-content">
               <h4 class="card-title mb-0">Contrato</h4>
               <p class="medium-small">Inclua aqui o contrato do aluno para fins de arquivamento.</p>
-              <form action="#">
+              <form action="alunos_form.php">
                 <div class="file-field input-field">
                   <div class="btn">
                     <span>ESCOLHER</span>
@@ -787,7 +787,7 @@ $alunoTelefoneMae = '';
             <div class="card-content">
               <div class="row">
                 <div class="col s12">
-                  <form action="index.php" class="pr-5 pb-5">
+                  <form action="alunos_form.php" class="pr-5 pb-5">
                     <div class="row">
                       <div class="input-field col s12">
                         <i class="material-icons prefix">question_answer</i>

@@ -116,7 +116,7 @@ $contaObs = '';
                             <td>0000</td>
                             <td>01234-0</td>
                             <td class="text-center">
-                              <button onclick="openModal('#plano-de-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                              <button onclick="openModal('#conta-bancaria')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                 <i class="material-icons">edit</i>
                               </button>
                             </td>
@@ -132,7 +132,7 @@ $contaObs = '';
                             <td>0000</td>
                             <td>01234-0</td>
                             <td class="text-center">
-                              <button onclick="openModal('#plano-de-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                              <button onclick="openModal('#conta-bancaria')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                 <i class="material-icons">edit</i>
                               </button>
                             </td>
@@ -147,7 +147,7 @@ $contaObs = '';
                             <td>0000</td>
                             <td>01234-0</td>
                             <td class="text-center">
-                              <button onclick="openModal('#plano-de-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                              <button onclick="openModal('#conta-bancaria')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                 <i class="material-icons">edit</i>
                               </button>
                             </td>
@@ -162,7 +162,7 @@ $contaObs = '';
                             <td>0000</td>
                             <td>01234-0</td>
                             <td class="text-center">
-                              <button onclick="openModal('#plano-de-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                              <button onclick="openModal('#conta-bancaria')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                 <i class="material-icons">edit</i>
                               </button>
                             </td>
@@ -193,14 +193,14 @@ $contaObs = '';
             </div>
             <!--/ Tabela de dados -->
 
-            <!-- Novo Plano de Conta -->
-            <div id="plano-de-conta" class="modal" style="width: 600px">
+            <!-- Nova Conta Bancária -->
+            <div id="conta-bancaria" class="modal" style="width: 600px">
               <div class="modal-content">
                 <div class="col s12">
                   <h5>Contas Bancárias</h5>
                   <p>Preencha os dados da conta. As contas cadastradas serão usadas para dar baixa em recebimentos quando este for efetuado através de depósito.</p>
 
-                  <form action="#">
+                  <form action="financeiro_contas_bancarias.php" id="form-contas-bancarias">
 
                     <!-- Títular da Conta -->
                     <div class="row">
@@ -250,12 +250,12 @@ $contaObs = '';
                   </form>
                 </div>
                 <div class="col s12 pb-5 text-center">
-                  <button type="submit" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">CADASTRAR</button>
-                  <a onclick="closeModal('#baixar-conta')" class="btn mb-5 btn-small btn-flat waves-effect waves-light grey light-2 white-text">FECHAR</a>
+                  <button onclick="submit('form-contas-bancarias')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">CADASTRAR</button>
+                  <a onclick="closeModal('#conta-bancaria')" class="btn mb-5 btn-small btn-flat waves-effect waves-light grey light-2 white-text">FECHAR</a>
                 </div>
               </div>
             </div>
-            <!--/ Novo Plano de Conta -->
+            <!--/ Nova Conta Bancária -->
 
             <?php
               include "app-includes/menus/aside-right.php";
@@ -263,7 +263,7 @@ $contaObs = '';
 
             <!-- FAB -->
             <div style="bottom: 50px; right: 19px;" class="fixed-action-btn direction-top">
-              <a href="#" onclick="openModal('#plano-de-conta')" class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow">
+              <a href="#" onclick="openModal('#conta-bancaria')" class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow">
                 <i class="material-icons">add</i>
               </a>
             </div>

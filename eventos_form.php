@@ -108,7 +108,7 @@ $eventoEstado = '';
                       <div class="row">
                         <div class="col s12">
 
-                          <form action="aulas_list.php" class="pr-5">
+                          <form action="eventos_list.php" class="pr-5">
 
                             <!-- Data da Aula -->
                             <div class="input-field col s12">

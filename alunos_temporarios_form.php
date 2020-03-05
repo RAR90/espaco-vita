@@ -123,7 +123,7 @@ $alunoSoubeAcademia = '';
                         <i class="material-icons">assignment</i> Informações Pessoais
                       </div>
                       <div class="collapsible-body">
-                        <form action="alunos_form.php" class="pr-5">
+                        <form action="alunos_temporarios_form.php" class="pr-5">
 
                           <!-- Inputs Invisíveis -->
                           <input type="hidden" name="alunoID" value="<?=$alunoID;?>">
@@ -310,7 +310,7 @@ $alunoSoubeAcademia = '';
                         <i class="material-icons">contact_phone</i> Informações de Contato
                       </div>
                       <div class="collapsible-body">
-                        <form action="alunos_form.php" class="pr-5">
+                        <form action="alunos_temporarios_form.php" class="pr-5">
 
                           <!-- Telefone -->
                           <div class="row">
@@ -364,7 +364,7 @@ $alunoSoubeAcademia = '';
                         <i class="material-icons">stars</i> Quiz (opcional)
                       </div>
                       <div class="collapsible-body">
-                        <form action="alunos_form.php" class="pr-5">
+                        <form action="alunos_temporarios_form.php" class="pr-5">
 
                           <!-- Objetivo do aluno -->
                           <div class="row">

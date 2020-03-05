@@ -113,6 +113,7 @@ $recebivelOutrosVencimento = '1990-03-26';
                       <div class="row">
 
                         <!-- Tabs Menu -->
+                        <!-- TODO: Criar mecanismo para manipular a abertura e fechamento de abas de acordo com uma variável passada na url -->
                         <div class="col s12 mb-3">
                           <ul class="tabs">
                             <li class="tab col"><a class="active" href="#tab-alunos">Alunos</a></li>
@@ -126,12 +127,12 @@ $recebivelOutrosVencimento = '1990-03-26';
                         <div id="tab-alunos" class="col s12">
                           <div class="row">
                             <div class="col s12">
-                              <form action="#" class="pr-5">
+                              <form action="financeiro_recebiveis_form.php" class="pr-5">
 
                                 <!-- Aluno -->
                                 <div class="input-field col s12">
                                   <i class="material-icons prefix">account_circle</i>
-                                  <select name="recebivelAluno" id="baixa-conta-meio-pagamento">
+                                  <select name="recebivelAluno" id="recebivelAluno">
                                     <option value="0" disabled selected>Selecione um Aluno</option>
                                     <option value="dinheiro">Hugo Savoia</option>
                                     <option value="dinheiro">Rafael Antonio</option>
@@ -143,7 +144,7 @@ $recebivelOutrosVencimento = '1990-03-26';
                                 <!-- Modalidade -->
                                 <div class="input-field col s12">
                                   <i class="material-icons prefix">content_paste</i>
-                                  <select name="recebivelAlunoModalidade" id="baixa-conta-meio-pagamento">
+                                  <select name="recebivelAlunoModalidade" id="recebivelAlunoModalidade">
                                     <option value="0" disabled selected>Selecione uma Modalidade</option>
                                     <option value="dinheiro">Pilates (Trimestral)</option>
                                     <option value="dinheiro">Funcional (Trimestral)</option>
@@ -197,7 +198,7 @@ $recebivelOutrosVencimento = '1990-03-26';
                                 <!-- Botão Lançar -->
                                 <div class="row">
                                   <div class="input-field col s12">
-                                    <button class="waves-effect waves-light btn-large float-right mr-1 mb-1">
+                                    <button type="submit" class="waves-effect waves-light btn-large float-right mr-1 mb-1">
                                       LANÇAR
                                     </button>
                                   </div>
@@ -215,12 +216,12 @@ $recebivelOutrosVencimento = '1990-03-26';
                         <div id="tab-eventos" class="col s12">
                           <div class="row">
                             <div class="col s12">
-                              <form action="#" class="pr-5">
+                              <form action="financeiro_recebiveis_form.php" class="pr-5">
 
                                 <!-- Aluno -->
                                 <div class="input-field col s12">
                                   <i class="material-icons prefix">account_circle</i>
-                                  <select name="recebivelEventoAluno" id="baixa-conta-meio-pagamento">
+                                  <select name="recebivelEventoAluno" id="recebivelEventoAluno">
                                     <option value="0" disabled selected>Selecione um Aluno</option>
                                     <option value="dinheiro">Hugo Savoia</option>
                                     <option value="dinheiro">Rafael Antonio</option>
@@ -232,7 +233,7 @@ $recebivelOutrosVencimento = '1990-03-26';
                                 <!-- Evento -->
                                 <div class="input-field col s12">
                                   <i class="material-icons prefix">today</i>
-                                  <select name="recebivelEvento" id="baixa-conta-meio-pagamento">
+                                  <select name="recebivelEvento" id="recebivelEvento">
                                     <option value="0" disabled selected>Selecione um Evento</option>
                                     <option value="">Corrida de Exemplo</option>
                                     <option value="">Pedal de Exemplo</option>
@@ -260,7 +261,7 @@ $recebivelOutrosVencimento = '1990-03-26';
                                 <!-- Botão Lançar -->
                                 <div class="row">
                                   <div class="input-field col s12">
-                                    <button class="waves-effect waves-light btn-large float-right mr-1 mb-1">
+                                    <button type="submit" class="waves-effect waves-light btn-large float-right mr-1 mb-1">
                                       LANÇAR
                                     </button>
                                   </div>
@@ -278,7 +279,7 @@ $recebivelOutrosVencimento = '1990-03-26';
                         <div id="tab-outros" class="col s12">
                           <div class="row">
                             <div class="col s12">
-                              <form action="#" class="pr-5">
+                              <form action="financeiro_recebiveis_form.php" class="pr-5">
 
                                 <!-- Origem -->
                                 <div class="input-field col s12">
@@ -307,7 +308,7 @@ $recebivelOutrosVencimento = '1990-03-26';
                                 <!-- Botão Lançar -->
                                 <div class="row">
                                   <div class="input-field col s12">
-                                    <button class="waves-effect waves-light btn-large float-right mr-1 mb-1">
+                                    <button type="submit" class="waves-effect waves-light btn-large float-right mr-1 mb-1">
                                       LANÇAR
                                     </button>
                                   </div>
