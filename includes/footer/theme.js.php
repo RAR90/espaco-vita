@@ -1,0 +1,1 @@
+<script src="assets/js/scripts/customizer.js" type="text/javascript"></script>

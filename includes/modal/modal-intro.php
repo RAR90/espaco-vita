@@ -23,7 +23,7 @@
             </div>
             <div class="carousel-item slide-1">
               <h5 class="intro-step-title mt-7 center animated fadeInUp">Bem vindo ao Materialize Teclabs</h5>
-              <img src="app-assets/images/gallery/intro-slide-1.png" alt="" class="responsive-img animated fadeInUp slide-1-img">
+              <img src="assets/images/gallery/intro-slide-1.png" alt="" class="responsive-img animated fadeInUp slide-1-img">
               <p class="intro-step-text mt-5 animated fadeInUp">
                 O Materialize Teclabs é a Dashboard baseada em Material Design da Teclabs.
                 Oferece centenas de recursos, plugins e estilos para construção de qualquer sistema.
@@ -32,7 +32,7 @@
             </div>
             <div class="carousel-item slide-2">
               <h5 class="intro-step-title mt-7 center">Example Request Information</h5>
-              <img src="app-assets/images/gallery/intro-features.png" alt="" class="responsive-img slide-2-img">
+              <img src="assets/images/gallery/intro-features.png" alt="" class="responsive-img slide-2-img">
               <p class="intro-step-text mt-5">Lorem ipsum dolor sit amet consectetur,
                 adipisicing elit.
                 Aperiam deserunt nulla
@@ -60,7 +60,7 @@
             </div>
             <div class="carousel-item slide-3">
               <h5 class="intro-step-title mt-7 center">Showcase App Features</h5>
-              <img src="app-assets/images/gallery/intro-app.png" alt="" class="responsive-img slide-1-img">
+              <img src="assets/images/gallery/intro-app.png" alt="" class="responsive-img slide-1-img">
               <div class="row">
                 <div class="col m5 offset-m1 s12">
                   <ul class="feature-list left-align">

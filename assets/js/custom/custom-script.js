@@ -3,6 +3,11 @@ $('.maskCpf').formatter({
   'persistent': false
 });
 
+$('.maskCep').formatter({
+  'pattern': '{{99999}}-{{999}}',
+  'persistent': false
+});
+
 $('.maskRg').formatter({
   'pattern': '{{99}}.{{999}}.{{999}}-{{99}}',
   'persistent': false
@@ -10,6 +15,20 @@ $('.maskRg').formatter({
 
 $('.maskCelular').formatter({
   'pattern': '({{99}}) {{99999}}-{{9999}}',
+  'persistent': false
+});
+
+$('.maskNumber').formatter({
+  'pattern': '{{9999999999999999999}}',
+  'persistent': false
+});
+
+$('.maskPercent').formatter({
+  'patterns': [
+    { '^.{1}$': '{{9}}%' },
+    { '^.{2}$': '{{99}}%' },
+    { '*': '{{999}}%' }
+  ],
   'persistent': false
 });
 

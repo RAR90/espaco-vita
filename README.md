@@ -22,8 +22,8 @@ $ git clone https://github.com/RAR90/espaco-vita
 
 To write custom codes and styles in project level, use this files
 ```
-app-assets/css/custom/custom.css
-app-assets/js/custom/custom-script.js
+assets/css/custom/custom.css
+assets/js/custom/custom-script.js
 ```
 
 ##### 2. Page level scripts
@@ -32,15 +32,15 @@ Each page have plugin dependencies (JavaScript and Css) and your own CSS and Jav
 
 Ex.: home.php
 ```
-app-assets/js/scripts/home.js
-app-assets/css/pages/home.css
+assets/js/scripts/home.js
+assets/css/pages/home.css
 ```
 
 ##### 3. Navigation
 
 All menus and navegation components must be placed in `/menus` directory
 ```
-app-includes/menus/aside-right.php
-app-includes/menus/aside.php
-app-includes/menus/header.php
+includes/menus/aside-right.php
+includes/menus/aside.php
+includes/menus/header.php
 ```

@@ -4,7 +4,7 @@
   <div class="brand-sidebar">
     <h1 class="logo-wrapper">
       <a class="brand-logo darken-1" href="">
-        <img class="image-logo-aside" src="app-assets/images/logo/logo-icon.png" alt="materialize logo">
+        <img class="image-logo-aside" src="assets/images/logo/logo-icon.png" alt="materialize logo">
         <span class="logo-text hide-on-med-and-down">
           <div class="text-logo-aside">
             Espaço Vita

@@ -6,23 +6,23 @@
   <head>
 
     <?php
-      include "app-includes/head/meta.php";
-      include "app-includes/head/icons.php";
+      include "includes/head/meta.php";
+      include "includes/head/icons.php";
     ?>
 
     <title>Sistema Espaço Vita</title>
 
     <?php
-      include "app-includes/head/vendors.css.php";
-      include "app-includes/head/theme.css.php";
+      include "includes/head/vendors.css.php";
+      include "includes/head/theme.css.php";
     ?>
 
     <!-- BEGIN: Page Level CSS-->
-    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/login.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/pages/login.css">
     <!-- END: Page Level CSS-->
 
     <?php
-      include "app-includes/head/custom.css.php";
+      include "includes/head/custom.css.php";
     ?>
 
   </head>
@@ -40,7 +40,7 @@
               <form class="login-form">
                 <div class="row">
                   <div class="input-field col s12 login-title-header">
-                    <img class="login-title-logo" src="app-assets/images/logo/logo-icon.png" alt="Logo do cliente">
+                    <img class="login-title-logo" src="assets/images/logo/logo-icon.png" alt="Logo do cliente">
                     <h5 class="login-title-text">Entrar no Sistema</h5>
                   </div>
                 </div>
@@ -81,12 +81,12 @@
     </div>
 
     <?php
-      include "app-includes/footer/vendor.js.php";
-      include "app-includes/footer/scripts.js.php";
+      include "includes/footer/vendor.js.php";
+      include "includes/footer/scripts.js.php";
     ?>
 
-    <script src="app-assets/js/plugins.js" type="text/javascript"></script>
-    <script src="app-assets/js/custom/custom-script.js" type="text/javascript"></script>
+    <script src="assets/js/plugins.js" type="text/javascript"></script>
+    <script src="assets/js/custom/custom-script.js" type="text/javascript"></script>
 
   </body>
 </html>

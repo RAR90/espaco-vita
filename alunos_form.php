@@ -62,34 +62,34 @@ $alunoTelefoneMae = '';
   <head>
 
     <?php
-      include "app-includes/head/meta.php";
-      include "app-includes/head/icons.php";
+      include "includes/head/meta.php";
+      include "includes/head/icons.php";
     ?>
 
     <title>Sistema Espaço Vita - Dashboard</title>
 
     <?php
-      include "app-includes/head/vendors.css.php";
+      include "includes/head/vendors.css.php";
     ?>
 
     <!-- BEGIN: PAGE VENDOR CSS-->
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/data-tables/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/data-tables/css/select.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/data-tables/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/data-tables/css/select.dataTables.min.css">
     <!-- END: PAGE VENDOR CSS-->
 
     <?php
-      include "app-includes/head/theme.css.php";
+      include "includes/head/theme.css.php";
     ?>
 
     <!-- BEGIN: Page Level CSS-->
-    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-modern-menu-template/materialize.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-modern-menu-template/style.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/alunos-form.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vertical-modern-menu-template/materialize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vertical-modern-menu-template/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/pages/alunos-form.css">
     <!-- END: Page Level CSS-->
 
     <?php
-      include "app-includes/head/custom.css.php";
+      include "includes/head/custom.css.php";
     ?>
 
   </head>
@@ -103,8 +103,8 @@ $alunoTelefoneMae = '';
   >
 
     <?php
-      include "app-includes/menus/header.php";
-      include "app-includes/menus/aside-alunos.php";
+      include "includes/menus/header.php";
+      include "includes/menus/aside-alunos.php";
     ?>
 
     <!-- BEGIN: Page Main-->
@@ -178,7 +178,7 @@ $alunoTelefoneMae = '';
                           <div class="row">
                             <div class="input-field col s12">
                               <i class="material-icons prefix">receipt</i>
-                              <input id="alunoMatricula" name="alunoMatricula" value="<?=$alunoMatricula;?>" type="text">
+                              <input id="alunoMatricula" name="alunoMatricula" value="<?=$alunoMatricula;?>" type="text" required>
                               <label for="alunoMatricula" class="active">Matrícula</label>
                             </div>
                           </div>
@@ -188,7 +188,7 @@ $alunoTelefoneMae = '';
                           <div class="row">
                             <div class="input-field col s12">
                               <i class="material-icons prefix">account_circle</i>
-                              <input id="alunoNome" name="alunoNome" value="<?=$alunoNome;?>" type="text">
+                              <input id="alunoNome" name="alunoNome" value="<?=$alunoNome;?>" type="text" required>
                               <label for="alunoNome" class="active">Nome Completo</label>
                             </div>
                           </div>
@@ -216,7 +216,7 @@ $alunoTelefoneMae = '';
                           <div class="row">
                             <div class="input-field col s12">
                               <i class="material-icons prefix">calendar_today</i>
-                              <input id="alunoDataNascimento" name="alunoDataNascimento" class="datepicker" value="<?=$alunoDataNascimento;?>" type="date">
+                              <input id="alunoDataNascimento" name="alunoDataNascimento" class="datepicker" value="<?=$alunoDataNascimento;?>" type="date" required>
                               <label for="alunoDataNascimento" class="active">Data de Nascimento</label>
                             </div>
                           </div>
@@ -226,7 +226,7 @@ $alunoTelefoneMae = '';
                           <div class="row">
                             <div class="input-field col s12">
                               <i class="material-icons prefix">credit_card</i>
-                              <input id="alunoCPF" name="alunoCPF" class="maskCpf" value="<?=$alunoCPF;?>" type="text">
+                              <input id="alunoCPF" name="alunoCPF" class="maskCpf" value="<?=$alunoCPF;?>" type="text" required>
                               <label for="alunoCPF" class="active">CPF</label>
                             </div>
                           </div>
@@ -342,7 +342,7 @@ $alunoTelefoneMae = '';
                           <div class="row">
                             <div class="input-field col s12">
                               <i class="material-icons prefix">phone</i>
-                              <input id="alunoTelefone" name="alunoTelefone" class="maskPhone" value="<?=$alunoTelefone;?>" type="text">
+                              <input id="alunoTelefone" name="alunoTelefone" class="maskPhone" value="<?=$alunoTelefone;?>" type="text" required>
                               <label for="alunoTelefone" class="active">Telefone</label>
                             </div>
                           </div>
@@ -352,7 +352,7 @@ $alunoTelefoneMae = '';
                           <div class="row">
                             <div class="input-field col s12">
                               <i class="material-icons prefix">stay_current_portrait</i>
-                              <input id="alunoCelular" name="alunoCelular" class="maskCelular" value="<?=$alunoCelular;?>" type="text">
+                              <input id="alunoCelular" name="alunoCelular" class="maskCelular" value="<?=$alunoCelular;?>" type="text" required>
                               <label for="alunoCelular" class="active">Celular</label>
                             </div>
                           </div>
@@ -821,7 +821,7 @@ $alunoTelefoneMae = '';
 
         <?php
           // Notifications Menu
-          include "app-includes/menus/aside-right.php";
+          include "includes/menus/aside-right.php";
         ?>
 
       </div>
@@ -829,24 +829,24 @@ $alunoTelefoneMae = '';
     <!-- END: Page Main-->
 
     <?php
-      include "app-includes/footer/credits.php";
-      include "app-includes/footer/vendor.js.php";
+      include "includes/footer/credits.php";
+      include "includes/footer/vendor.js.php";
     ?>
 
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="app-assets/vendors/data-tables/js/jquery.dataTables.min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/data-tables/js/dataTables.select.min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/formatter/jquery.formatter.min.js" type="text/javascript"></script>
+    <script src="assets/vendors/data-tables/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="assets/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
+    <script src="assets/vendors/data-tables/js/dataTables.select.min.js" type="text/javascript"></script>
+    <script src="assets/vendors/formatter/jquery.formatter.min.js" type="text/javascript"></script>
     <!-- END PAGE VENDOR JS-->
 
     <?php
-      include "app-includes/footer/theme.js.php";
-      include "app-includes/footer/scripts.js.php";
+      include "includes/footer/theme.js.php";
+      include "includes/footer/scripts.js.php";
     ?>
 
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="app-assets/js/scripts/alunos-form.js" type="text/javascript"></script>
+    <script src="assets/js/scripts/alunos-form.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS-->
 
   </body>

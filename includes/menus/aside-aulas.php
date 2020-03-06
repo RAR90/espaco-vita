@@ -4,7 +4,7 @@
   <div class="brand-sidebar">
     <h1 class="logo-wrapper">
       <a class="brand-logo darken-1" href="">
-        <img class="image-logo-aside" src="app-assets/images/logo/logo-icon.png" alt="materialize logo">
+        <img class="image-logo-aside" src="assets/images/logo/logo-icon.png" alt="materialize logo">
         <span class="logo-text hide-on-med-and-down">
           <div class="text-logo-aside">
             Espaço Vita
@@ -22,14 +22,14 @@
     data-menu="menu-navigation"
     data-collapsible="menu-accordion"
   >
-    <li class="bold <?=(strpos($self, 'eventos_list')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="eventos_list.php">
-      <i class="material-icons">library_books</i><span class="menu-title" data-i18n="">Lista de Eventos</span></a>
+    <li class="bold <?=(strpos($self, 'modalidades_list')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="modalidades_list.php">
+      <i class="material-icons">fitness_center</i><span class="menu-title" data-i18n="">Modalidades</span></a>
     </li>
-    <li class="bold <?=(strpos($self, 'eventos_form')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="eventos_form.php">
-      <i class="material-icons">today</i><span class="menu-title" data-i18n="">Criar Eventos</span></a>
+    <li class="bold <?=(strpos($self, 'aulas_list')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="aulas_list.php">
+      <i class="material-icons">library_books</i><span class="menu-title" data-i18n="">Lista de Aulas</span></a>
     </li>
-    <li class="bold <?=(strpos($self, 'eventos_history')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="eventos_history.php">
-      <i class="material-icons">history</i><span class="menu-title" data-i18n="">Eventos Passados</span></a>
+    <li class="bold <?=(strpos($self, 'aulas_form')>0?'active':'')?>"><a class="waves-effect waves-cyan " href="aulas_form.php">
+      <i class="material-icons">today</i><span class="menu-title" data-i18n="">Agendar Aula</span></a>
     </li>
   </ul>
   <div class="navigation-background"></div><a class="sidenav-trigger btn-sidenav-toggle btn-floating btn-medium waves-effect waves-light hide-on-large-only" href="#" data-target="slide-out"><i class="material-icons">menu</i></a>

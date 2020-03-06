@@ -18,34 +18,34 @@ $alunoAulaProfessor = '';
   <head>
 
     <?php
-      include "app-includes/head/meta.php";
-      include "app-includes/head/icons.php";
+      include "includes/head/meta.php";
+      include "includes/head/icons.php";
     ?>
 
     <title>Sistema Espaço Vita - Aula</title>
 
     <?php
-      include "app-includes/head/vendors.css.php";
+      include "includes/head/vendors.css.php";
     ?>
 
     <!-- BEGIN: PAGE VENDOR CSS-->
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/data-tables/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/data-tables/css/select.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/data-tables/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/data-tables/css/select.dataTables.min.css">
     <!-- END: PAGE VENDOR CSS-->
 
     <?php
-      include "app-includes/head/theme.css.php";
+      include "includes/head/theme.css.php";
     ?>
 
     <!-- BEGIN: Page Level CSS-->
-    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-modern-menu-template/materialize.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-modern-menu-template/style.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/aulas-form.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vertical-modern-menu-template/materialize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vertical-modern-menu-template/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/pages/aulas-form.css">
     <!-- END: Page Level CSS-->
 
     <?php
-      include "app-includes/head/custom.css.php";
+      include "includes/head/custom.css.php";
     ?>
 
   </head>
@@ -59,8 +59,8 @@ $alunoAulaProfessor = '';
   >
 
     <?php
-      include "app-includes/menus/header.php";
-      include "app-includes/menus/aside-aulas.php";
+      include "includes/menus/header.php";
+      include "includes/menus/aside-aulas.php";
     ?>
 
 
@@ -112,7 +112,7 @@ $alunoAulaProfessor = '';
                             <!-- Selecione um aluno -->
                             <div class="input-field col s12 mb-0">
                               <i class="material-icons prefix">account_circle</i>
-                              <select name="alunoNome">
+                              <select name="alunoNome" required>
                                 <option value="" disabled selected>Selecione um aluno</option>
                                 <option value="0" >Rafael Ribeiro</option>
                                 <option value="1" >Hugo Savoia</option>
@@ -196,7 +196,7 @@ $alunoAulaProfessor = '';
             <!--/ Conteúdo -->
 
             <?php
-              include "app-includes/menus/aside-right.php";
+              include "includes/menus/aside-right.php";
             ?>
 
           </div>
@@ -207,23 +207,24 @@ $alunoAulaProfessor = '';
     <!-- END: Page Main-->
 
     <?php
-      include "app-includes/footer/credits.php";
-      include "app-includes/footer/vendor.js.php";
+      include "includes/footer/credits.php";
+      include "includes/footer/vendor.js.php";
     ?>
 
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="app-assets/vendors/data-tables/js/jquery.dataTables.min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/data-tables/js/dataTables.select.min.js" type="text/javascript"></script>
+    <script src="assets/vendors/data-tables/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="assets/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
+    <script src="assets/vendors/data-tables/js/dataTables.select.min.js" type="text/javascript"></script>
+    <script src="assets/vendors/formatter/jquery.formatter.min.js" type="text/javascript"></script>
     <!-- END PAGE VENDOR JS-->
 
     <?php
-      include "app-includes/footer/theme.js.php";
-      include "app-includes/footer/scripts.js.php";
+      include "includes/footer/theme.js.php";
+      include "includes/footer/scripts.js.php";
     ?>
 
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="app-assets/js/scripts/aulas-form.js" type="text/javascript"></script>
+    <script src="assets/js/scripts/aulas-form.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS-->
 
   </body>

@@ -15,34 +15,34 @@ $contaObs = '';
   <head>
 
     <?php
-      include "app-includes/head/meta.php";
-      include "app-includes/head/icons.php";
+      include "includes/head/meta.php";
+      include "includes/head/icons.php";
     ?>
 
     <title>Sistema Espaço Vita - Financeiro Contas</title>
 
     <?php
-      include "app-includes/head/vendors.css.php";
+      include "includes/head/vendors.css.php";
     ?>
 
     <!-- BEGIN: PAGE VENDOR CSS-->
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/data-tables/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/data-tables/css/select.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/data-tables/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/data-tables/css/select.dataTables.min.css">
     <!-- END: PAGE VENDOR CSS-->
 
     <?php
-      include "app-includes/head/theme.css.php";
+      include "includes/head/theme.css.php";
     ?>
 
     <!-- BEGIN: Page Level CSS-->
-    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-modern-menu-template/materialize.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-modern-menu-template/style.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/financeiro-contas-list.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vertical-modern-menu-template/materialize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vertical-modern-menu-template/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/pages/financeiro-contas-list.css">
     <!-- END: Page Level CSS-->
 
     <?php
-      include "app-includes/head/custom.css.php";
+      include "includes/head/custom.css.php";
     ?>
 
   </head>
@@ -56,8 +56,8 @@ $contaObs = '';
   >
 
     <?php
-      include "app-includes/menus/header.php";
-      include "app-includes/menus/aside-financeiro.php";
+      include "includes/menus/header.php";
+      include "includes/menus/aside-financeiro.php";
     ?>
 
 
@@ -195,17 +195,16 @@ $contaObs = '';
 
             <!-- Nova Conta Bancária -->
             <div id="conta-bancaria" class="modal" style="width: 600px">
-              <div class="modal-content">
-                <div class="col s12">
-                  <h5>Contas Bancárias</h5>
-                  <p>Preencha os dados da conta. As contas cadastradas serão usadas para dar baixa em recebimentos quando este for efetuado através de depósito.</p>
-
-                  <form action="financeiro_contas_bancarias.php" id="form-contas-bancarias">
+              <form action="financeiro_contas_bancarias.php" id="form-contas-bancarias">
+                <div class="modal-content">
+                  <div class="col s12">
+                    <h5>Contas Bancárias</h5>
+                    <p>Preencha os dados da conta. As contas cadastradas serão usadas para dar baixa em recebimentos quando este for efetuado através de depósito.</p>
 
                     <!-- Títular da Conta -->
                     <div class="row">
                       <div class="input-field col s12">
-                        <input id="contaTitular" name="contaTitular" value="<?=$contaTitular;?>" type="text">
+                        <input id="contaTitular" name="contaTitular" value="<?=$contaTitular;?>" type="text" required>
                         <label for="contaTitular" class="active">Títular</label>
                       </div>
                     </div>
@@ -214,7 +213,7 @@ $contaObs = '';
                     <!-- CPF -->
                     <div class="row">
                       <div class="input-field col s12">
-                        <input id="contaTitularCPF" name="contaTitularCPF" class="maskCpf" value="<?=$contaTitularCPF;?>" type="text">
+                        <input id="contaTitularCPF" name="contaTitularCPF" class="maskCpf" value="<?=$contaTitularCPF;?>" type="text" required>
                         <label for="contaTitularCPF" class="active">CPF do Títular</label>
                       </div>
                     </div>
@@ -223,7 +222,7 @@ $contaObs = '';
                     <!-- Agência -->
                     <div class="row">
                       <div class="input-field col s12">
-                        <input id="contaAgencia" name="contaAgencia" value="<?=$contaAgencia;?>" type="text">
+                        <input id="contaAgencia" name="contaAgencia" value="<?=$contaAgencia;?>" type="text" required>
                         <label for="contaAgencia" class="active">Número da Agência</label>
                       </div>
                     </div>
@@ -232,7 +231,7 @@ $contaObs = '';
                     <!-- Conta -->
                     <div class="row">
                       <div class="input-field col s12">
-                        <input id="contaNumero" name="contaNumero" value="<?=$contaNumero;?>" type="text">
+                        <input id="contaNumero" name="contaNumero" value="<?=$contaNumero;?>" type="text" required>
                         <label for="contaNumero" class="active">Número da Conta</label>
                       </div>
                     </div>
@@ -247,18 +246,18 @@ $contaObs = '';
                     </div>
                     <!--/ Observação -->
 
-                  </form>
+                  </div>
+                  <div class="col s12 pb-5 text-center">
+                    <button type="submit" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">CADASTRAR</button>
+                    <a onclick="closeModal('#conta-bancaria')" class="btn mb-5 btn-small btn-flat waves-effect waves-light grey light-2 white-text">FECHAR</a>
+                  </div>
                 </div>
-                <div class="col s12 pb-5 text-center">
-                  <button onclick="submit('form-contas-bancarias')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">CADASTRAR</button>
-                  <a onclick="closeModal('#conta-bancaria')" class="btn mb-5 btn-small btn-flat waves-effect waves-light grey light-2 white-text">FECHAR</a>
-                </div>
-              </div>
+              </form>
             </div>
             <!--/ Nova Conta Bancária -->
 
             <?php
-              include "app-includes/menus/aside-right.php";
+              include "includes/menus/aside-right.php";
             ?>
 
             <!-- FAB -->
@@ -278,22 +277,23 @@ $contaObs = '';
     <!-- END: Page Main-->
 
     <?php
-      include "app-includes/footer/credits.php";
-      include "app-includes/footer/vendor.js.php";
+      include "includes/footer/credits.php";
+      include "includes/footer/vendor.js.php";
     ?>
 
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="app-assets/vendors/data-tables/js/jquery.dataTables.min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
+    <script src="assets/vendors/data-tables/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="assets/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
+    <script src="assets/vendors/formatter/jquery.formatter.min.js" type="text/javascript"></script>
     <!-- END PAGE VENDOR JS-->
 
     <?php
-      include "app-includes/footer/theme.js.php";
-      include "app-includes/footer/scripts.js.php";
+      include "includes/footer/theme.js.php";
+      include "includes/footer/scripts.js.php";
     ?>
 
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="app-assets/js/scripts/financeiro-contas-list.js" type="text/javascript"></script>
+    <script src="assets/js/scripts/financeiro-contas-list.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS-->
 
   </body>
