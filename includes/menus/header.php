@@ -1,3 +1,10 @@
+
+<!-- Ajax Loading -->
+<div id="throbber" class="modal-loading">
+  <img src="assets/images/loading.gif" />
+</div>
+<!--/ Ajax Loading -->
+
 <header class="page-topbar" id="header">
   <div class="navbar navbar-fixed">
     <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-dark gradient-45deg-indigo-light-blue no-shadow">

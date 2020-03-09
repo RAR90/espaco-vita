@@ -2,8 +2,6 @@
   $filtroData = date('Y-m-d');
   $filtroTipo = '';
   $fechamentoObs = '';
-  $retiradaObs = '';
-  $valorRetirada = '';
   $caixaValorEntradas = 'R$ 7291,90';
   $caixaValorSaldo = 'R$ 7291,90';
   $caixaValorSaidas = 'R$ 00,00';
@@ -99,7 +97,7 @@
               <!-- Controles -->
               <div class="col s12 m9">
                 <button class="waves-effect waves-light btn-large float-right mr-1 mb-1" onclick="openModal('#fechar-caixa')"><i class="material-icons right">no_meeting_room</i>Fechar Caixa</button>
-                <a class="waves-effect waves-light btn-large float-right mr-1 mb-1" onclick="openModal('#retirar-dinheiro')"><i class="material-icons right">local_atm</i>Retirar</a>
+                <a class="waves-effect waves-light btn-large float-right mr-1 mb-1" onclick="ajaxModal('#retirar-dinheiro', 'ajax/retirar_dinheiro.php', {'id':'01','parametro_exemplo':'teste'})"><i class="material-icons right">local_atm</i>Retirar</a>
                 <a class="waves-effect waves-light btn-large float-right mr-1 mb-1" href="financeiro_recebiveis_form.php"><i class="material-icons right">add_to_photos</i>Lançar</a>
               </div>
               <!--/ Controles -->
@@ -246,7 +244,7 @@
                             <td>Infraestrutura - Conta de Luz - CPFL</td>
                             <td class="text-orange darken-3 text-center">Conta a Pagar</td>
                             <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                              <button onclick="ajaxModal('#detalhes-conta', 'ajax/detalhes_recebivel.php', {'id':'01','id_usuario':'02'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
                               </button>
                             </td>
@@ -264,7 +262,7 @@
                             <td>Aluno - Edivaldo Antonio</td>
                             <td class="green-text text-center">Recebível</td>
                             <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                              <button onclick="ajaxModal('#detalhes-conta', 'ajax/detalhes_recebivel.php', {'id':'01','id_usuario':'02'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
                               </button>
                             </td>
@@ -282,7 +280,7 @@
                             <td>Aluno - Maria Darlene da Silva</td>
                             <td class="green-text text-center">Recebível</td>
                             <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                              <button onclick="ajaxModal('#detalhes-conta', 'ajax/detalhes_recebivel.php', {'id':'01','id_usuario':'02'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
                               </button>
                             </td>
@@ -300,7 +298,7 @@
                             <td>Aluno - Elias Amarildo Santos</td>
                             <td class="green-text text-center">Recebível</td>
                             <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                              <button onclick="ajaxModal('#detalhes-conta', 'ajax/detalhes_recebivel.php', {'id':'01','id_usuario':'02'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
                               </button>
                             </td>
@@ -318,7 +316,7 @@
                             <td>Professor - Péricles Aparecido Fonseca</td>
                             <td class="text-orange darken-3 text-center">Conta a Pagar</td>
                             <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                              <button onclick="ajaxModal('#detalhes-conta', 'ajax/detalhes_recebivel.php', {'id':'01','id_usuario':'02'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
                               </button>
                             </td>
@@ -355,35 +353,8 @@
             <!-- Modal Detalhes da Conta -->
             <div id="detalhes-conta" class="modal" style="width: 500px">
               <div class="modal-content">
-                <h5>Detalhes da Conta</h5>
-                <h6>Status: <span class="text-red">Atrasado</span></h6>
-                <table>
-                  <tbody>
-                    <tr>
-                      <td><strong>Tipo:</strong></td>
-                      <td>Recebível</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Origem:</strong></td>
-                      <td>Pagamento Trimestral</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Aluno:</strong></td>
-                      <td>Maria Antonieta Delas Neves</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Vencimento:</strong></td>
-                      <td>22/12/2019</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Valor Total:</strong></td>
-                      <td>R$ 1500,00</td>
-                    </tr>
-                  </tbody>
-                </table>
-
                 <div class="col s12 pt-5 pb-5 text-center">
-                  <a onclick="closeModal('#detalhes-conta')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">FECHAR</a>
+                  <a onclick="closeModal('#detalhes-conta')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">CANCELAR</a>
                 </div>
               </div>
             </div>
@@ -461,82 +432,9 @@
             <!-- Modal Retirar dinheiro -->
             <div id="retirar-dinheiro" class="modal pb-2" style="width: 600px">
               <div class="modal-content">
-                <form action="financeiro_caixa_list.php">
-                  <div class="col s12">
-
-                    <h5>Retirar dinheiro</h5>
-                    <p>
-                      <i class="material-icons float-left">warning</i> A retirada de dinheiro do caixa é apenas para situações específicas.
-                      Opte por lançar uma conta avulsa ou da modalidade correta.
-                    </p>
-                    <hr><h5 class="pb-1">Saldo Disponível: R$ 7291,90</h5><hr>
-
-                    <!-- Valor da retirada -->
-                    <div class="row pt-2">
-                      <div class="input-field col s12">
-                        <i class="material-icons prefix">attach_money</i>
-                        <input id="valorRetirada" name="valorRetirada" class="maskMoney" value="<?=$valorRetirada;?>" type="text" required>
-                        <label for="valorRetirada" class="active">Valor da Retirada</label>
-                      </div>
-                    </div>
-                    <!--/ Valor da retirada -->
-
-                    <!-- Observação sobre a retirada -->
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <i class="material-icons prefix">chrome_reader_mode</i>
-                        <textarea name="retiradaObs" id="retiradaObs" style="height:100px" required><?=$retiradaObs;?></textarea>
-                        <label for="retiradaObs" class="active label-textarea">Motivo da Retirada</label>
-                      </div>
-                    </div>
-                    <!--/ Observação sobre a retirada -->
-
-                    <!-- Ações -->
-                    <div class="col s12 text-center">
-                      <button type="submit" class="btn mb-5 btn-flat waves-effect waves-light pink accent-2 white-text">Retirar</button>
-                      <a onclick="closeModal('#retirar-dinheiro')" class="btn mb-5 btn-flat waves-effect waves-light grey lighten-3"><i class="material-icons left">cancel</i>Cancelar</a>
-                    </div>
-                    <!--/ Ações -->
-
-                    <!-- Tabela de histórico -->
-                    <div class="row">
-                      <h5>Histórico de retiradas</h5>
-                      <table>
-                        <thead>
-                          <tr>
-                            <th>Data e hora</th>
-                            <th>Usuário</th>
-                            <th>Valor</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>25/12/2020 08:30</td>
-                            <td>Raquel Duarte</td>
-                            <td>R$ 50,00</td>
-                          </tr>
-                          <tr>
-                            <td>25/12/2020 08:30</td>
-                            <td>Raquel Duarte</td>
-                            <td>R$ 50,00</td>
-                          </tr>
-                          <tr>
-                            <td>25/12/2020 08:30</td>
-                            <td>Raquel Duarte</td>
-                            <td>R$ 50,00</td>
-                          </tr>
-                          <tr>
-                            <td>25/12/2020 08:30</td>
-                            <td>Raquel Duarte</td>
-                            <td>R$ 50,00</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <!--/ Tabela de histórico -->
-
-                  </div>
-                </form>
+                <div class="col s12 pt-5 pb-5 text-center">
+                  <a onclick="closeModal('#retirar-dinheiro')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">CANCELAR</a>
+                </div>
               </div>
             </div>
             <!--/ Modal Retirar dinheiro -->
@@ -561,6 +459,7 @@
     <script src="assets/vendors/data-tables/js/jquery.dataTables.min.js" type="text/javascript"></script>
     <script src="assets/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
     <script src="assets/vendors/formatter/jquery.formatter.min.js" type="text/javascript"></script>
+    <script src="assets/js/scripts/customizer.js" type="text/javascript"></script>
     <!-- END PAGE VENDOR JS-->
 
     <?php

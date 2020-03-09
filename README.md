@@ -44,3 +44,48 @@ includes/menus/aside-right.php
 includes/menus/aside.php
 includes/menus/header.php
 ```
+
+
+
+##### 4. Ajax Modal `ajaxModal()`
+
+This function send you parameters to php file and open an modal with a html fragment with result of php processing.
+
+```js
+ajaxModal(
+	'yourModalId',
+	'urlOfPHPFile',
+	{jsonObjectWithParams}
+)
+```
+####Usage
+#####HTML e JS
+To open an modal ajax throught a table line or button, you can use  function like that:
+
+```html
+<button
+  onclick="ajaxModal(
+    '#detalhes-conta',
+    'ajax/detalhes_recebivel.php',
+    {
+      'id':'01',
+      'id_usuario':'02'
+    }
+  )"
+>Abrir Modal</button>
+```
+#####PHP `ajax/detalhes_recebivel.php`
+In your php file, you can use simple `$_REQUEST` function to get your params. The response is a html fragment outside php tag:
+
+```html
+<?php
+  $id = $_REQUEST['id'];
+  $id_usuario = $_REQUEST['id_usuario'];
+?>
+
+<h5><?=$id;?></h5>
+<h6><?=$id_usuario;?></h6>
+```
+
+This fragment will be placed inside modal after bloking ui.
+

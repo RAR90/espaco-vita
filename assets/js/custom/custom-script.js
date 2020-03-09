@@ -98,3 +98,43 @@ function moeda(a, e, r, t) {
 function editModal() {
   openModal("#plano-de-conta")
 }
+
+function ajaxModal(modal, url, params) {
+  var modalContent = $(modal+' .modal-content');
+  var jsonData = JSON.parse(JSON.stringify(params));
+  block();
+  $.ajax({
+    method: "POST",
+    url: url,
+    data: jsonData
+  })
+  .done(function( msg ) {
+    setTimeout(() => {
+      $(modal).modal('open');
+      modalContent.html(msg);
+      unblock();
+    }, 300);
+  });
+}
+
+function block() {
+  var body = $('body');
+  var w = body.css("width");
+  var h = body.css("height");
+  var trb = $('#throbber');
+  var position = body.offset(); // top and left coord, related to document
+  trb.css({
+      width: w,
+      height: h,
+      opacity: 0.7,
+      position: 'absolute',
+      top:        position.top,
+      left:       position.left
+  });
+  trb.show();
+}
+
+function unblock() {
+  var trb = $('#throbber');
+  trb.hide();
+}

@@ -171,3 +171,28 @@ table {
 table td a {
 	cursor: pointer !important;
 }
+
+.modal-loading {
+	/* opacity: .5; */
+}
+
+.modal {
+	background-color: #FFF !important;
+}
+
+.modal-loading {
+	display: none;
+	position: static;
+	opacity: 0.6;
+	background-color: white;
+	z-index: 999999;
+	height: 100vh;
+}
+
+.modal-loading img {
+	margin: 0 auto;
+	position: absolute;
+	top: 0; bottom: 0; left:0; right:0;
+	margin: auto;
+	display: block;
+}
