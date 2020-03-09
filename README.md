@@ -46,8 +46,8 @@ includes/menus/header.php
 ```
 
 
-
-##### 4. Ajax Modal `ajaxModal()`
+## Async Functions
+##### 1. Ajax Modal `ajaxModal()`
 
 This function send you parameters to php file and open an modal with a html fragment with result of php processing.
 
@@ -58,8 +58,8 @@ ajaxModal(
 	{jsonObjectWithParams}
 )
 ```
-####Usage
-#####HTML e JS
+###Usage
+####HTML e JS
 To open an modal ajax throught a table line or button, you can use  function like that:
 
 ```html
@@ -74,7 +74,7 @@ To open an modal ajax throught a table line or button, you can use  function lik
   )"
 >Abrir Modal</button>
 ```
-#####PHP `ajax/detalhes_recebivel.php`
+####PHP `ajax/detalhes_recebivel.php`
 In your php file, you can use simple `$_REQUEST` function to get your params. The response is a html fragment outside php tag:
 
 ```html
