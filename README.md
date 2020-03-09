@@ -53,9 +53,9 @@ This function send you parameters to php file and open an modal with a html frag
 
 ```js
 ajaxModal(
-	'yourModalId',
-	'urlOfPHPFile',
-	{jsonObjectWithParams}
+  'yourModalId',
+  'urlOfPHPFile',
+  {jsonObjectWithParams}
 )
 ```
 ### Usage
