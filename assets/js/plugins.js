@@ -191,9 +191,6 @@ $(function() {
       }
    }
 
-   //Init tabs
-   $(".tabs").tabs();
-
    // Swipeable Tabs Demo Init
    if ($("#tabs-swipe-demo").length) {
       $("#tabs-swipe-demo").tabs({

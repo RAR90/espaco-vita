@@ -51,6 +51,8 @@ $('.datepicker').datepicker({
 
 $('.timepicker').timepicker();
 
+setTabs();
+
 function submit(formId) {
   var form = document.getElementById(formId);
   if (form) {
@@ -143,6 +145,9 @@ function unblock() {
   trb.hide();
 }
 
-function setTab() {
+function setTabs() {
+
+   //Init tabs
+   var instance = $(".tabs").tabs();
 
 }

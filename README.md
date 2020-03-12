@@ -92,3 +92,8 @@ In your php file, you can use simple `$_REQUEST` function to get your params. Th
 
 This fragment will be placed inside modal after bloking ui.
 
+#### 2. TABs navigation
+If you need open an page with a especific tab, you can passes tab name in url like that:
+```
+financeiro_recebiveis_form.php#tab-eventos
+```
