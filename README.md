@@ -45,7 +45,7 @@ includes/menus/aside.php
 includes/menus/header.php
 ```
 
-#### 2. TABs Navigation
+#### 4. TABs Navigation
 
 If you need open an page with a especific tab, you can passes tab name in url like that:
 ```php
