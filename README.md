@@ -45,6 +45,12 @@ includes/menus/aside.php
 includes/menus/header.php
 ```
 
+#### 2. TABs Navigation
+
+If you need open an page with a especific tab, you can passes tab name in url like that:
+```php
+financeiro_recebiveis_form.php#tab-eventos
+```
 
 ## Async Functions
 #### 1. Ajax Modal `ajaxModal()`
@@ -92,8 +98,3 @@ In your php file, you can use simple `$_REQUEST` function to get your params. Th
 
 This fragment will be placed inside modal after bloking ui.
 
-#### 2. TABs navigation
-If you need open an page with a especific tab, you can passes tab name in url like that:
-```
-financeiro_recebiveis_form.php#tab-eventos
-```
