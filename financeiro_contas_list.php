@@ -1,14 +1,9 @@
 <?php
 
 $planoDeConta = '';
-$dataPago = date('Y-m-d');
-$valorPago = '5.000,00';
 
-
-$tipo = 'Conta a Pagar';
 $origem =	'Salário do professor Rafael Antônio';
 $vencimento =	'22/12/2019';
-$valorTotal = 'R$ 1500,00';
 
 if (isset($_GET['planoDeConta'])) {
   $planoDeConta = $_GET['planoDeConta'];
@@ -100,8 +95,6 @@ if (isset($_GET['planoDeConta'])) {
         <div class="col s12">
           <div class="container">
             <div class="section section-data-tables">
-
-              <!-- Page Length Options -->
               <div class="row">
                 <div class="col s12">
                   <div class="card border-radius-6">
@@ -115,7 +108,6 @@ if (isset($_GET['planoDeConta'])) {
                             <th>Origem</th>
                             <th style="width: 100px">Status</th>
                             <th class="text-center" style="width: 100px">Editar</th>
-                            <th class="text-center" style="width: 100px">Detalhes</th>
                             <th class="text-center" style="width: 100px">Dar Baixa</th>
                           </tr>
                         </thead>
@@ -132,12 +124,7 @@ if (isset($_GET['planoDeConta'])) {
                               </a>
                             </td>
                             <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                              <button onclick="ajaxModal('#baixar-conta', 'ajax/baixar_conta.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
                                 <i class="material-icons">assignment_turned_in</i>
                               </button>
                             </td>
@@ -154,12 +141,7 @@ if (isset($_GET['planoDeConta'])) {
                               </a>
                             </td>
                             <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                              <button onclick="ajaxModal('#baixar-conta', 'ajax/baixar_conta.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
                                 <i class="material-icons">assignment_turned_in</i>
                               </button>
                             </td>
@@ -176,12 +158,7 @@ if (isset($_GET['planoDeConta'])) {
                               </a>
                             </td>
                             <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
-                                <i class="material-icons">search</i>
-                              </button>
-                            </td>
-                            <td class="text-center">
-                              <button onclick="openModal('#baixar-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
+                              <button onclick="ajaxModal('#baixar-conta', 'ajax/baixar_conta.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light green white-text">
                                 <i class="material-icons">assignment_turned_in</i>
                               </button>
                             </td>
@@ -195,7 +172,6 @@ if (isset($_GET['planoDeConta'])) {
                             <th>Nome do Professor</th>
                             <th style="width: 100px">Status</th>
                             <th class="text-center" style="width: 100px">Editar</th>
-                            <th class="text-center" style="width: 100px">Detalhes</th>
                             <th class="text-center" style="width: 100px">Dar Baixa</th>
                           </tr>
                         </tfoot>
@@ -205,143 +181,17 @@ if (isset($_GET['planoDeConta'])) {
                   </div>
                 </div>
               </div>
-
             </div>
-
-
-            <!-- Modal Detalhes da Conta -->
-            <div id="detalhes-conta" class="modal" style="width: 500px">
-              <div class="modal-content">
-                <h5>Detalhes da Conta</h5>
-                <h6>Status: <span class="text-red">Atrasado</span></h6>
-                <table>
-                  <tbody>
-                    <tr>
-                      <td><strong>Tipo:</strong></td>
-                      <td><?=$tipo;?></td>
-                    </tr>
-                    <tr>
-                      <td><strong>Origem:</strong></td>
-                      <td><?=$origem;?></td>
-                    </tr>
-                    <tr>
-                      <td><strong>Vencimento:</strong></td>
-                      <td><?=$vencimento;?></td>
-                    </tr>
-                    <tr>
-                      <td><strong>Valor Total:</strong></td>
-                      <td><?=$valorTotal;?></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="col s12 pt-5 pb-5 text-center">
-                  <a onclick="closeModal('#detalhes-conta')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">FECHAR</a>
-                </div>
-              </div>
-            </div>
-            <!--/ Modal Detalhes da Conta -->
 
             <!-- Modal Baixar Conta -->
-            <div id="baixar-conta" class="modal" style="width: 600px">
-              <form action="financeiro_contas_list.php" method="get">
-                <div class="modal-content">
-                  <div class="col s12">
-                    <h5>Dar Baixa na Conta</h5>
-                    <p>Para dar baixa na conta, preencha os dados e faça upload do comprovante.</p>
-
-                    <table class="mb-5">
-                      <tbody>
-                        <tr>
-                          <td><strong>Tipo:</strong></td>
-                          <td><?=$tipo;?></td>
-                        </tr>
-                        <tr>
-                          <td><strong>Origem:</strong></td>
-                          <td><?=$origem;?></td>
-                        </tr>
-                        <tr>
-                          <td><strong>Vencimento:</strong></td>
-                          <td><?=$vencimento;?></td>
-                        </tr>
-                        <tr>
-                          <td><strong>Valor Total:</strong></td>
-                          <td><?=$valorTotal;?></td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <div class="file-field input-field">
-                      <label class="active">Anexar Comprovante</label>
-                      <div class="btn mb-5 mt-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
-                        <span>Escolher Comprovante</span>
-                        <input type="file">
-                      </div>
-                      <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text">
-                      </div>
-                    </div>
-
-                    <!-- Meio de Pagamento -->
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <i class="material-icons prefix">credit_card</i>
-                        <select name="meioPagamento" id="baixa-conta-meio-pagamento">
-                          <option value="0" disabled selected>Selecione o meio de pagamento</option>
-                          <option value="dinheiro">Dinheiro</option>
-                          <option value="cartao">Cartão</option>
-                          <option value="cheque">Cheque</option>
-                          <option value="deposito">Deposito</option>
-                        </select>
-                        <label>Meio de Pagamento</label>
-                      </div>
-                    </div>
-                    <!--/ Meio de Pagamento -->
-
-                    <!-- Sacado -->
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <i class="material-icons prefix">card_membership</i>
-                        <select name="meioPagamento" id="baixa-conta-meio-pagamento">
-                          <option value="0" disabled selected>Selecione o sacado</option>
-                          <option value="">ITAÚ - CC.: 00000-1</option>
-                          <option value="">BB - CC.: 00000-1</option>
-                        </select>
-                        <label>Sacado</label>
-                      </div>
-                    </div>
-                    <!--/ Sacado -->
-
-                    <!-- Data do pagamento -->
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <i class="material-icons prefix">calendar_today</i>
-                        <input id="dataPago" name="dataPago" class="datepicker" value="<?=$dataPago;?>" type="date" required>
-                        <label for="dataPago" class="active strong">Data do pagamento</label>
-                      </div>
-                    </div>
-                    <!--/ Data do pagamento -->
-
-                    <!-- Valor pago -->
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <i class="material-icons prefix">attach_money</i>
-                        <input id="valorPago" name="valorPago" value="<?=$valorPago;?>" type="text" class="maskMoney" required>
-                        <label for="valorPago" class="active">Valor Pago</label>
-                      </div>
-                    </div>
-                    <!--/ Valor pago -->
-
-                  </div>
-
-                  <!-- Gravar -->
-                  <div class="col s12 pb-5 text-center">
-                    <button type="submit" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">DAR BAIXA</button>
-                    <a onclick="closeModal('#baixar-conta')" class="btn mb-5 btn-small btn-flat waves-effect waves-light grey light-2 white-text">FECHAR</a>
-                  </div>
-                  <!--/ Gravar -->
-
+            <div id="baixar-conta" class="modal" style="width: 650px">
+              <div class="modal-content">
+                <!-- Gravar -->
+                <div class="col s12 pb-5 text-center">
+                  <a onclick="closeModal('#baixar-conta')" class="btn mb-5 btn-small btn-flat waves-effect waves-light grey light-2 white-text">FECHAR</a>
                 </div>
-              </form>
+                <!--/ Gravar -->
+              </div>
             </div>
             <!--/ Modal Baixar Conta -->
 

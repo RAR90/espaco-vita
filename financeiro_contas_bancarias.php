@@ -1,13 +1,3 @@
-<?php
-
-$contaTitular = '';
-$contaTitularCPF = '';
-$contaAgencia = '';
-$contaNumero = '';
-$contaObs = '';
-
-?>
-
 <!DOCTYPE html>
 <html class="loading" lang="pt-Br" data-textdirection="ltr">
 
@@ -116,7 +106,7 @@ $contaObs = '';
                             <td>0000</td>
                             <td>01234-0</td>
                             <td class="text-center">
-                              <button onclick="openModal('#conta-bancaria')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                              <button onclick="ajaxModal('#conta-bancaria', 'ajax/conta_bancaria.php', {'acao':'editar'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                 <i class="material-icons">edit</i>
                               </button>
                             </td>
@@ -132,7 +122,7 @@ $contaObs = '';
                             <td>0000</td>
                             <td>01234-0</td>
                             <td class="text-center">
-                              <button onclick="openModal('#conta-bancaria')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                              <button onclick="ajaxModal('#conta-bancaria', 'ajax/conta_bancaria.php', {'acao':'editar'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                 <i class="material-icons">edit</i>
                               </button>
                             </td>
@@ -147,7 +137,7 @@ $contaObs = '';
                             <td>0000</td>
                             <td>01234-0</td>
                             <td class="text-center">
-                              <button onclick="openModal('#conta-bancaria')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                              <button onclick="ajaxModal('#conta-bancaria', 'ajax/conta_bancaria.php', {'acao':'editar'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                 <i class="material-icons">edit</i>
                               </button>
                             </td>
@@ -162,7 +152,7 @@ $contaObs = '';
                             <td>0000</td>
                             <td>01234-0</td>
                             <td class="text-center">
-                              <button onclick="openModal('#conta-bancaria')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                              <button onclick="ajaxModal('#conta-bancaria', 'ajax/conta_bancaria.php', {'acao':'editar'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                 <i class="material-icons">edit</i>
                               </button>
                             </td>
@@ -195,64 +185,12 @@ $contaObs = '';
 
             <!-- Nova Conta Bancária -->
             <div id="conta-bancaria" class="modal" style="width: 600px">
-              <form action="financeiro_contas_bancarias.php" id="form-contas-bancarias">
-                <div class="modal-content">
-                  <div class="col s12">
-                    <h5>Contas Bancárias</h5>
-                    <p>Preencha os dados da conta. As contas cadastradas serão usadas para dar baixa em recebimentos quando este for efetuado através de depósito.</p>
-
-                    <!-- Títular da Conta -->
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <input id="contaTitular" name="contaTitular" value="<?=$contaTitular;?>" type="text" required>
-                        <label for="contaTitular" class="active">Títular</label>
-                      </div>
-                    </div>
-                    <!--/ Títular da Conta -->
-
-                    <!-- CPF -->
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <input id="contaTitularCPF" name="contaTitularCPF" class="maskCpf" value="<?=$contaTitularCPF;?>" type="text" required>
-                        <label for="contaTitularCPF" class="active">CPF do Títular</label>
-                      </div>
-                    </div>
-                    <!--/ CPF -->
-
-                    <!-- Agência -->
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <input id="contaAgencia" name="contaAgencia" value="<?=$contaAgencia;?>" type="text" required>
-                        <label for="contaAgencia" class="active">Número da Agência</label>
-                      </div>
-                    </div>
-                    <!--/ Agência -->
-
-                    <!-- Conta -->
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <input id="contaNumero" name="contaNumero" value="<?=$contaNumero;?>" type="text" required>
-                        <label for="contaNumero" class="active">Número da Conta</label>
-                      </div>
-                    </div>
-                    <!--/ Conta -->
-
-                    <!-- Observação -->
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <textarea name="contaObs" id="contaObs" rows="10"><?=$contaObs;?></textarea>
-                        <label for="contaObs" class="active label-textarea">Observação</label>
-                      </div>
-                    </div>
-                    <!--/ Observação -->
-
-                  </div>
-                  <div class="col s12 pb-5 text-center">
-                    <button type="submit" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">CADASTRAR</button>
-                    <a onclick="closeModal('#conta-bancaria')" class="btn mb-5 btn-small btn-flat waves-effect waves-light grey light-2 white-text">FECHAR</a>
-                  </div>
+              <div class="modal-content">
+                <div class="col s12 pb-5 text-center">
+                  <button type="submit" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">CADASTRAR</button>
+                  <a onclick="closeModal('#conta-bancaria')" class="btn mb-5 btn-small btn-flat waves-effect waves-light grey light-2 white-text">FECHAR</a>
                 </div>
-              </form>
+              </div>
             </div>
             <!--/ Nova Conta Bancária -->
 
@@ -262,7 +200,7 @@ $contaObs = '';
 
             <!-- FAB -->
             <div style="bottom: 50px; right: 19px;" class="fixed-action-btn direction-top">
-              <a href="#" onclick="openModal('#conta-bancaria')" class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow">
+              <a href="#" onclick="ajaxModal('#conta-bancaria', 'ajax/conta_bancaria.php', {'acao':'novo'})" class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow">
                 <i class="material-icons">add</i>
               </a>
             </div>

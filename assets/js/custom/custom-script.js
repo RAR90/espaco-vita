@@ -112,6 +112,10 @@ function ajaxModal(modal, url, params) {
     setTimeout(() => {
       $(modal).modal('open');
       modalContent.html(msg);
+      $('.datepicker').datepicker({
+        format: 'yyyy-mm-dd'
+      });
+      $("select").formSelect();
       unblock();
     }, 300);
   });
@@ -127,7 +131,7 @@ function block() {
       width: w,
       height: h,
       opacity: 0.7,
-      position: 'absolute',
+      position: 'fixed',
       top:        position.top,
       left:       position.left
   });
@@ -137,4 +141,8 @@ function block() {
 function unblock() {
   var trb = $('#throbber');
   trb.hide();
+}
+
+function setTab() {
+
 }

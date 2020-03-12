@@ -133,7 +133,7 @@
                                 <td>Alexandre Exemplo</td>
                                 <td>Pilates</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -146,7 +146,7 @@
                                 <td>Alexandre Exemplo</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -159,7 +159,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -172,7 +172,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -185,7 +185,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -198,7 +198,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -211,7 +211,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -224,7 +224,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -237,7 +237,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -250,7 +250,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -263,7 +263,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -276,7 +276,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -289,7 +289,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -302,7 +302,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -315,7 +315,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -328,7 +328,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -341,7 +341,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -354,7 +354,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -367,7 +367,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -380,7 +380,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -393,7 +393,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -406,7 +406,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -419,7 +419,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -432,7 +432,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -445,7 +445,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -458,7 +458,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -471,7 +471,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -484,7 +484,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -497,7 +497,7 @@
                                 <td>Professor Exemplo 0</td>
                                 <td>Funcional</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#detalhes-aula')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                                  <button onclick="ajaxModal('#detalhes-aula', 'ajax/detalhes_aula.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                     <i class="material-icons">search</i>
                                   </button>
                                 </td>
@@ -529,23 +529,6 @@
             <!-- Modal Detalhes da Aula -->
             <div id="detalhes-aula" class="modal" style="width: 310px">
               <div class="modal-content">
-                <div class="col s12">
-                  <h5>Aula de Pilates</h5>
-                  <p>Detalhes sobre a aula de pilates</p>
-                </div>
-                <div class="col s12">
-                  <ul>
-                    <li><strong>Professor: </strong>Alexandre Exemplo</li>
-                    <li><strong>Aluno: </strong>Rafael Ribeiro</li>
-                  </ul>
-                  <ul>
-                    <li><strong>Data: </strong>22/12/2019</li>
-                    <li><strong>Horário: </strong>08:30</li>
-                  </ul>
-                </div>
-                <div class="col s12 pb-5 text-center">
-                  <a href="aulas_form.php" class="btn mb-5 mt-5 btn-small btn-flat waves-effect waves-light red accent-2 white-text">REAGENDAR</a>
-                </div>
                 <div class="col s12 pb-5 text-center">
                   <a onclick="closeModal('#detalhes-aula')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">FECHAR</a>
                 </div>

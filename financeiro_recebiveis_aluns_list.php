@@ -108,7 +108,7 @@
                             <td>Exemplo de Aluno</td>
                             <td class="text-center">Pago</td>
                             <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                              <button onclick="ajaxModal('#detalhes-recebivel-aluno', 'ajax/detalhes_recebivel_aluno.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
                               </button>
                             </td>
@@ -125,7 +125,7 @@
                             <td>Exemplo de Aluno</td>
                             <td class="blue-text text-center">Em dia</td>
                             <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                              <button onclick="ajaxModal('#detalhes-recebivel-aluno', 'ajax/detalhes_recebivel_aluno.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
                               </button>
                             </td>
@@ -142,7 +142,7 @@
                             <td>Exemplo de Aluno</td>
                             <td class="text-center red-text">Atrasado</td>
                             <td class="text-center">
-                              <button onclick="openModal('#detalhes-conta')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                              <button onclick="ajaxModal('#detalhes-recebivel-aluno', 'ajax/detalhes_recebivel_aluno.php', {'id':'01'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
                               </button>
                             </td>
@@ -152,8 +152,6 @@
                               </a>
                             </td>
                           </tr>
-
-
 
                         </tbody>
                         <tfoot>
@@ -176,37 +174,10 @@
             </div>
 
             <!-- Modal Detalhes da Conta -->
-            <div id="detalhes-conta" class="modal" style="width: 500px">
+            <div id="detalhes-recebivel-aluno" class="modal" style="width: 500px">
               <div class="modal-content">
-                <h5>Detalhes da Conta</h5>
-                <h6>Status: <span class="text-red">Atrasado</span></h6>
-                <table>
-                  <tbody>
-                    <tr>
-                      <td><strong>Tipo:</strong></td>
-                      <td>Recebível</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Origem:</strong></td>
-                      <td>Pagamento Trimestral</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Aluno:</strong></td>
-                      <td>Maria Antonieta Delas Neves</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Vencimento:</strong></td>
-                      <td>22/12/2019</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Valor Total:</strong></td>
-                      <td>R$ 1500,00</td>
-                    </tr>
-                  </tbody>
-                </table>
-
                 <div class="col s12 pt-5 pb-5 text-center">
-                  <a onclick="closeModal('#detalhes-conta')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">FECHAR</a>
+                  <a onclick="closeModal('#detalhes-recebivel-aluno')" class="btn mb-5 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">FECHAR</a>
                 </div>
               </div>
             </div>

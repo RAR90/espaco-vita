@@ -244,7 +244,7 @@
                             <td>Infraestrutura - Conta de Luz - CPFL</td>
                             <td class="text-orange darken-3 text-center">Conta a Pagar</td>
                             <td class="text-center">
-                              <button onclick="ajaxModal('#detalhes-conta', 'ajax/detalhes_recebivel.php', {'id':'01','id_usuario':'02'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                              <button onclick="ajaxModal('#detalhes-conta', 'ajax/detalhes_conta.php', {'id':'01','id_usuario':'02'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
                               </button>
                             </td>
@@ -262,7 +262,7 @@
                             <td>Aluno - Edivaldo Antonio</td>
                             <td class="green-text text-center">Recebível</td>
                             <td class="text-center">
-                              <button onclick="ajaxModal('#detalhes-conta', 'ajax/detalhes_recebivel.php', {'id':'01','id_usuario':'02'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                              <button onclick="ajaxModal('#detalhes-conta', 'ajax/detalhes_conta.php', {'id':'01','id_usuario':'02'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
                               </button>
                             </td>
@@ -280,7 +280,7 @@
                             <td>Aluno - Maria Darlene da Silva</td>
                             <td class="green-text text-center">Recebível</td>
                             <td class="text-center">
-                              <button onclick="ajaxModal('#detalhes-conta', 'ajax/detalhes_recebivel.php', {'id':'01','id_usuario':'02'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                              <button onclick="ajaxModal('#detalhes-conta', 'ajax/detalhes_conta.php', {'id':'01','id_usuario':'02'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
                               </button>
                             </td>
@@ -298,7 +298,7 @@
                             <td>Aluno - Elias Amarildo Santos</td>
                             <td class="green-text text-center">Recebível</td>
                             <td class="text-center">
-                              <button onclick="ajaxModal('#detalhes-conta', 'ajax/detalhes_recebivel.php', {'id':'01','id_usuario':'02'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                              <button onclick="ajaxModal('#detalhes-conta', 'ajax/detalhes_conta.php', {'id':'01','id_usuario':'02'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
                               </button>
                             </td>
@@ -316,7 +316,7 @@
                             <td>Professor - Péricles Aparecido Fonseca</td>
                             <td class="text-orange darken-3 text-center">Conta a Pagar</td>
                             <td class="text-center">
-                              <button onclick="ajaxModal('#detalhes-conta', 'ajax/detalhes_recebivel.php', {'id':'01','id_usuario':'02'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
+                              <button onclick="ajaxModal('#detalhes-conta', 'ajax/detalhes_conta.php', {'id':'01','id_usuario':'02'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light pink accent-2 white-text">
                                 <i class="material-icons">search</i>
                               </button>
                             </td>

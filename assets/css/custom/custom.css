@@ -196,3 +196,21 @@ table td a {
 	margin: auto;
 	display: block;
 }
+
+#baixar-conta {
+	overflow-x: visible !important;
+}
+
+.modal .input-field .modal-overlay {
+	background: none !important;
+}
+
+.dataTables_length .select-wrapper .select-dropdown,
+.dataTables_length .select-wrapper ul,
+.dataTables_length .select-wrapper svg {
+	display: none !important;
+}
+
+.dataTables_length .select-wrapper {
+	width: 200px !important;
+}

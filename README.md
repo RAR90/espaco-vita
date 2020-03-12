@@ -66,7 +66,7 @@ To open an modal ajax throught a table line or button, you can use  function lik
 <button
   onclick="ajaxModal(
     '#detalhes-conta',
-    'ajax/detalhes_recebivel.php',
+    'ajax/detalhes_conta.php',
     {
       'id':'01',
       'id_usuario':'02'
@@ -74,7 +74,10 @@ To open an modal ajax throught a table line or button, you can use  function lik
   )"
 >Abrir Modal</button>
 ```
-#### PHP `ajax/detalhes_recebivel.php`
+
+For convention, the name of php file that contain the modal content have a same name of modal id.
+
+#### PHP `ajax/detalhes_conta.php`
 In your php file, you can use simple `$_REQUEST` function to get your params. The response is a html fragment outside php tag:
 
 ```html

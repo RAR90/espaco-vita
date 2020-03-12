@@ -1,10 +1,3 @@
-<?php
-
-$modalidadeNome = '';
-$modalidadeCredito = '';
-
-?>
-
 <!DOCTYPE html>
 <html class="loading" lang="pt-Br" data-textdirection="ltr">
 
@@ -114,7 +107,7 @@ $modalidadeCredito = '';
                                 <td>Pilates</td>
                                 <td>Meia hora</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#editar-modalidade')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                  <button onclick="ajaxModal('#editar-modalidade', 'ajax/editar_modalidade.php', {'acao':'editar'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                     <i class="material-icons">edit</i>
                                   </button>
                                 </td>
@@ -124,7 +117,7 @@ $modalidadeCredito = '';
                                 <td>Pilates</td>
                                 <td>Uma hora</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#editar-modalidade')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                  <button onclick="ajaxModal('#editar-modalidade', 'ajax/editar_modalidade.php', {'acao':'editar'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                     <i class="material-icons">edit</i>
                                   </button>
                                 </td>
@@ -134,7 +127,7 @@ $modalidadeCredito = '';
                                 <td>Pilates</td>
                                 <td>Meia hora</td>
                                 <td class="text-center">
-                                  <button onclick="openModal('#editar-modalidade')" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
+                                  <button onclick="ajaxModal('#editar-modalidade', 'ajax/editar_modalidade.php', {'acao':'editar'})" class="btn-floating mb-1 btn-small btn-flat waves-effect waves-light blue accent-2 white-text">
                                     <i class="material-icons">edit</i>
                                   </button>
                                 </td>
@@ -163,50 +156,7 @@ $modalidadeCredito = '';
 
             <!-- Modal Detalhes da Aula -->
             <div id="editar-modalidade" class="modal" style="width: 600px">
-              <div class="modal-content">
-                <div class="col s12">
-                  <h5>Editar Modalidade</h5>
-                  <p>As modalidades não podem ser removidas depois de cadastradas. Editando essa modalidade, tudo relacionada a ela é alterado.</p>
-                </div>
-                <div class="col s12">
-
-                  <form action="modalidades_list.php" class="pr-5">
-
-                    <!-- Nome da Modalidade -->
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">fitness_center</i>
-                      <input id="modalidadeNome" type="text" value="<?=$modalidadeNome;?>" required>
-                      <label for="modalidadeNome" class="active">Nome da Modalidade</label>
-                    </div>
-                    <!--/ Nome da Modalidade -->
-
-                    <!-- Tipo de Crédito -->
-                    <div class="input-field col s12 mb-0">
-                      <i class="material-icons prefix">access_time</i>
-                      <select name="modalidadeCredito">
-                        <option value="" disabled selected>Selecione o Tipo de Crédito</option>
-                        <option value="" disabled selected>Uma Hora</option>
-                        <option value="" disabled selected>Meia Hora</option>
-                      </select>
-                      <label>Tipo de Crédito</label>
-                    </div>
-                    <!--/ Tipo de Crédito -->
-
-                    <!-- Gravar -->
-                    <div class="row mb-5">
-                      <div class="input-field col s12">
-                        <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
-                          <i class="material-icons left">today</i>
-                          GRAVAR
-                        </button>
-                      </div>
-                    </div>
-                    <!--/ Gravar -->
-
-                  </form>
-
-                </div>
-              </div>
+              <div class="modal-content"></div>
             </div>
             <!--/ Modal Detalhes da Aula -->
 
@@ -216,7 +166,7 @@ $modalidadeCredito = '';
 
             <!-- FAB -->
             <div style="bottom: 50px; right: 19px;" class="fixed-action-btn direction-top">
-              <a onclick="openModal('#editar-modalidade')" class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow">
+              <a onclick="ajaxModal('#editar-modalidade', 'ajax/editar_modalidade.php', {'acao':'novo'})" class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow">
                 <i class="material-icons">add</i>
               </a>
             </div>
