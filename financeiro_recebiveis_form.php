@@ -2,7 +2,6 @@
 
 // Alunos
 $recebivelAluno = '';
-$recebivelAlunoModalidade = '';
 $valorRecebivel = '';
 $recebivelDesconto = '';
 $recebivelAlunosCreditos = '';
@@ -143,21 +142,8 @@ $recebivelOutrosVencimento = '1990-03-26';
                                 </div>
                                 <!--/ Aluno -->
 
-                                <!-- Modalidade -->
-                                <div class="input-field col s12">
-                                  <i class="material-icons prefix">content_paste</i>
-                                  <select name="recebivelAlunoModalidade" id="recebivelAlunoModalidade">
-                                    <option value="0" disabled selected>Selecione uma Modalidade</option>
-                                    <option value="dinheiro">Pilates (Trimestral)</option>
-                                    <option value="dinheiro">Funcional (Trimestral)</option>
-                                    <option value="dinheiro">Funcional (Trimestral)</option>
-                                  </select>
-                                  <label>Selecione uma Modalidade</label>
-                                </div>
-                                <!--/ Modalidade -->
-
                                 <!-- Valor -->
-                                <div class="input-field col s4">
+                                <div class="input-field col s6">
                                   <i class="material-icons prefix">attach_money</i>
                                   <input id="valorRecebivel" name="valorRecebivel" type="text" class="maskMoney" placeholder="50,00" value="<?=$valorRecebivel;?>" required>
                                   <label for="valorRecebivel" class="active">Valor</label>
@@ -165,15 +151,27 @@ $recebivelOutrosVencimento = '1990-03-26';
                                 <!--/ Valor -->
 
                                 <!-- Desconto (%) -->
-                                <div class="input-field col s4">
+                                <div class="input-field col s6">
                                   <i class="material-icons prefix">local_atm</i>
                                   <input id="recebivelDesconto" name="recebivelDesconto" type="text" class="maskPercent" placeholder="50%" value="<?=$recebivelDesconto;?>">
                                   <label for="recebivelDesconto" class="active">Desconto (%)</label>
                                 </div>
                                 <!--/ Desconto (%) -->
 
+                                <!-- Tipo do Crédito -->
+                                <div class="input-field col s6">
+                                  <i class="material-icons prefix">flag</i>
+                                  <select name="tipoCredito" id="tipoCredito">
+                                    <option value="0" disabled selected>Selecione o tipo do crédito</option>
+                                    <option value="">1 hora</option>
+                                    <option value="">30 minutos</option>
+                                  </select>
+                                  <label>Tipo do Crédito</label>
+                                </div>
+                                <!-- Tipo do Crédito -->
+
                                 <!-- Créditos -->
-                                <div class="input-field col s4">
+                                <div class="input-field col s6">
                                   <i class="material-icons prefix">confirmation_number</i>
                                   <input id="recebivelAlunosCreditos" name="recebivelAlunosCreditos" type="text" class="maskNumber" placeholder="500" value="<?=$recebivelAlunosCreditos;?>" required>
                                   <label for="recebivelAlunosCreditos" class="active">Créditos</label>

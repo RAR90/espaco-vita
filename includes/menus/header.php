@@ -22,7 +22,7 @@
               <li class="horizontal-menu-link <?=(strpos($self, 'professores')>0?'active':'')?>">
                 <a href="professores_list.php"><span>Professores</span></a>
               </li>
-              <li class="horizontal-menu-link <?=(strpos($self, 'aulas')>0?'active':'')?>">
+              <li class="horizontal-menu-link <?=(strpos($self, 'aulas')>0 || strpos($self, 'modalidades_list')>0?'active':'')?>">
                 <a href="aulas_list.php"><span>Aulas</span></a>
               </li>
               <li class="horizontal-menu-link <?=(strpos($self, 'eventos')>0?'active':'')?>">
@@ -42,7 +42,7 @@
         </div>
 
         <ul class="navbar-list right">
-          <li class="hide-on-med-and-down"><a class="waves-effect waves-block waves-light toggle-fullscreen" href="javascript:void(0);"><i class="material-icons">settings_overscan</i></a></li>
+          <!-- <li class="hide-on-med-and-down"><a class="waves-effect waves-block waves-light toggle-fullscreen" href="javascript:void(0);"><i class="material-icons">settings_overscan</i></a></li> -->
           <li><a class="waves-effect waves-block waves-light profile-button" href="javascript:void(0);" data-target="profile-dropdown"><span class="avatar-status avatar-online"><img src="assets/images/avatar/avatar-7.png" alt="avatar"><i></i></span></a></li>
           <li><a class="waves-effect waves-block waves-light sidenav-trigger" href="javascript:void(0);" data-target="slide-out-right"><i class="material-icons">notifications_none<small class="notification-badge">3</small></i></a></li>
         </ul>

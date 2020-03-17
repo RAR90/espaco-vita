@@ -372,13 +372,11 @@ $funcDigitosCelular = '';
                           <form action="professores_form.php" class="pr-5">
 
                             <div class="row">
-                              <div class="pl-5 ml-3">
-                                <div class="input-field col s12">
-                                  <select>
-                                    <option value="" disabled selected>Selecione uma Especialidade</option>
-                                  </select>
-                                  <label>Especialidade</label>
-                                </div>
+                              <div class="input-field col s12">
+                                <select>
+                                  <option value="" disabled selected>Selecione uma Especialidade</option>
+                                </select>
+                                <label>Especialidade</label>
                               </div>
                             </div>
 
@@ -393,8 +391,8 @@ $funcDigitosCelular = '';
 
                           <h6>Especialidades do Professor</h6>
                           <ul class="collection">
-                            <li class="collection-item">Piplates</li>
-                            <li class="collection-item">Funcional</li>
+                            <li class="collection-item">Piplates <a href="#remover" class="float-right">Remover</a></li>
+                            <li class="collection-item">Funcional <a href="#remover" class="float-right">Remover</a></li>
                           </ul>
 
                         </div>
@@ -457,23 +455,23 @@ $funcDigitosCelular = '';
                             <!--/ Data Demissão -->
 
                             <!-- Professor -->
-                            <div class="row">
+                            <!-- <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">contact_support</i>
                                 <input id="funcProfessor" name="funcProfessor" value="<?=$funcProfessor;?>" type="text">
                                 <label for="funcProfessor" class="active">Professor</label>
                               </div>
-                            </div>
+                            </div> -->
                             <!--/ Professor -->
 
                             <!-- Situação do Professor -->
-                            <div class="row">
+                            <!-- <div class="row">
                               <div class="input-field col s12">
                                 <i class="material-icons prefix">error</i>
                                 <input id="funcSituacao" name="funcSituacao" value="<?=$funcSituacao;?>" type="text">
                                 <label for="funcSituacao" class="active">Situação do Professor</label>
                               </div>
-                            </div>
+                            </div> -->
                             <!--/ Situação do Professor -->
 
                             <!-- CREF -->
